@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude Code 기본 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="Claude Code 기본 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">가이드</a> › Claude Code 기본</div>
+  <h1>Claude Code 기본</h1>
+  <p>Claude Code 기본 분야에서는 권한 규칙으로 Claude가 할 수 있는 일의 범위를 정하는 법, 클라우드 세션으로 컴퓨터를 꺼 둔 채 작업을 맡기는 법, 코드 전에 디자인 시안을 먼저 잡는 법, 자동 모드를 우리 회사 환경에 맞추는 법을 배울 수 있습니다. 처음이라면 권한 규칙부터 읽어 Claude가 무엇을 스스로 하고 무엇을 물어보는지 이해하세요. 그다음 클라우드 세션과 디자인 시안 가이드를 보고, 마지막에 자동 모드 환경 설정으로 넘어가면 됩니다.</p>
+  <div class="meta muted">설치, 첫 실행, CLAUDE.md, 권한, 슬래시 명령, IDE·데스크톱·웹·모바일에서 쓰기 · 영상 5개 기반 · 2026-10-20 갱신</div>
+</section>
+<section class="brief"><h2>최근 바뀐 점</h2><ul><li>Claude 공식 영상(10/13)에서 클라우드 세션이 소개되었습니다. 클라우드의 가상 머신에서 GitHub 저장소를 복제해 따로 브랜치를 만들어 작업하므로 노트북을 닫아도 작업이 계속됩니다.</li><li>클라우드 세션은 데스크톱 앱, 브라우저, 터미널, 휴대폰, Slack에서 시작할 수 있고 휴대폰으로 질문에 답하거나 작업 방향을 바꿀 수 있습니다.</li><li>클라우드 세션 사용량은 로컬 세션과 함께 플랜 한도에 합산되며 가상 머신 비용은 따로 들지 않습니다.</li><li>Claude 공식 영상(10/2)에서 Claude 디자인으로 시안을 만들고, 댓글로 피드백하고, 클릭형 프로토타입을 거쳐 구현까지 이어 가는 흐름을 시연했습니다.</li></ul></section>
+<nav class="toc gtoc"><a href="#g1">권한 규칙으로 안전선 정하기</a><a href="#g2">클라우드 세션으로 작업 맡겨 두기</a><a href="#g3">코드 전에 디자인 시안 먼저 잡기</a><a href="#g4">자동 모드에 우리 회사 환경 알려주기</a></nav>
+<div class="guides"><article id="g1" class="card guide">
+  <div class="card-head"><span class="tag">중급</span><h3>1. 권한 규칙으로 안전선 정하기</h3></div>
+  <p>Claude Code는 파일 수정이나 명령 실행처럼 영향이 있는 작업을 하기 전에 권한을 묻습니다. 연구에서는 권한 요청의 97%가 그대로 승인될 만큼 확인 요청이 많아 피로가 쌓였습니다. 그래서 늘 막을 일, 늘 물어볼 일, 늘 허용할 일을 규칙으로 미리 정해 두면 안전과 속도를 함께 챙길 수 있습니다.</p>
+  <ol class="steps"><li>Claude가 절대 하면 안 되는 동작(예: 운영 환경 변경)을 골라 <code>deny</code> 규칙에 적습니다.</li><li>자동으로 넘기지 말고 매번 확인받고 싶은 동작은 <code>ask</code> 규칙에 적습니다.</li><li>확인 없이 진행해도 되는 예외 동작은 <code>allow</code> 규칙에 적습니다.</li><li><code>deny</code>·<code>ask</code>·<code>allow</code> 규칙이 다른 판단보다 먼저 적용된다는 점을 기억하고, 규칙끼리 겹치지 않는지 확인합니다.</li><li>실제로 작업을 맡겨 보고 막히는 동작을 살펴 규칙을 조금씩 넓힙니다.</li></ol>
+  
+  <ul class="tips"><li>처음에는 허용 범위를 좁게 시작하고, 거부되는 항목을 보며 넓혀 갑니다.</li><li>읽기 전용 작업이나 되돌릴 수 있는 작업은 자동 모드에서도 분류기를 거치지 않고 바로 진행됩니다.</li><li>회사 관리자가 정한 규칙은 개발자가 직접 지울 수 없습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=b8SV4U6fEIc" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/b8SV4U6fEIc/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 자동 모드의 작동 원리와 설정</b><span class="muted">Claude (공식) · 2026-08-04</span></span></a></div>
+</article><article id="g2" class="card guide">
+  <div class="card-head"><span class="tag">중급</span><h3>2. 클라우드 세션으로 작업 맡겨 두기</h3></div>
+  <p>클라우드 세션은 내 컴퓨터가 아닌 클라우드의 가상 머신에서 Claude Code가 작업하는 방식입니다. 노트북을 닫아도 작업이 계속되므로 큰 리팩터링이나 마이그레이션, 퇴근 전에 맡겨 두는 일에 알맞습니다. Pro, Max, Team 플랜과 Enterprise 프리미엄 좌석 또는 Chat + Claude Code 좌석에서 쓸 수 있습니다.</p>
+  <ol class="steps"><li>작업할 코드를 GitHub 저장소에 올려 둡니다.</li><li>데스크톱 앱, 브라우저, 터미널, 휴대폰, Slack 가운데 편한 곳에서 클라우드 세션을 시작합니다.</li><li>맡길 작업을 설명하고 시작합니다. Claude가 저장소를 복제해 따로 브랜치를 만들어 작업합니다.</li><li>노트북을 닫거나 외출해도 되며, Claude가 질문하면 휴대폰으로 답하거나 작업 방향을 바꿉니다.</li><li>필요하면 다른 작업도 세션을 따로 열어 동시에 돌립니다.</li><li>작업이 끝나면 변경 내용을 검토하고 PR을 만듭니다.</li></ol>
+  
+  <ul class="tips"><li>사용량은 로컬 세션과 함께 플랜 한도에 합산되며 가상 머신 비용은 따로 없습니다.</li><li>Remote Control은 클라우드 세션과 다릅니다. 내 컴퓨터에서 돌고 있는 세션에 연결하는 방식이라 컴퓨터가 켜져 있어야 합니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=-OH1y7CjIew" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/-OH1y7CjIew/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 클라우드 세션으로 외출 중에도 코딩하기</b><span class="muted">Claude (공식) · 2026-10-13</span></span></a></div>
+</article><article id="g3" class="card guide">
+  <div class="card-head"><span class="tag">중급</span><h3>3. 코드 전에 디자인 시안 먼저 잡기</h3></div>
+  <p>Claude 디자인으로 화면 시안을 먼저 살펴본 뒤 구현으로 넘어가는 방식입니다. 바로 코드부터 짜지 않고 짧게 디자인을 다듬으면 결과가 더 좋아집니다. 앱 온보딩처럼 화면 흐름이 중요한 작업에 알맞습니다.</p>
+  <ol class="steps"><li>Claude 디자인에 작업할 저장소를 연결합니다.</li><li>만들 화면(예: 앱 온보딩)의 시안을 요청합니다.</li><li>마음에 들지 않는 부분은 시안에 댓글을 달아 피드백합니다.</li><li>세부 사항은 시안을 직접 고쳐 다듬습니다.</li><li>클릭형 프로토타입으로 실제 화면 흐름을 눌러 보며 확인합니다.</li><li>확정한 디자인을 바탕으로 구현을 진행합니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>이 앱의 온보딩 화면 시안을 몇 가지 다른 방향으로 만들어 줘</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>코드로 바로 들어가기 전에 디자인에 시간을 더 쓰고 싶을 때 쓰면 좋습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=COJAZQM1aeQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/COJAZQM1aeQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 디자인으로 앱 온보딩 만들기</b><span class="muted">Claude (공식) · 2026-10-02</span></span></a></div>
+</article><article id="g4" class="card guide">
+  <div class="card-head"><span class="tag">고급</span><h3>4. 자동 모드에 우리 회사 환경 알려주기</h3></div>
+  <p>자동 모드에서는 Claude가 자기 행동을 스스로 승인하지 않습니다. 별도 분류기가 사용자의 메시지와 도구 호출만 보고 사용자의 의도에 맞는지 판단합니다. 기본 설정은 작업 디렉터리와 git 리모트만 내부 자원으로 보므로, 회사의 GitHub 조직이나 클라우드 저장소 같은 인프라를 따로 알려 줘야 제대로 판단합니다.</p>
+  <ol class="steps"><li>관리자라면 관리형 설정(managed settings)에 환경을 정의합니다. 여기에 정한 내용은 모든 개발자가 그대로 물려받습니다.</li><li>개발자라면 사용자 설정(user settings)에 자기 항목을 추가합니다.</li><li><code>environment</code> 필드에 GitHub 조직, 클라우드 버킷, 내부 서비스 등을 쉬운 영어 문장으로 설명합니다.</li><li><code>environment</code>를 설정하면 기본 항목이 바뀌므로 기본 문자열도 함께 넣어 남겨 둡니다.</li><li>더 세밀하게 정하려면 예외는 <code>allow</code>에 적고, 명시적으로 요청하지 않으면 막을 동작은 soft deny, 무조건 막을 동작은 hard deny에 적습니다.</li><li>확실히 막을 동작은 <code>deny</code> 규칙으로, 자동 모드에서도 확인받을 동작은 <code>ask</code> 규칙으로 따로 지정합니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>Our GitHub organization is acme-corp. Our internal services run on *.internal.acme.com. Our cloud bucket acme-data is trusted.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>처음에는 좁게 설정하고, 거부되는 항목을 보며 점차 넓힙니다.</li><li>도구 결과는 서버 측 프로브가 숨은 악성 지시를 먼저 검사합니다. 프로브와 자동 모드를 함께 켠 평가에서는 프롬프트 인젝션 공격 성공률이 0으로 떨어졌습니다.</li><li>운영 인프라 변경처럼 위험이 큰 작업은 사람이 직접 검토하거나 자체 평가를 만들어 확인합니다.</li><li>개발자는 관리자가 설정한 항목을 지울 수 없습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=b8SV4U6fEIc" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/b8SV4U6fEIc/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 자동 모드의 작동 원리와 설정</b><span class="muted">Claude (공식) · 2026-08-04</span></span></a></div>
+</article></div>
+<p><a href="../videos.html?cat=code-basics">이 분야 영상 전체 보기 →</a></p>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 7곳</p>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+  navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+    b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); });
+}));
+</script>
+</body>
+</html>

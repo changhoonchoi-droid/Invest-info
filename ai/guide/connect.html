@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP·커넥터 연결 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="MCP·커넥터 연결 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">가이드</a> › MCP·커넥터 연결</div>
+  <h1>MCP·커넥터 연결</h1>
+  <p>이 분야에서는 Slack 같은 팀 채널, TeachFX 같은 외부 업무 도구, 브라우저, 사내 시스템을 Claude에 연결합니다. 이렇게 연결하면 자료를 복사해 붙이지 않아도 Claude가 직접 찾아보고, 작업하고, 결과를 확인합니다. 처음이라면 팀 채널에 Claude를 넣는 것부터 시작하세요. 그다음 외부 도구 연결과 정기 실행, 브라우저 검증, 자체 MCP 서버 구축 순서로 보면 됩니다.</p>
+  <div class="meta muted">MCP 서버, 커넥터(구글·노션·슬랙 등), 브라우저·컴퓨터 사용, 외부 도구 연결 · 영상 5개 기반 · 2026-10-20 갱신</div>
+</section>
+<section class="brief"><h2>최근 바뀐 점</h2><ul><li>Slack 등 팀 워크스페이스 채널에 Claude를 추가해 팀 대화를 따라가며 일하게 하는 Claude Tag가 소개되었습니다(Team·Enterprise 계정).</li><li>Claude Code에 포함된 verify 스킬로 시작해 브라우저 클릭·콘솔 확인 같은 수동 검증 절차를 프로젝트 스킬로 만들 수 있다고 안내되었습니다.</li></ul></section>
+<nav class="toc gtoc"><a href="#g1">팀 Slack 채널에 Claude Tag 추가하기</a><a href="#g2">외부 도구 연결해 반복 업무 자동화하기</a><a href="#g3">브라우저 검증 스킬로 결과 확인하기</a><a href="#g4">자체 MCP 서버로 사내 업무 연결하기</a></nav>
+<div class="guides"><article id="g1" class="card guide">
+  <div class="card-head"><span class="tag">입문</span><h3>1. 팀 Slack 채널에 Claude Tag 추가하기</h3></div>
+  <p>Claude Tag는 Slack 등 팀 워크스페이스의 채널에 Claude를 추가하는 기능입니다. Claude는 팀 대화를 실시간으로 따라가며 일합니다. 채팅 창을 오가거나 맥락을 복사해 붙일 필요 없이 채널 안에서 정보 정리, 문서 초안 작성, 도구 안의 수정까지 맡길 수 있습니다.</p>
+  <ol class="steps"><li>회사 Claude 계정이 Team 또는 Enterprise 요금제인지 확인합니다. Claude Tag는 이 두 요금제에서만 쓸 수 있습니다.</li><li>Claude와 함께 일할 팀 채널을 하나 고르고, 그 채널에 Claude를 추가합니다.</li><li>그 채널에서 Claude가 맡을 일, 얼마나 자주 끼어들지, 어디까지 혼자 처리할지를 정합니다.</li><li>필요하면 다른 공개 채널의 정보에 접근할 권한을 줍니다. DM과 비공개 채널은 항상 비공개로 유지됩니다.</li><li>채널에서 바로 작업을 요청합니다. Claude는 대화 기록, 공유 문서, 연결된 커넥터와 도구를 참고해 일합니다.</li><li>Claude가 무엇을 바꿨는지, 누가 요청했는지 변경 기록에서 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>이 채널에서 이번 주에 나온 논의를 정리해서 공유 문서용 주간 업무 요약 초안을 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>Claude는 채널별 지침을 기억합니다. 채널마다 역할을 다르게 정해 두면 같은 설명을 반복하지 않아도 됩니다.</li><li>Claude는 별도의 자체 계정으로 작업하고 모든 변경과 요청자를 기록합니다. 누가 무엇을 시켰는지 나중에 추적할 수 있습니다.</li><li>접근 범위와 자율성은 관리자가 채널마다 조절합니다. 처음에는 좁게 열고 차차 넓히는 편이 안전합니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=_f_rtbW_uFM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_f_rtbW_uFM/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Tag 시작하기: 팀 채널 속 Claude</b><span class="muted">Claude (공식) · 2026-09-29</span></span></a></div>
+</article><article id="g2" class="card guide">
+  <div class="card-head"><span class="tag">중급</span><h3>2. 외부 도구 연결해 반복 업무 자동화하기</h3></div>
+  <p>Claude가 업무 도구에 연결되어 있으면 요청 하나로 그 도구에서 자료를 찾아 분석하고 결과물까지 만들어 줍니다. 영상에서는 교사가 수업 녹음 분석 도구 TeachFX를 연결해 어제 수업을 분석하고 내일 수업안을 만듭니다. 마음에 드는 과정은 정해진 시간마다 자동으로 돌게 할 수 있습니다.</p>
+  <ol class="steps"><li>Claude에 연결된 업무 도구 가운데 반복 업무의 자료가 쌓이는 도구를 정합니다. 영상에서는 TeachFX를 썼습니다.</li><li>어떤 자료를 찾아 무엇을 분석하고 어떤 결과물을 만들지 요청 하나로 말합니다. 음성으로 요청해도 됩니다.</li><li>Claude가 도구에서 찾아온 자료와 분석 결과(영상에서는 학생 반응, 발화 비율, 질문, 참여도)를 확인합니다.</li><li>분석 결과를 반영한 결과물이 기준(영상에서는 주 교육 표준과 ELD 기준)에 맞는지 검토합니다.</li><li>결과가 마음에 들면 같은 과정을 정해진 요일과 시간에 자동으로 실행하도록 맡깁니다. 영상에서는 평일 오후 4시로 정했습니다.</li></ol>
+  
+  <ul class="tips"><li>코칭 메모처럼 함께 받고 싶은 내용은 결과물 안에 넣어 달라고 요청하면 한 문서로 받을 수 있습니다.</li><li>Claude for Teachers는 인증된 미국 K-12 교사에게 무료인 서비스입니다. 같은 흐름을 다른 업무 도구에 그대로 적용해 볼 수 있습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=V-OOEC5RNaQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V-OOEC5RNaQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude for Teachers로 수업 계획 세우기</b><span class="muted">Claude (공식) · 2026-07-14</span></span></a></div>
+</article><article id="g3" class="card guide">
+  <div class="card-head"><span class="tag">중급</span><h3>3. 브라우저 검증 스킬로 결과 확인하기</h3></div>
+  <p>Claude Code는 테스트, 타입 검사, 린터를 스스로 실행합니다. 하지만 이것만으로는 변경이 의도대로 동작하는지 증명되지 않습니다. 브라우저에서 클릭하고 콘솔을 보는 확인 절차를 프로젝트 스킬로 만들어 두면 Claude가 직접 확인하고, 고치고, 다시 확인합니다.</p>
+  <ol class="steps"><li>평소 사람이 손으로 하는 확인 절차를 적어 봅니다. 예를 들면 브라우저에서 버튼 클릭하기, 콘솔 오류 보기 같은 것입니다.</li><li>Claude Code에 포함된 <code>verify</code> 스킬로 프로젝트용 검증 스킬을 만듭니다.</li><li>만들어진 스킬에 확인 항목을 더합니다. 성능 측정이나 레이아웃 시프트(Core Web Vitals 지표 중 하나) 같은 것입니다.</li><li>확인 기준은 숫자나 통과·실패처럼 측정할 수 있는 형태로 적습니다.</li><li>작업을 맡긴 뒤 Claude가 검증 스킬을 실행하고, 문제를 고치고, 다시 확인하는지 지켜봅니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>verify 스킬로 이 프로젝트용 검증 스킬을 만들어 줘. 브라우저에서 주요 버튼을 눌러 보고, 콘솔 오류를 확인하고, 레이아웃 시프트도 측정하는 항목을 넣어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>Claude Code의 한 사이클은 맥락 수집 → 실행 → 검증 → 응답입니다. 검증 단계를 탄탄하게 만들수록 결과가 좋아집니다.</li><li>웹은 브라우저, 백엔드는 엔드포인트 호출, 모바일은 iOS 시뮬레이터로 확인 절차를 만들 수 있습니다.</li><li>검증 기준이 측정 가능할수록 Claude가 사람 개입 없이 더 멀리 혼자 갑니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=mQZB0l-rhxE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mQZB0l-rhxE/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 검증 루프 만들기</b><span class="muted">Claude (공식) · 2026-09-25</span></span></a></div>
+</article><article id="g4" class="card guide">
+  <div class="card-head"><span class="tag">고급</span><h3>4. 자체 MCP 서버로 사내 업무 연결하기</h3></div>
+  <p>회사 시스템을 자체 MCP 서버로 Claude에 연결하는 방법입니다. 금융 범죄 조사처럼 위험도가 높은 업무나 앱 개발·배포 같은 복합 작업을 맡길 때 씁니다. 보안·규정 준수 검토와 평가(evals)로 신뢰를 쌓은 뒤 팀 전체에 배포하는 흐름입니다.</p>
+  <ol class="steps"><li>Claude에게 맡길 업무와 해결할 문제를 정의합니다.</li><li>업무에 맞는 모델을 고르고 벤치마크로 비교합니다.</li><li>연결할 데이터와 시스템이 보안·규정 준수 요건을 지키는지 검토합니다.</li><li>자체 MCP 서버와 MCP 게이트웨이를 포함해 전체 시스템을 설계합니다.</li><li>업무용 프롬프트와 스킬 구조를 정리합니다. 필요하면 서브에이전트와 커스텀 스킬을 함께 씁니다.</li><li>평가(evals)로 결과를 검증해 신뢰를 쌓은 뒤 실제 운영에 배포하고 확장합니다.</li></ol>
+  
+  <ul class="tips"><li>두 영상 모두 자막이 없어 제목, 설명, 챕터 정보로만 정리했습니다. 세부 명령어와 설정 절차는 영상에서 직접 확인하세요.</li><li>Google Cloud 사례에서는 MCP 서버, 서브에이전트, 커스텀 스킬을 함께 써서 약 30분 만에 피드백 앱을 기획부터 배포까지 만들었습니다.</li><li>실제 사용자가 쓸 화면(영상에서는 조사자 UI)도 함께 설계해야 팀 단위로 운영할 수 있습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=tUoO4ucrNc0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tUoO4ucrNc0/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Cowork로 금융 범죄에 맞서기</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=l8fxVYIP4HQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/l8fxVYIP4HQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude와 Google Cloud로 앱 만들고 배포하기</b><span class="muted">Claude (공식) · 2026-05-21</span></span></a></div>
+</article></div>
+<p><a href="../videos.html?cat=connect">이 분야 영상 전체 보기 →</a></p>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 7곳</p>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+  navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+    b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); });
+}));
+</script>
+</body>
+</html>
