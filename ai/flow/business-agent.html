@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>업무 에이전트 만들어 운영하기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="업무 에이전트 만들어 운영하기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › 업무 에이전트 만들어 운영하기</div>
+  <h1>업무 에이전트 만들어 운영하기</h1>
+  <p>회의 브리프·영업 보고처럼 사내에 오래 두고 쓸 업무 에이전트를 Managed Agents로 설계하고, 기억·검증·비용·안전장치를 갖춰 운영합니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 팀의 노하우를 담은 스킬과 메모리를 갖추고, 평가 기준을 통과한 결과만 내보내는 업무 에이전트 첫 버전이 남습니다.</span><span><b>난이도</b> 고급</span>
+    <span><b>시간</b> 첫 버전까지 며칠~2주</span><span><b>단계</b> 9개</span></div>
+  <div class="cos"><span class="co">Claude Managed Agents</span><span class="co">Agent SDK</span><span class="co">Claude Console</span><span class="co">Skills</span><span class="co">Evals</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-10-23 갱신</p>
+<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>설계</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">맡길 업무와 구축 방식 정하기</span><span class="ns">Managed Agents와 직접 구축 중 고르기</span>
+  <span class="ntool">Claude Managed Agents</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">에이전트·환경·세션 설계하기</span><span class="ns">두뇌·손·연결 세 자원으로 구조 나누기</span>
+  <span class="ntool">Claude Managed Agents</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>지식</div>
+  <div class="nodes"><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">업무 노하우를 스킬로 담기</span><span class="ns">잘하는 사람의 판단 기준을 스킬로 정리</span>
+  <span class="ntool">Skills</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">메모리 스토어 붙이기</span><span class="ns">세션이 끝나도 배운 내용을 기억하게</span>
+  <span class="ntool">Claude Console</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>검증</div>
+  <div class="nodes"><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">Outcomes로 결과 기준 정하기</span><span class="ns">루브릭을 채울 때까지 스스로 반복</span>
+  <span class="ntool">Claude Managed Agents</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">평가 세트로 품질 재기</span><span class="ns">실제 업무 사례로 테스트하고 점수 기록</span>
+  <span class="ntool">Evals</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>운영</div>
+  <div class="nodes"><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="num">7</span>
+  <span class="nbody"><span class="nt">비용·컨텍스트 줄이기</span><span class="ns">캐싱·도구 검색·컴팩션으로 비용 절감</span>
+  <span class="ntool">Claude API</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s8" aria-haspopup="dialog">
+  <span class="num">8</span>
+  <span class="nbody"><span class="nt">안전장치 두고 팀에 배포하기</span><span class="ns">권한 분리·멈춤 장치·사람 승인 갖추기</span>
+  <span class="ntool">Claude Managed Agents</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s9" aria-haspopup="dialog">
+  <span class="num">9</span>
+  <span class="nbody"><span class="nt">새 모델 나오면 다시 평가하기</span><span class="ns">모델 교체 전 평가부터 돌려 판단</span>
+  <span class="ntool">Evals</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 9 · 설계</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">맡길 업무와 구축 방식 정하기</h2>
+  <div class="cos"><span class="co strong">Claude Managed Agents</span></div>
+  <p>에이전트에게 맡길 업무 하나를 정하고, 운영을 Managed Agents에 맡길지 Agent SDK로 직접 만들지 판단합니다. 작업 난이도, 응답 속도, 실행 횟수에 따른 비용이 기준입니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>에이전트에게 맡길 업무 하나를 정합니다(예: 회의 전 브리프 작성, 영업 보고).</li><li>작업이 얼마나 어렵고 오래 걸리는지 적어 봅니다.</li><li>어렵고 오래 걸리는 작업이면 Managed Agents를 우선 검토합니다.</li><li>빠른 응답이 중요하면 콜드 스타트 지연이 문제가 되지 않는지 확인합니다.</li><li>실행 횟수가 많으면 비용을 미리 계산합니다.</li><li>자체 시스템과 가드레일에 깊이 붙여야 하면 Agent SDK로 직접 만드는 방법을 검토합니다.</li></ol>
+  
+  <ul class="tips"><li>회의 어시스턴트 첫 버전을 하루 만에, 영업 보고 에이전트를 2주 만에 만든 사례가 있습니다.</li><li>어려운 작업이 아니면 직접 만드는 편이 나을 수 있다는 창업자들의 의견도 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/api.html#g3">API·개발자 플랫폼 › Managed Agents와 직접 구축 중 고르기</a><a class="refl" href="../guide/automation.html#g10">업무 자동화·에이전트 › 자동화할 일과 모델 고르기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=9GtcbnmldcY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/9GtcbnmldcY/mqdefault.jpg" alt="" loading="lazy"><span><b>Shopify CTO가 말하는 AI 전략과 배벨 토큰 전략</b><span class="muted">Claude (공식) · 2026-10-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=hm8NzEd5io0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/hm8NzEd5io0/mqdefault.jpg" alt="" loading="lazy"><span><b>창업자들이 Claude Managed Agents로 만드는 법</b><span class="muted">Claude (공식) · 2026-09-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=M5uwBawBDpw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/M5uwBawBDpw/mqdefault.jpg" alt="" loading="lazy"><span><b>AirOps가 Claude로 마케터용 AI 에이전트를 만든 방법</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=zFslvuvYifQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/zFslvuvYifQ/mqdefault.jpg" alt="" loading="lazy"><span><b>코딩은 더 이상 병목이 아니다: Spotify의 에이전트 개발 환경</b><span class="muted">Claude (공식) · 2026-05-20</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">에이전트·환경·세션 설계하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 9 · 설계</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">에이전트·환경·세션 설계하기</h2>
+  <div class="cos"><span class="co strong">Claude Managed Agents</span></div>
+  <p>Managed Agents는 에이전트(두뇌), 환경(손), 세션(둘을 연결) 세 자원으로 이뤄집니다. 에이전트 루프는 Anthropic 서버에서 돌고, 자격 증명은 Vaults에 따로 보관합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>에이전트에 모델, 시스템 프롬프트, 스킬, MCP 서버 구성을 정합니다.</li><li>에이전트가 실제로 작업할 샌드박스 환경을 준비합니다.</li><li>세션으로 에이전트와 환경을 연결해 작업을 시작합니다.</li><li>API 키 같은 자격 증명은 Vaults에 저장해 사용자·세션별로 관리합니다.</li><li>에이전트가 행동할 때 필요한 권한은 사람에게 요청해 승인받도록 합니다.</li></ol>
+  
+  <ul class="tips"><li>두뇌와 손을 분리한 구조라 자격 증명이 더 안전합니다.</li><li>API 키는 코드나 공유 문서에 직접 적지 않습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/api.html#g1">API·개발자 플랫폼 › Managed Agents 기본 구조 이해하기</a><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › Managed Agents로 에이전트 설계하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ksfm6jeTg3Q" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ksfm6jeTg3Q/mqdefault.jpg" alt="" loading="lazy"><span><b>에이전트 인프라의 미래: Managed Agents 대담</b><span class="muted">Claude (공식) · 2026-07-10</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=19HDQ9HppOA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/19HDQ9HppOA/mqdefault.jpg" alt="" loading="lazy"><span><b>첫 번째 Managed Agent 만들어 배포하기</b><span class="muted">Claude (공식) · 2026-05-26</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 맡길 업무와 구축 방식 정하기</button><button type="button" class="nav-b next" data-go="s3">업무 노하우를 스킬로 담기 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 9 · 지식</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">업무 노하우를 스킬로 담기</h2>
+  <div class="cos"><span class="co strong">Skills</span></div>
+  <p>잘하는 사람의 판단 기준과 과거 작업 기록을 스킬로 만들어 주면 에이전트가 그 방식대로 일합니다. 사람이 추가로 고친 내용을 다시 반영해 계속 개선합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>노하우를 옮길 업무와 기준이 되는 사람을 정합니다.</li><li>그 사람의 과거 수정과 작업 기록을 모읍니다.</li><li>판단 기준을 마크다운 문서 형태의 스킬로 만듭니다.</li><li>에이전트가 실제 문서에 수정 제안을 달게 합니다.</li><li>에이전트 제안 뒤에 사람이 추가로 고친 내용을 추적해 스킬에 다시 반영합니다.</li></ol>
+  
+  <ul class="tips"><li>지침을 수정→검토→병합하는 방식으로 관리하면 팀의 판단이 에이전트에 쌓입니다.</li><li>늘 필요하지 않은 지침은 스킬로 떼어 내 필요할 때만 불러오게 하면 컨텍스트가 가벼워집니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/api.html#g6">API·개발자 플랫폼 › 업무 노하우를 스킬로 만들기</a><a class="refl" href="../guide/automation.html#g8">업무 자동화·에이전트 › 스킬로 우리 팀 기준 가르치기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=z7cNbsr3b5s" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/z7cNbsr3b5s/mqdefault.jpg" alt="" loading="lazy"><span><b>지식노동용 안전한 에이전트 만들기</b><span class="muted">Claude (공식) · 2026-10-06</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=uGroRwlC9y4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/uGroRwlC9y4/mqdefault.jpg" alt="" loading="lazy"><span><b>팀의 판단을 학습하는 에이전트 만들기</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=M5uwBawBDpw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/M5uwBawBDpw/mqdefault.jpg" alt="" loading="lazy"><span><b>AirOps가 Claude로 마케터용 AI 에이전트를 만든 방법</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 에이전트·환경·세션 설계하기</button><button type="button" class="nav-b next" data-go="s4">메모리 스토어 붙이기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 9 · 지식</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">메모리 스토어 붙이기</h2>
+  <div class="cos"><span class="co strong">Claude Console</span></div>
+  <p>에이전트는 세션마다 따로 동작해 앞에서 배운 내용을 잊습니다. 메모리 스토어를 세션에 붙이면 여러 세션에 걸쳐 같은 기억을 읽고 씁니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>CLI로 메모리 스토어를 만들고 <code>name</code>과 간단한 설명을 정합니다.</li><li>콘솔의 <code>manage agents</code> → <code>memory stores</code>에서 상태가 active인지 확인합니다.</li><li>세션을 만들 때 메모리 스토어 ID를 리소스로 넘깁니다.</li><li><code>access</code> 필드로 권한을 정합니다. 기본값은 읽기·쓰기입니다.</li><li>새 세션을 열고 같은 내용을 물어 기억하는지 확인합니다.</li></ol>
+  
+  <ul class="tips"><li>메모리가 쌓이면 오래된 정보가 남습니다. 드리밍이 과거 세션 기록으로 사실 확인, 정리, 중복 제거를 합니다.</li><li>읽기 전용으로 붙이면 에이전트가 메모리를 고칠 수 없습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/api.html#g4">API·개발자 플랫폼 › 메모리 스토어로 세션 기억 붙이기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=geUv4CjPpxI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/geUv4CjPpxI/mqdefault.jpg" alt="" loading="lazy"><span><b>세션이 끝나도 기억하는 에이전트 만들기</b><span class="muted">Claude (공식) · 2026-05-23</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 업무 노하우를 스킬로 담기</button><button type="button" class="nav-b next" data-go="s5">Outcomes로 결과 기준 정하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 9 · 검증</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">Outcomes로 결과 기준 정하기</h2>
+  <div class="cos"><span class="co strong">Claude Managed Agents</span></div>
+  <p>Outcomes는 평가 기준(루브릭)과 반복 횟수를 정해 기준을 만족할 때까지 작업을 되풀이하게 합니다. 틀린 결과가 사용자에게 그대로 가면 안 되는 업무에 씁니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>사용자에게 중요한 기준을 모두 나열합니다(예: 올바른 인물 정보인지, 읽기 쉬운지).</li><li>객관적 확인 항목과 표시 방식 같은 사용성 항목을 루브릭으로 정리합니다.</li><li>루브릭과 반복 시도 횟수를 정합니다.</li><li>작업 에이전트와 분리된 독립 컨텍스트의 검증 에이전트가 결과를 평가하게 합니다.</li><li>회의 24시간 전처럼 시간을 넉넉히 두고 실행합니다.</li><li>기준을 통과하지 못한 결과는 사용자에게 보여 주지 않도록 처리합니다.</li></ol>
+  
+  <ul class="tips"><li>틀린 정보를 보여 주는 것보다 아예 보여 주지 않는 편이 낫습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/api.html#g5">API·개발자 플랫폼 › Outcomes로 에이전트 결과 검증하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=hm8NzEd5io0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/hm8NzEd5io0/mqdefault.jpg" alt="" loading="lazy"><span><b>창업자들이 Claude Managed Agents로 만드는 법</b><span class="muted">Claude (공식) · 2026-09-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ksfm6jeTg3Q" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ksfm6jeTg3Q/mqdefault.jpg" alt="" loading="lazy"><span><b>에이전트 인프라의 미래: Managed Agents 대담</b><span class="muted">Claude (공식) · 2026-07-10</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 메모리 스토어 붙이기</button><button type="button" class="nav-b next" data-go="s6">평가 세트로 품질 재기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 9 · 검증</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">평가 세트로 품질 재기</h2>
+  <div class="cos"><span class="co strong">Evals</span></div>
+  <p>평가는 &#x27;좀 이상한데&#x27; 같은 느낌을 숫자로 바꿔 줍니다. 수정이나 모델 교체가 다른 곳을 망가뜨리지 않았는지 확인하는 근거가 됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>좋은 결과의 성공 기준을 먼저 글로 정합니다.</li><li>공개 벤치마크 대신 내 업무의 실제 사례로 테스트 세트를 만듭니다.</li><li>형식·필수 문구는 코드 기반 채점기로, 문장 품질은 모델 기반 채점기로 평가합니다.</li><li>현재 상태로 평가를 돌려 기준 점수를 기록합니다.</li><li>프롬프트나 구조를 한 번에 하나씩 바꾸며 점수를 비교합니다.</li></ol>
+  
+  <ul class="tips"><li>판정 모델도 틀릴 수 있으니 채점기 여러 개를 함께 씁니다.</li><li>결과가 만들어진 과정도 사람이나 다른 에이전트가 확인할 수 있게 설계하면 신뢰도가 높아집니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g8">프롬프트·활용 요령 › 평가(evals)로 결과 품질 재기</a><a class="refl" href="../guide/automation.html#g12">업무 자동화·에이전트 › 평가로 에이전트 결과 검증하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=hm8NzEd5io0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/hm8NzEd5io0/mqdefault.jpg" alt="" loading="lazy"><span><b>창업자들이 Claude Managed Agents로 만드는 법</b><span class="muted">Claude (공식) · 2026-09-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=CG7Rcl49C2w" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/CG7Rcl49C2w/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 출시 전, 고객 팀들이 모델을 시험하는 방식</b><span class="muted">Claude (공식) · 2026-05-28</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=mWvtOHlZM-I" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mWvtOHlZM-I/mqdefault.jpg" alt="" loading="lazy"><span><b>도구·스킬·서브에이전트, 어디에 둘까: 에이전트 분해</b><span class="muted">Claude (공식) · 2026-05-23</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=v9FTCvkV_a0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/v9FTCvkV_a0/mqdefault.jpg" alt="" loading="lazy"><span><b>취향을 위한 평가: 슬라이드 생성 에이전트 개선</b><span class="muted">Claude (공식) · 2026-05-23</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← Outcomes로 결과 기준 정하기</button><button type="button" class="nav-b next" data-go="s7">비용·컨텍스트 줄이기 →</button></div>
+</dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
+  <div class="dr-head"><span class="muted small">7 / 9 · 운영</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s7">비용·컨텍스트 줄이기</h2>
+  <div class="cos"><span class="co strong">Claude API</span></div>
+  <p>오래 일하는 에이전트는 토큰을 많이 써서 비용이 커지고 컨텍스트도 무거워집니다. 반복되는 앞부분은 캐싱하고 필요한 것만 불러오게 해 비용과 정확도를 함께 챙깁니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>매번 반복해서 보내는 긴 내용(시스템 프롬프트, 참고 자료)을 프롬프트 캐싱 대상으로 정합니다.</li><li>도구가 많으면 도구 검색으로 필요한 도구만 불러오게 합니다.</li><li>긴 작업에는 컴팩션(대화 기록 압축)을 씁니다.</li><li>평소에는 비용이 적은 모델로 일하고 막힐 때만 더 똑똑한 모델에 묻는 어드바이저 전략을 적용합니다.</li><li>구조를 바꿀 때마다 평가를 다시 돌려 실제로 나아졌는지 확인합니다.</li></ol>
+  
+  <ul class="tips"><li>만들고 시험할 때는 큰 모델, 안정적으로 운영할 때는 저렴한 모델로 바꾸는 배벨 전략도 있습니다.</li><li>세부 설정값은 공식 문서에서 확인하세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/api.html#g7">API·개발자 플랫폼 › 캐싱·컨텍스트 관리로 비용 줄이기</a><a class="refl" href="../guide/prompting.html#g7">프롬프트·활용 요령 › 긴 작업의 컨텍스트·비용 줄이기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=71-8fJIGi34" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/71-8fJIGi34/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 모델과 노력 수준, 어떻게 고를까</b><span class="muted">Claude (공식) · 2026-09-18</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=geUv4CjPpxI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/geUv4CjPpxI/mqdefault.jpg" alt="" loading="lazy"><span><b>세션이 끝나도 기억하는 에이전트 만들기</b><span class="muted">Claude (공식) · 2026-05-23</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=mWvtOHlZM-I" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mWvtOHlZM-I/mqdefault.jpg" alt="" loading="lazy"><span><b>도구·스킬·서브에이전트, 어디에 둘까: 에이전트 분해</b><span class="muted">Claude (공식) · 2026-05-23</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=QIriO1-vHYw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/QIriO1-vHYw/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 플랫폼 200% 활용: 비용·컨텍스트·성능</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 평가 세트로 품질 재기</button><button type="button" class="nav-b next" data-go="s8">안전장치 두고 팀에 배포하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s8" aria-labelledby="t-s8">
+  <div class="dr-head"><span class="muted small">8 / 9 · 운영</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s8">안전장치 두고 팀에 배포하기</h2>
+  <div class="cos"><span class="co strong">Claude Managed Agents</span></div>
+  <p>AI에게 일을 많이 맡길수록 품질을 AI 판단에만 맡기지 않는 장치가 필요합니다. 권한을 나누고 작은 범위부터 배포하며, 폭주에 대비한 멈춤 장치를 둡니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>에이전트가 접근할 데이터와 권한을 업무별로 나눕니다.</li><li>보안·규정 준수 요건을 확인하고 접근을 관리할 구조를 정합니다.</li><li>자동 작업이 예상보다 오래 돌거나 많이 실행되면 멈추는 기준(서킷 브레이커)을 정합니다.</li><li>작은 팀부터 배포하고 평가로 신뢰를 쌓은 뒤 범위를 넓힙니다.</li><li>에이전트가 제안한 행동은 사람이 확인하고 승인하게 합니다.</li></ol>
+  
+  <ul class="tips"><li>표준화와 단단한 가드레일은 에이전트에게도 제약이 아니라 가속기가 됩니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/news.html#g9">발표·소식 › AI 작업에 안전장치 두기</a><a class="refl" href="../guide/connect.html#g5">MCP·커넥터 연결 › 자체 MCP로 사내 업무 흐름 설계하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=9GtcbnmldcY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/9GtcbnmldcY/mqdefault.jpg" alt="" loading="lazy"><span><b>Shopify CTO가 말하는 AI 전략과 배벨 토큰 전략</b><span class="muted">Claude (공식) · 2026-10-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=S_lzYIvtEaQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/S_lzYIvtEaQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Stripe가 Claude Code로 개발하는 방법</b><span class="muted">Claude (공식) · 2026-09-24</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=tUoO4ucrNc0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tUoO4ucrNc0/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Cowork로 금융 범죄에 맞서기</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s8"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 비용·컨텍스트 줄이기</button><button type="button" class="nav-b next" data-go="s9">새 모델 나오면 다시 평가하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s9" aria-labelledby="t-s9">
+  <div class="dr-head"><span class="muted small">9 / 9 · 운영</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s9">새 모델 나오면 다시 평가하기</h2>
+  <div class="cos"><span class="co strong">Evals</span></div>
+  <p>Claude 모델은 약 두 달마다 바뀝니다. 새 모델이 나오면 평가 세트부터 돌려 옮길지 판단하고, 충분히 잘하는 부분은 예전에 덧댄 보완 단계를 걷어 냅니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>새 모델이 나오면 평가 세트를 먼저 백그라운드로 돌립니다.</li><li>복잡한 실제 작업을 하나 맡겨 결과를 직접 읽어 봅니다.</li><li>이전 모델과 성공률과 비용을 비교해 기록합니다.</li><li>아직 안 되는 작업은 따로 적어 두고 다음 모델에서 다시 시험합니다.</li><li>새 모델이 잘하는 부분은 하네스와 보완 단계를 얇게 줄입니다.</li></ol>
+  
+  <ul class="tips"><li>모델만 바꿨는데 테스트 에이전트 성공률이 약 20% 오른 사례가 있습니다.</li><li>지금 안 되는 작업은 지우지 말고 남겨 두세요. 다음 모델이 잘하게 될 분야의 신호입니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/news.html#g8">발표·소식 › 새 모델이 나오면 평가부터 돌려 보기</a><a class="refl" href="../guide/api.html#g8">API·개발자 플랫폼 › 평가(evals)로 에이전트 개선하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=LQkcGtkSLNQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/LQkcGtkSLNQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Frontier Day: 스타트업이 Claude로 만드는 법</b><span class="muted">Claude (공식) · 2026-09-15</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=S-sYlFiGFv8" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/S-sYlFiGFv8/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 팀이 Claude Code를 쓰는 방법</b><span class="muted">Claude (공식) · 2026-09-02</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=bjrmYsFae_g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/bjrmYsFae_g/mqdefault.jpg" alt="" loading="lazy"><span><b>Legora 대표가 말하는 법률 업무와 Claude</b><span class="muted">Claude (공식) · 2026-06-02</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=CG7Rcl49C2w" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/CG7Rcl49C2w/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 출시 전, 고객 팀들이 모델을 시험하는 방식</b><span class="muted">Claude (공식) · 2026-05-28</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s9"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s8">← 안전장치 두고 팀에 배포하기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>

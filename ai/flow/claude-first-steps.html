@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Claude로 업무 시작하기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="Claude로 업무 시작하기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › Claude로 업무 시작하기</div>
+  <h1>Claude로 업무 시작하기</h1>
+  <p>업무 정보를 안전하게 다루도록 설정을 점검하고, 맥락을 담아 요청하고, 답을 검증하는 기본 습관을 한 번에 익힙니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 내 계정의 메모리·학습 설정이 정리되어 있고, 업무 요청과 검증을 직접 해 본 첫 결과물(메일 초안 등)이 남습니다.</span><span><b>난이도</b> 입문</span>
+    <span><b>시간</b> 처음 1시간 안팎</span><span><b>단계</b> 6개</span></div>
+  <div class="cos"><span class="co">Claude 앱</span><span class="co">Claude 메모리</span><span class="co">웹 검색</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-10-23 갱신</p>
+<div class="flow" style="--cols:3"><div class="phase"><div class="phase-h"><span>1</span>점검</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">메모리·개인정보 설정 점검하기</span><span class="ns">업무 전에 메모리와 대화 기록 설정 확인</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">학습·보관 정책 확인하기</span><span class="ns">학습 사용 여부와 데이터 보관 방식 확인</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>요청</div>
+  <div class="nodes"><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">작업에 맞는 모델 고르기</span><span class="ns">방향 잡기는 Opus 5.5, 빠른 수정은 Sonnet 5.5</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">맥락 담아 첫 요청하기</span><span class="ns">나·목적·좋은 결과의 기준을 함께 적기</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">여러 버전 받아 고르기</span><span class="ns">버전을 비교해 고르고 이어서 고쳐 달라기</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>확인</div>
+  <div class="nodes"><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">중요한 내용 검증하기</span><span class="ns">숫자·출처·이름은 원문과 직접 대조</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 6 · 점검</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">메모리·개인정보 설정 점검하기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>Claude에 입력한 정보는 대화, 제품 메모리, 제공사 시스템, 향후 모델 학습 중 한 곳 이상에 쓰일 수 있습니다. 메모리는 모델 안이 아니라 내 계정에 저장되므로 업무에 쓰기 전에 무엇이 저장돼 있는지 확인하고 정리해 둡니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>계정이나 개인정보 설정에서 메모리, 대화 기록, 연결된 앱 항목을 찾습니다.</li><li>메모리 기능이 켜져 있는지 확인합니다. 제품에 따라 처음부터 켜져 있을 수 있습니다.</li><li>저장된 메모리를 읽고 틀리거나 오래된 정보는 고치거나 지웁니다.</li><li>민감한 정보가 저장돼 있으면 삭제합니다.</li><li>메모리가 필요 없다면 기능을 끕니다.</li><li>이 점검을 정기적으로 반복하는 습관을 들입니다.</li></ol>
+  
+  <ul class="tips"><li>새 대화에서 Claude가 이전 내용을 모르는 것은 오류가 아니라 원래 그렇게 동작하는 것입니다.</li><li>메뉴 위치는 제품마다 다르니 쓰는 앱의 설정 화면에서 직접 확인하세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/start.html#g3">Claude 시작하기 › 메모리와 개인정보 설정 점검하기</a><a class="refl" href="../guide/projects.html#g2">프로젝트·메모리·지식 › 메모리 설정 점검하고 관리하기</a><a class="refl" href="../guide/projects.html#g1">프로젝트·메모리·지식 › AI가 내 정보를 기억하는 방식 알기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ANDl5Tkru7g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ANDl5Tkru7g/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 나에 대해 무엇을 알고 있을까</b><span class="muted">Claude (공식) · 2026-08-13</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">학습·보관 정책 확인하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 6 · 점검</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">학습·보관 정책 확인하기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>입력한 대화가 모델 학습에 쓰이는지, 얼마나 보관되는지 알아야 어떤 정보를 넣어도 되는지 판단할 수 있습니다. 정보 민감도에 따라 쓸 제품과 기준을 미리 정해 둡니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>설정 화면에서 대화를 모델 학습에 쓰는지, 거부(옵트아웃)할 수 있는지 확인합니다.</li><li>업무 정보를 입력할 계획이면 옵트아웃 설정을 켜고 제대로 적용됐는지 다시 확인합니다.</li><li>Fable 5 이후 모델은 안전 모니터링을 위해 최근 30일간의 프롬프트와 출력이 저장된다는 점을 알아 둡니다.</li><li>입력할 정보를 민감도에 따라 나누고, 민감한 정보는 회사가 도입한 조직용 제품에서만 다루기로 정합니다.</li><li>회사가 Claude를 조직 단위로 도입했는지 확인합니다. 조직이 도입한 경우 모델 학습은 기본으로 꺼져 있습니다.</li><li>정한 기준을 팀원과 공유해 같은 방식으로 쓰게 합니다.</li></ol>
+  
+  <ul class="tips"><li>엔터프라이즈 데이터는 명시적 허가 없이 학습에 쓰이지 않습니다. 보안팀과 이야기할 때는 Enterprise Frontier Safeguards(EFS) 대상인지도 확인하세요.</li><li>회사 보안 규정이 있으면 그 규정을 먼저 따릅니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/projects.html#g3">프로젝트·메모리·지식 › 모델 학습 사용 여부 확인하기</a><a class="refl" href="../guide/projects.html#g4">프로젝트·메모리·지식 › 정보 민감도에 맞게 AI 제품 고르기</a><a class="refl" href="../guide/news.html#g5">발표·소식 › Claude 데이터 보관 정책 확인하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=PQGxYvkMobQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/PQGxYvkMobQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 사용 시 데이터 보관 방식</b><span class="muted">Claude (공식) · 2026-09-14</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=FoteuzPpx7E" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/FoteuzPpx7E/mqdefault.jpg" alt="" loading="lazy"><span><b>고객과 함께 만든 기업용 프런티어 세이프가드</b><span class="muted">Claude (공식) · 2026-09-01</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ANDl5Tkru7g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ANDl5Tkru7g/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 나에 대해 무엇을 알고 있을까</b><span class="muted">Claude (공식) · 2026-08-13</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 메모리·개인정보 설정 점검하기</button><button type="button" class="nav-b next" data-go="s3">작업에 맞는 모델 고르기 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 6 · 요청</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">작업에 맞는 모델 고르기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>작업 비용과 품질은 모델, effort(추론 노력), 캐시로 정해집니다. 작업 성격에 맞춰 모델을 나눠 쓰면 결과물과 사용 한도를 함께 챙길 수 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>할 일이 열린 작업(심층 조사, 복잡한 분석)인지 반복 작업(요약, 메일 초안)인지 나눕니다.</li><li>기획이나 구조 잡기처럼 방향을 찾는 단계에서는 <code>Opus 5.5</code>를 고릅니다.</li><li>문구 수정이나 형식 맞추기처럼 빠르게 고치는 단계에서는 <code>Sonnet 5.5</code>로 바꿉니다.</li><li>몇 시간씩 걸리는 열린 작업이면 <code>Fable 5.1</code>을 고르고 effort를 <code>medium</code>으로 시작합니다.</li><li>결과가 부족하면 effort를 한 단계씩 올려 다시 실행합니다.</li></ol>
+  
+  <ul class="tips"><li>토큰 단가보다 작업 하나당 비용으로 비교하세요. 더 똑똑한 모델이 적은 단계로 끝내서 총비용이 오히려 낮을 수 있습니다.</li><li>지금 쓰는 기본 모델은 앱에서 직접 확인하세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/news.html#g4">발표·소식 › 작업 단계에 맞춰 모델 나눠 쓰기</a><a class="refl" href="../guide/start.html#g2">Claude 시작하기 › 작업에 맞는 모델과 effort 고르기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=9GtcbnmldcY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/9GtcbnmldcY/mqdefault.jpg" alt="" loading="lazy"><span><b>Shopify CTO가 말하는 AI 전략과 배벨 토큰 전략</b><span class="muted">Claude (공식) · 2026-10-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ICGS7LlRfpI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ICGS7LlRfpI/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 9월 업데이트 정리</b><span class="muted">Claude (공식) · 2026-10-07</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=71-8fJIGi34" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/71-8fJIGi34/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 모델과 노력 수준, 어떻게 고를까</b><span class="muted">Claude (공식) · 2026-09-18</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 학습·보관 정책 확인하기</button><button type="button" class="nav-b next" data-go="s4">맥락 담아 첫 요청하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 6 · 요청</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">맥락 담아 첫 요청하기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>Claude는 내 메시지, 올린 문서, 대화 기록을 모두 보고 답을 만들어 냅니다. 내가 누구이고 어떤 결과를 원하는지 알려 줄수록 답이 좋아집니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>내가 누구이고 지금 무슨 작업을 하는지 먼저 적습니다.</li><li>좋은 결과의 조건(분량, 형식, 읽을 사람)을 적습니다.</li><li>&#x27;더 좋게&#x27;, &#x27;실수 없이&#x27; 같은 막연한 주문은 빼고 구체적인 조건만 남깁니다.</li><li>관련 문서나 배경 자료가 있으면 함께 올립니다.</li><li>가격이나 뉴스처럼 최신 정보가 필요하면 웹 검색을 해 달라고 요청합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>저는 영업지원팀 직장인이고, 다음 주 거래처 대상 신제품 설명회 안내 메일을 쓰고 있습니다. 읽을 사람은 기존 거래처 구매 담당자이고, 좋은 결과는 5문장 이내로 일시·장소·참석 혜택이 바로 보이는 메일입니다. 서로 다른 어조로 세 가지 버전을 써 주세요.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>모델은 학습 시점 이후의 일을 검색 없이는 정확히 알지 못합니다. 웹 검색을 했다고 넘겨짚지 말고 직접 요청하세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g1">프롬프트·활용 요령 › 맥락을 알려 주고 더 나은 답 받기</a><a class="refl" href="../guide/start.html#g1">Claude 시작하기 › Claude가 답을 만드는 방식 알고 쓰기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=j1Vk6Y-23CY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/j1Vk6Y-23CY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI와 대화하면 실제로 무슨 일이 일어날까?</b><span class="muted">Claude (공식) · 2026-08-05</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=IlqJqcl8ONE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/IlqJqcl8ONE/mqdefault.jpg" alt="" loading="lazy"><span><b>앤트로픽 방식의 Claude Code 활용법</b><span class="muted">Claude (공식) · 2026-05-23</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 작업에 맞는 모델 고르기</button><button type="button" class="nav-b next" data-go="s5">여러 버전 받아 고르기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 6 · 요청</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">여러 버전 받아 고르기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>Claude는 저장된 답을 꺼내는 것이 아니라 매번 새로 만들어 내므로 같은 요청으로도 여러 버전을 받을 수 있습니다. 버전을 비교해 고르고 같은 대화에서 이어서 다듬습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>답이 마음에 들지 않으면 다른 어조나 길이의 버전을 여러 개 요청합니다.</li><li>마음에 드는 버전을 고르고 고칠 점을 같은 대화에서 이어서 요청합니다.</li><li>새 대화는 빈 상태에서 시작하므로 필요한 맥락은 다시 알려 줍니다.</li><li>실명이 필요 없는 작업이면 이름을 <code>[고객명]</code> 같은 자리표시자로 바꿔 입력합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>방금 쓴 안내 메일을 더 간결한 버전, 더 공손한 버전, 핵심만 담은 버전으로 각각 다시 써 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>같은 질문에도 매번 조금씩 다른 답이 나오는 것은 정상입니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/start.html#g1">Claude 시작하기 › Claude가 답을 만드는 방식 알고 쓰기</a><a class="refl" href="../guide/start.html#g3">Claude 시작하기 › 메모리와 개인정보 설정 점검하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ANDl5Tkru7g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ANDl5Tkru7g/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 나에 대해 무엇을 알고 있을까</b><span class="muted">Claude (공식) · 2026-08-13</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=j1Vk6Y-23CY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/j1Vk6Y-23CY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI와 대화하면 실제로 무슨 일이 일어날까?</b><span class="muted">Claude (공식) · 2026-08-05</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 맥락 담아 첫 요청하기</button><button type="button" class="nav-b next" data-go="s6">중요한 내용 검증하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 6 · 확인</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">중요한 내용 검증하기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>AI는 그럴듯하지만 사실이 아닌 내용을 만들거나(환각) 듣고 싶은 말에 맞춰 주기도 합니다(아첨). 틀렸을 때의 영향에 따라 확인 강도를 조절합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>이 답이 틀리면 어떤 일이 생기는지 따져 보고 확인 강도를 정합니다.</li><li>질문 전에 &#x27;모르면 모른다고 말해 달라&#x27;고 미리 말해 둡니다.</li><li>원하는 답을 흘리지 말고 중립적으로 질문합니다.</li><li>답의 근거가 된 출처를 요청합니다.</li><li>받은 출처를 직접 열어 그 내용이 실제로 있는지 확인합니다.</li><li>숫자, 이름, 인용, 건강·법률·돈 문제는 믿을 만한 출처로 다시 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 결정에 대한 가장 강력한 찬성과 반대 논거는 무엇인가요? 근거가 되는 출처도 함께 알려 주시고, 모르면 모른다고 말해 주세요.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>AI는 실제로 없는 출처를 그럴듯하게 지어낼 수도 있습니다.</li><li>아이디어 브레인스토밍은 가볍게 확인해도 되지만, 상사에게 보일 통계는 반드시 원문과 대조합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g2">프롬프트·활용 요령 › AI 답변을 검증하며 쓰기</a><a class="refl" href="../guide/start.html#g1">Claude 시작하기 › Claude가 답을 만드는 방식 알고 쓰기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=cIMlBw2nqfA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/cIMlBw2nqfA/mqdefault.jpg" alt="" loading="lazy"><span><b>AI의 답을 얼마나 믿어도 될까?</b><span class="muted">Claude (공식) · 2026-08-11</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=j1Vk6Y-23CY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/j1Vk6Y-23CY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI와 대화하면 실제로 무슨 일이 일어날까?</b><span class="muted">Claude (공식) · 2026-08-05</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=LrZHnKS_L6k" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/LrZHnKS_L6k/mqdefault.jpg" alt="" loading="lazy"><span><b>변호사처럼 Claude 활용하기</b><span class="muted">Claude (공식) · 2026-06-08</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 여러 버전 받아 고르기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
