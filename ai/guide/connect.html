@@ -21,46 +21,53 @@
 <section class="hero">
   <div class="date"><a href="../index.html">가이드</a> › MCP·커넥터 연결</div>
   <h1>MCP·커넥터 연결</h1>
-  <p>MCP·커넥터를 연결하면 Claude가 캘린더, Slack, 이메일 같은 업무 도구와 브라우저를 직접 쓰면서 문서 작성, 반복 업무 자동화, 결과 확인까지 맡을 수 있습니다. 처음이라면 Cowork에 커넥터를 연결해 일을 한 번 맡겨 보세요. 그다음 예약 작업으로 반복 업무를 자동화하고, 팀 채널 연동, 브라우저 검증, 자체 MCP 설계 순서로 넓혀 가면 됩니다.</p>
-  <div class="meta muted">MCP 서버, 커넥터(구글·노션·슬랙 등), 브라우저·컴퓨터 사용, 외부 도구 연결 · 영상 6개 기반 · 2026-10-22 갱신</div>
+  <p>MCP·커넥터를 쓰면 Claude나 Codex가 메일, 캘린더, Slack, 웹 브라우저, 회사 시스템 같은 외부 도구에 직접 들어가서 일합니다. 처음에는 AI 브라우저를 연결해 클릭과 입력을 맡겨 보세요. 다음으로 커넥터를 연결해 업무를 위임하고 예약 작업을 만듭니다. 그 뒤 팀 채널에 Claude를 들이고, 마지막으로 개발·기업용 환경에서 검증 루프와 MCP 도구를 붙이는 순서로 보면 좋습니다.</p>
+  <div class="meta muted">MCP 서버, 커넥터(구글·노션·슬랙 등), 브라우저·컴퓨터 사용, 외부 도구 연결 · 영상 8개 기반 · 2026-10-25 갱신</div>
 </section>
-<section class="brief"><h2>최근 바뀐 점</h2><ul><li>Claude Tag가 나왔습니다. Slack 같은 팀 워크스페이스 채널에 Claude를 추가하면 팀 대화를 실시간으로 따라가며 채널에서 바로 작업을 처리합니다(Team·Enterprise 계정).</li><li>Claude Code에 포함된 verify 스킬로 프로젝트 전용 검증 스킬을 만들 수 있습니다. 이 스킬이 있으면 Claude가 브라우저 확인까지 직접 하면서 고치고 다시 확인하는 검증 루프를 돌립니다.</li></ul></section>
-<nav class="toc gtoc"><a href="#g1">Cowork에 커넥터 연결해 업무 맡기기</a><a href="#g2">Cowork 예약 작업으로 반복 업무 자동화하기</a><a href="#g3">Claude Tag로 팀 채널에 Claude 넣기</a><a href="#g4">브라우저 확인까지 맡기는 검증 루프 만들기</a><a href="#g5">자체 MCP로 사내 업무 흐름 설계하기</a></nav>
+<section class="brief"><h2>최근 바뀐 점</h2><ul><li>AI 웹 브라우저 어사이드(Aside)를 Codex에 연결하면 메일 확인, 사내 사이트 조회 같은 브라우저 작업을 말로 시킬 수 있고, 이미 GPT나 Claude를 유료로 쓰고 있으면 어사이드 비용은 따로 들지 않는다고 소개되었습니다.</li><li>Claude Tag가 나왔습니다. Slack 같은 팀 워크스페이스 채널에 Claude를 추가하면 팀 대화를 따라가며 정리, 문서 초안 작성, 도구 안 수정까지 합니다. Team·Enterprise 계정에서 쓸 수 있습니다.</li><li>Claude Code에 포함된 verify 스킬로 시작하면, 브라우저 클릭이나 콘솔 확인 같은 수동 검증 절차를 프로젝트 스킬로 만들어 Claude가 스스로 확인하고 고치게 할 수 있습니다.</li></ul></section>
+<nav class="toc gtoc"><a href="#g1">Codex에 어사이드 브라우저 연결하기</a><a href="#g2">커넥터로 Cowork에 업무 맡기기</a><a href="#g3">반복 업무를 예약 작업으로 자동화하기</a><a href="#g4">Claude Tag로 Slack 채널에 Claude 두기</a><a href="#g5">verify 스킬로 브라우저 검증 맡기기</a><a href="#g6">기업용 플랫폼에서 MCP 도구 붙이기</a></nav>
 <div class="guides"><article id="g1" class="card guide">
-  <div class="card-head"><span class="tag">입문</span><h3>1. Cowork에 커넥터 연결해 업무 맡기기</h3></div>
-  <p>Claude Cowork에 캘린더·Slack·이메일 같은 커넥터를 연결하면 여러 도구에 흩어진 정보를 모아 문서로 만들어 줍니다. 회의 준비 문서처럼 자료를 여기저기서 모아야 하는 업무를 맡길 때 씁니다.</p>
-  <ol class="steps"><li>Claude 데스크톱 앱에서 Cowork를 엽니다.</li><li>업무에 필요한 커넥터(캘린더, Slack, 이메일 등)를 연결합니다.</li><li>맡길 일과 원하는 결과물을 한 번에 요청합니다.</li><li>작업이 진행되는 동안 빠진 출처가 있으면 추가하고, 방향이 다르면 수정을 요청합니다. 처음부터 다시 하지 않고 이어서 고칩니다.</li><li>작업 폴더에 저장된 문서를 열어 직접 검토하고 마무리합니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>내일 회의 일정을 캘린더에서 확인하고, 관련 Slack 대화와 이메일을 참고해서 회의 준비 문서를 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>완성된 문서의 최종 소유와 수정은 사용자 몫입니다. 보내기 전에 꼭 직접 확인하세요.</li><li>중간에 수정을 요청해도 앞서 한 작업은 그대로 이어지므로 완벽하게 요청하려고 처음부터 길게 쓰지 않아도 됩니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=tYOI-WoLS_o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tYOI-WoLS_o/mqdefault.jpg" alt="" loading="lazy"><span><b>Cowork로 업무 위임하고 예약 작업 만들기</b><span class="muted">Claude (공식) · 2026-06-21</span></span></a></div>
+  <div class="card-head"><span class="tag">입문</span><h3>1. Codex에 어사이드 브라우저 연결하기</h3></div>
+  <p>어사이드(Aside)는 크롬 같은 AI 웹 브라우저로, AI가 사이트에서 클릭하고 입력하는 일을 대신 합니다. Codex에 연결하면 메일 확인, 사내 물류 사이트 조회, 인스타그램 계정 탐색처럼 로그인이 필요한 브라우저 업무도 말로 시킬 수 있습니다.</p>
+  <ol class="steps"><li>PC에 Claude 데스크톱 앱과 GPT의 <code>Codex</code> 앱을 설치합니다.</li><li>어사이드를 설치하고, 쓰고 있는 GPT와 Claude 계정을 연결합니다.</li><li>어사이드 하단에서 사용할 모델을 고릅니다. 낮은 요금제라면 가성비 좋은 균형형 모델을 고릅니다.</li><li>크롬에 저장된 비밀번호와 즐겨찾기를 어사이드로 가져옵니다.</li><li><code>Codex</code>를 열어 <code>시작하기</code>를 진행하고, <code>승인 요청</code> 단계에서 전체 액세스를 켭니다.</li><li>터미널을 열고 영상에서 안내한 어사이드 연결 문구를 복사해 붙여 넣습니다.</li><li>Codex에 어사이드를 쓰라고 지정해 일을 시킵니다.</li><li>어사이드 창에서 AI가 실제로 클릭하고 입력하는지 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>어사이드를 활용해서 내 메일함을 열고 오늘 받은 메일을 확인한 뒤 중요한 것만 요약해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>전체 액세스는 모든 권한을 여는 설정이라 보안 위험이 있습니다. 회사 PC라면 사내 보안 규정을 먼저 확인하세요.</li><li>일을 시킬 때 &#x27;어사이드를 활용해서&#x27;라고 지정할수록 더 정확하게 움직입니다.</li><li>크롬 로그인 정보가 제대로 옮겨졌는지 확인하고, 안 됐다면 GPT에 연결을 시켜 봅니다.</li><li>컴퓨터가 켜져 있으면 휴대폰 앱으로도 Codex에 일을 시킬 수 있습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=Hol_hJwEmog" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Hol_hJwEmog/mqdefault.jpg" alt="" loading="lazy"><span><b>왕초보를 위한 Codex·어사이드 설치와 연결</b><span class="muted">신영선의 AI탐구 · 2026-10-24</span></span></a></div>
 </article><article id="g2" class="card guide">
-  <div class="card-head"><span class="tag">입문</span><h3>2. Cowork 예약 작업으로 반복 업무 자동화하기</h3></div>
-  <p>매일 또는 매주 반복하는 업무를 정한 시간에 Cowork가 자동으로 실행하게 하는 기능입니다. 한 번 해 보고 결과가 마음에 든 작업을 정기 업무로 돌릴 때 씁니다.</p>
-  <ol class="steps"><li>반복할 작업을 Cowork에서 먼저 한 번 실행해 결과가 원하는 대로 나오는지 확인합니다.</li><li>Claude에게 이 작업을 예약 작업으로 만들어 달라고 요청합니다.</li><li>Claude가 써 준 프롬프트 초안을 읽고 필요한 부분을 고칩니다.</li><li>실행 주기(예: 평일 오후 4시)를 확인하고 필요하면 바꿉니다.</li><li>내용을 승인해 예약 작업을 등록합니다.</li><li>예약 시간에 컴퓨터가 켜져 있고 데스크톱 앱이 열려 있는지 확인합니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>방금 만든 회의 준비 문서 작업을 평일 오후 4시마다 자동으로 실행하는 예약 작업으로 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>예약 작업은 실행할 때마다 새 Cowork 세션으로 돌아가므로 늘 그 시점의 최신 파일과 도구 상태를 기준으로 합니다.</li><li>미리 설정해 둔 커넥터는 예약 작업에서도 그대로 쓸 수 있습니다.</li><li>컴퓨터가 꺼져 있거나 데스크톱 앱이 닫혀 있으면 예약 작업이 실행되지 않습니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=tYOI-WoLS_o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tYOI-WoLS_o/mqdefault.jpg" alt="" loading="lazy"><span><b>Cowork로 업무 위임하고 예약 작업 만들기</b><span class="muted">Claude (공식) · 2026-06-21</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V-OOEC5RNaQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V-OOEC5RNaQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude for Teachers로 수업 계획 세우기</b><span class="muted">Claude (공식) · 2026-07-14</span></span></a></div>
+  <div class="card-head"><span class="tag">입문</span><h3>2. 커넥터로 Cowork에 업무 맡기기</h3></div>
+  <p>Claude Cowork에 캘린더, Slack, 이메일 같은 커넥터를 연결하면 여러 도구의 정보를 모아 회의 준비 문서 같은 결과물을 만들어 줍니다. 작업 중에 방향을 바꾸라고 해도 처음부터 다시 하지 않고 이어서 진행합니다.</p>
+  <ol class="steps"><li>Claude 데스크톱 앱에서 Cowork를 엽니다.</li><li>업무에 필요한 캘린더, Slack, 이메일 커넥터를 연결합니다.</li><li>만들 결과물을 구체적으로 요청합니다. 예: 다음 회의의 준비 문서.</li><li>작업이 진행되는 동안 참고할 출처를 더하거나 고칠 점을 말해 방향을 바꿉니다.</li><li>작업 폴더에 저장된 완성 문서를 열어 직접 검토하고 마무리합니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>내 캘린더에서 내일 회의를 찾고, 관련 Slack 대화와 이메일을 참고해서 회의 준비 문서를 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>완성된 문서의 최종 소유와 수정은 사용자 몫입니다. 사실관계는 꼭 직접 확인하세요.</li><li>중간에 수정을 요청해도 처음부터 다시 하지 않으니 생각나는 대로 바로 말하면 됩니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=tYOI-WoLS_o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tYOI-WoLS_o/mqdefault.jpg" alt="" loading="lazy"><span><b>Cowork로 업무 위임하고 예약 작업 만들기</b><span class="muted">Claude (공식) · 2026-06-21</span></span></a></div>
 </article><article id="g3" class="card guide">
-  <div class="card-head"><span class="tag">중급</span><h3>3. Claude Tag로 팀 채널에 Claude 넣기</h3></div>
-  <p>Claude Tag는 Slack 같은 팀 워크스페이스 채널에 Claude를 추가해 팀 대화를 실시간으로 따라가며 일하게 하는 기능입니다. 채팅 창을 오가거나 맥락을 복사해 붙이지 않고, 채널에서 바로 정보 정리, 문서 초안 작성, 도구 안 수정까지 맡길 때 씁니다.</p>
-  <ol class="steps"><li>사용하는 계정이 Team 또는 Enterprise인지 확인합니다.</li><li>Slack 같은 팀 워크스페이스에서 Claude를 쓸 채널에 Claude를 추가합니다.</li><li>채널마다 Claude가 맡을 일, 대화에 끼어드는 빈도, 스스로 처리할 수 있는 범위를 정합니다.</li><li>다른 공개 채널의 정보가 필요하면 그 채널에 접근 권한을 줍니다.</li><li>채널에서 바로 Claude에게 정리, 초안 작성, 도구 수정 같은 작업을 요청합니다.</li><li>작업이 끝나면 기록된 변경 내역과 요청자를 확인합니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>이 채널에서 이번 주에 논의한 내용을 정리해서 공유 문서 초안으로 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>DM과 비공개 채널은 비공개로 유지되고, 다른 공개 채널은 접근 권한을 준 경우에만 참고합니다.</li><li>Claude는 별도 계정으로 작업하며 모든 변경과 요청자를 기록하므로 누가 무엇을 시켰는지 추적할 수 있습니다.</li><li>채널별 지침을 기억하므로 채널 용도에 맞는 규칙을 처음에 알려 두면 좋습니다.</li><li>관리자는 채널마다 접근 범위와 자율성을 조절할 수 있습니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=_f_rtbW_uFM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_f_rtbW_uFM/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Tag 시작하기: 팀 채널 속 Claude</b><span class="muted">Claude (공식) · 2026-09-29</span></span></a></div>
+  <div class="card-head"><span class="tag">중급</span><h3>3. 반복 업무를 예약 작업으로 자동화하기</h3></div>
+  <p>한 번 해 보고 마음에 든 업무를 정해진 주기(예: 평일 오후 4시)마다 자동으로 돌게 하는 기능입니다. 매일 하는 보고, 회의 준비, 수업 피드백처럼 같은 일을 반복할 때 씁니다.</p>
+  <ol class="steps"><li>먼저 Cowork에서 자동화할 업무를 한 번 직접 시켜 결과가 마음에 드는지 확인합니다.</li><li>이 작업을 정기적으로 실행하는 예약 작업으로 만들어 달라고 Claude에 요청합니다.</li><li>Claude가 만들어 준 예약 작업 프롬프트 초안을 읽고 필요한 부분을 고칩니다.</li><li>실행 주기를 확인하고 필요하면 수정합니다.</li><li>승인해서 예약 작업을 등록합니다.</li><li>정해진 시간에 컴퓨터를 켜 두고 데스크톱 앱을 열어 둡니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>방금 한 작업을 평일 오후 4시마다 자동으로 실행하는 예약 작업으로 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>예약 작업은 컴퓨터가 켜져 있고 데스크톱 앱이 열려 있을 때만 실행됩니다.</li><li>실행할 때마다 새 Cowork 세션으로 돌아가서 그 시점의 최신 파일과 도구 상태를 기준으로 합니다.</li><li>미리 설정해 둔 커넥터는 예약 작업에서도 그대로 쓸 수 있습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=tYOI-WoLS_o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tYOI-WoLS_o/mqdefault.jpg" alt="" loading="lazy"><span><b>Cowork로 업무 위임하고 예약 작업 만들기</b><span class="muted">Claude (공식) · 2026-06-21</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V-OOEC5RNaQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V-OOEC5RNaQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude for Teachers로 수업 계획 세우기</b><span class="muted">Claude (공식) · 2026-07-14</span></span></a></div>
 </article><article id="g4" class="card guide">
-  <div class="card-head"><span class="tag">고급</span><h3>4. 브라우저 확인까지 맡기는 검증 루프 만들기</h3></div>
-  <p>Claude Code는 테스트, 타입 검사, 린터를 스스로 돌리지만, 그것만으로는 변경이 의도대로 동작하는지 증명되지 않습니다. 브라우저에서 클릭하고 콘솔을 확인하던 수동 절차를 프로젝트 스킬로 만들어 두면 Claude가 직접 확인하고, 고치고, 다시 확인합니다.</p>
-  <ol class="steps"><li>Claude Code에 포함된 <code>verify</code> 스킬로 프로젝트 전용 검증 스킬을 만듭니다.</li><li>평소 손으로 하던 확인 절차(브라우저에서 클릭하고 콘솔 보기 등)를 스킬에 적습니다.</li><li>프로젝트 종류에 맞게 확인 방법을 정합니다. 웹은 브라우저, 백엔드는 엔드포인트 호출, 모바일은 iOS 시뮬레이터로 확인합니다.</li><li>만들어진 스킬에 성능 측정 같은 확인 항목을 더합니다.</li><li>수정을 요청하고, Claude가 검증 스킬을 실행해 문제를 고친 뒤 다시 확인하는지 지켜봅니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>이 프로젝트의 검증 스킬에 페이지를 불러올 때 레이아웃 시프트를 측정하는 확인 항목을 추가해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>검증 기준이 측정 가능할수록 Claude가 사람 개입 없이 더 멀리 진행합니다.</li><li>Claude Code의 한 사이클은 맥락 수집 → 실행 → 검증 → 응답입니다. 검증 단계를 탄탄하게 만드는 게 핵심입니다.</li><li>레이아웃 시프트는 Core Web Vitals 지표 중 하나라 성능 확인 항목으로 넣기 좋습니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=mQZB0l-rhxE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mQZB0l-rhxE/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 검증 루프 만들기</b><span class="muted">Claude (공식) · 2026-09-25</span></span></a></div>
-</article><article id="g5" class="card guide">
-  <div class="card-head"><span class="tag">고급</span><h3>5. 자체 MCP로 사내 업무 흐름 설계하기</h3></div>
-  <p>회사 내부 시스템을 자체 MCP 서버나 MCP 게이트웨이로 Claude에 연결해 팀 단위 업무 흐름을 만드는 방법입니다. 금융 범죄 대응처럼 위험도가 높은 업무나 기획부터 배포까지 이어지는 개발 업무를 실제로 운영할 때 참고합니다.</p>
-  <ol class="steps"><li>Claude로 해결할 업무 문제와 목표를 정의합니다.</li><li>업무에 맞는 모델을 고르고 벤치마크로 비교합니다.</li><li>보안·규정 준수 요건을 확인하고 MCP 게이트웨이처럼 접근을 관리할 구조를 정합니다.</li><li>자체 MCP 서버, 스킬, 서브에이전트를 묶어 전체 시스템을 설계합니다.</li><li>실무자가 쓸 화면과 프롬프트·스킬 구조를 만듭니다.</li><li>평가(evals)로 결과를 검증해 신뢰를 쌓은 뒤 팀에 배포하고 범위를 넓힙니다.</li></ol>
+  <div class="card-head"><span class="tag">중급</span><h3>4. Claude Tag로 Slack 채널에 Claude 두기</h3></div>
+  <p>Claude Tag는 Slack 같은 팀 워크스페이스 채널에 Claude를 추가해 팀 대화를 실시간으로 따라가며 일하게 하는 기능입니다. 채팅 창을 오가거나 맥락을 복사해 붙이지 않고, 채널 안에서 바로 정보 정리, 문서 초안, 도구 안 수정을 요청할 수 있습니다.</p>
+  <ol class="steps"><li>회사가 Claude Team 또는 Enterprise 계정을 쓰고 있는지 확인합니다.</li><li>관리자가 Claude를 쓸 팀 채널에 추가합니다.</li><li>채널마다 Claude가 맡을 일, 대화에 끼어드는 빈도, 스스로 처리해도 되는 범위를 정합니다.</li><li>필요하면 참고할 다른 공개 채널에 대한 접근 권한을 줍니다.</li><li>채널에서 Claude에게 정리, 문서 초안, 도구 수정 같은 일을 요청합니다.</li><li>기록된 변경 내역과 요청자를 확인해 결과를 검토합니다.</li></ol>
   
-  <ul class="tips"><li>근거 영상 두 편 모두 자막이 없어 제목·설명·챕터만으로 정리했습니다. 세부 명령과 설정은 영상에서 직접 확인하세요.</li><li>Google Cloud와 함께 MCP 서버, 커스텀 스킬, 서브에이전트를 써서 약 30분 만에 앱을 배포까지 진행하는 사례도 있습니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=tUoO4ucrNc0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tUoO4ucrNc0/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Cowork로 금융 범죄에 맞서기</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=l8fxVYIP4HQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/l8fxVYIP4HQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude와 Google Cloud로 앱 만들고 배포하기</b><span class="muted">Claude (공식) · 2026-05-21</span></span></a></div>
+  <ul class="tips"><li>DM과 비공개 채널은 비공개로 유지되고, 공개 채널만 접근 권한을 줄 수 있습니다.</li><li>Claude는 자체 계정으로 작업하고 모든 변경과 요청자를 기록하므로 누가 무엇을 시켰는지 추적할 수 있습니다.</li><li>Claude는 채널별 지침을 기억하니 채널 성격에 맞게 처음에 역할을 분명히 정해 두세요.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=_f_rtbW_uFM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_f_rtbW_uFM/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Tag 시작하기: 팀 채널 속 Claude</b><span class="muted">Claude (공식) · 2026-09-29</span></span></a></div>
+</article><article id="g5" class="card guide">
+  <div class="card-head"><span class="tag">고급</span><h3>5. verify 스킬로 브라우저 검증 맡기기</h3></div>
+  <p>Claude Code는 테스트, 타입 검사, 린터를 스스로 돌리지만, 그것만으로는 변경이 의도대로 동작하는지 증명되지 않습니다. 브라우저에서 클릭하고 콘솔을 보는 수동 확인 절차를 스킬로 만들어 두면 Claude가 직접 확인하고, 고치고, 다시 확인합니다.</p>
+  <ol class="steps"><li>Claude Code에 포함된 <code>verify</code> 스킬로 시작합니다.</li><li>평소 사람이 하던 확인 절차를 Claude에 설명합니다. 웹은 브라우저 클릭과 콘솔 확인, 백엔드는 엔드포인트 호출, 모바일은 iOS 시뮬레이터 확인입니다.</li><li>생성된 프로젝트 스킬을 열어 확인 항목이 맞는지 봅니다.</li><li>성능 측정처럼 숫자로 판단할 수 있는 확인 항목을 스킬에 추가합니다. 예: 레이아웃 시프트.</li><li>Claude에 작업을 맡기고, 스킬로 검증한 뒤 문제가 있으면 고쳐 다시 확인하게 합니다.</li></ol>
+  
+  <ul class="tips"><li>Claude Code는 &#x27;맥락 수집 → 실행 → 검증 → 응답&#x27; 순서로 한 사이클을 돕니다. 검증 단계를 단단히 만들수록 결과가 좋아집니다.</li><li>검증 기준이 측정 가능할수록 Claude가 사람 도움 없이 더 멀리 혼자 갑니다.</li><li>레이아웃 시프트는 Core Web Vitals 지표 중 하나라 성능 기준으로 쓰기 좋습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=mQZB0l-rhxE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mQZB0l-rhxE/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 검증 루프 만들기</b><span class="muted">Claude (공식) · 2026-09-25</span></span></a></div>
+</article><article id="g6" class="card guide">
+  <div class="card-head"><span class="tag">고급</span><h3>6. 기업용 플랫폼에서 MCP 도구 붙이기</h3></div>
+  <p>회사 시스템에 Claude를 넣을 때는 Microsoft Foundry나 Google Cloud 같은 기업용 플랫폼에서 Claude 모델을 배포하고, 에이전트에 커넥터와 MCP 도구를 붙여 씁니다. 보안·거버넌스와 평가(evals)까지 함께 챙겨야 하는 실제 운영 배포에 해당합니다.</p>
+  <ol class="steps"><li>aka.ms/cloudworkshop 실습 페이지를 열어 제공된 실습 환경에 들어갑니다.</li><li>Microsoft Foundry에서 Claude 모델을 배포합니다.</li><li>배포한 모델을 에이전트에 연결합니다.</li><li>Foundry가 제공하는 커넥터·MCP 도구 가운데 필요한 것을 에이전트에 붙입니다.</li><li>실습 시나리오(가상의 컵케이크 가게 에이전트)를 단계별 안내대로 따라 하며 동작을 확인합니다.</li><li>실제 업무에 쓰기 전에 보안·규정 준수와 평가(evals)로 결과를 믿을 수 있는지 점검합니다.</li></ol>
+  
+  <ul class="tips"><li>Foundry는 1,400개 이상의 내장 커넥터와 MCP 도구, 그리고 Defender·Purview·Entra ID와 연동되는 보안·거버넌스 기능을 제공한다고 합니다.</li><li>금융처럼 위험도가 높은 업무에서는 자체 MCP와 MCP 게이트웨이를 두고 평가로 신뢰를 쌓는 방식이 소개되었습니다.</li><li>Google Cloud 사례는 서브에이전트, MCP 서버, 커스텀 스킬을 함께 써서 약 30분 만에 앱 하나를 배포까지 만들었습니다. 다만 자막이 없어 세부 명령어는 영상에서 직접 확인해야 합니다.</li><li>Foundry 실습 영상은 자막이 중간에 끊겨 있어 세부 절차는 실습 페이지 안내를 기준으로 하세요.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=tUoO4ucrNc0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tUoO4ucrNc0/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Cowork로 금융 범죄에 맞서기</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=l8fxVYIP4HQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/l8fxVYIP4HQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude와 Google Cloud로 앱 만들고 배포하기</b><span class="muted">Claude (공식) · 2026-05-21</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=TQd_YQvydVg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/TQd_YQvydVg/mqdefault.jpg" alt="" loading="lazy"><span><b>Microsoft Foundry에서 Claude로 AI 에이전트 만들기</b><span class="muted">Claude (공식) · 2026-05-20</span></span></a></div>
 </article></div>
 <p><a href="../videos.html?cat=connect">이 분야 영상 전체 보기 →</a></p>
 </main>

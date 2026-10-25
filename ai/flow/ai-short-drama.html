@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 숏드라마 1화 만들기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="AI 숏드라마 1화 만들기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="https://changhoonchoi-droid.github.io/">🏠 홈</a><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › AI 숏드라마 1화 만들기</div>
+  <h1>AI 숏드라마 1화 만들기</h1>
+  <p>대본 표, 캐릭터 시트, 컷별 스틸, 대사 음성을 먼저 준비하고, 인물이 흔들리지 않으며 입 모양이 맞는 숏드라마 1화를 만듭니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 컷 번호로 정리된 대본·스틸·음성 파일과, 입 모양이 대사에 맞는 1분 남짓한 숏드라마 1화</span><span><b>난이도</b> 고급</span>
+    <span><b>시간</b> 처음 하루 이상 (영상 생성 크레딧 비용 별도)</span><span><b>단계</b> 8개</span></div>
+  <div class="cos"><span class="co">Claude</span><span class="co">이미지 생성 모델</span><span class="co">ElevenLabs</span><span class="co">Higgsfield (Seedance 2.5)</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-10-25 갱신</p>
+<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>준비</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">작업 폴더와 대본 표 만들기</span><span class="ns">한 줄이 한 컷인 대본 표부터 쓰기</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">인물 시트와 세트 만들기</span><span class="ns">인물 묘사 문장을 고정하고 시트 만들기</span>
+  <span class="ntool">이미지 생성 모델</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">컷별 시작 스틸 만들기</span><span class="ns">컷마다 첫 장면 이미지를 한 장씩</span>
+  <span class="ntool">이미지 생성 모델</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>소리</div>
+  <div class="nodes"><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">대사 음성에 연기 붙이기</span><span class="ns">인물별 목소리에 대괄호 연기 지시</span>
+  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>생성</div>
+  <div class="nodes"><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">480p로 시험 생성하기</span><span class="ns">본 생성 전에 짧게 입 모양 확인</span>
+  <span class="ntool">Higgsfield (Seedance 2.5)</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">견적 확인 후 1080p 생성</span><span class="ns">크레딧 견적을 확인하고 본 생성</span>
+  <span class="ntool">Higgsfield (Seedance 2.5)</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>다듬기</div>
+  <div class="nodes"><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="num">7</span>
+  <span class="nbody"><span class="nt">입·소리 맞추고 다시 만들기</span><span class="ns">1프레임 안 싱크 검사, 고칠 컷만 재생성</span>
+  <span class="ntool">Higgsfield (Seedance 2.5)</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s8" aria-haspopup="dialog">
+  <span class="num">8</span>
+  <span class="nbody"><span class="nt">AI 콘텐츠 공개 원칙 정하기</span><span class="ns">AI 제작물을 어떻게 내보낼지 정하기</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 8 · 준비</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">작업 폴더와 대본 표 만들기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>AI 영상 모델은 앞 컷을 기억하지 못합니다. 그래서 컷 단위로 정리된 대본 표를 먼저 만들고, 그 컷 번호를 이후 모든 파일의 기준으로 씁니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>작업 폴더를 만들고, 단계가 끝날 때마다 결과 파일을 남깁니다.</li><li>대본을 표 하나로 씁니다. 한 줄이 한 컷이고 칸은 컷 번호, 샷 크기, 인물, 대사, 길이입니다.</li><li>한 클립에 들어갈 대사가 세 줄·10초 이하인지 확인합니다.</li><li>표의 컷 번호를 스틸·오디오·영상 파일 이름의 기준으로 정합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>아래 줄거리로 1분 남짓한 로맨스 판타지 숏드라마 1화 대본을 표로 써 줘. 한 줄이 한 컷이고, 칸은 컷 번호 | 샷 크기 | 인물 | 대사 | 길이(초)야. 한 클립에 대사는 세 줄, 10초 이하로 묶어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>16초까지 묶은 클립에서는 대사 타이밍이 줄마다 최대 1.5초 흔들렸습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g3">다른 AI 도구 › AI 숏드라마 대본·캐릭터 준비하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">인물 시트와 세트 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 8 · 준비</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">인물 시트와 세트 만들기</h2>
+  <div class="cos"><span class="co strong">이미지 생성 모델</span></div>
+  <p>인물마다 외모를 묘사하는 문장을 하나 정해 모든 프롬프트에 똑같이 붙여야 얼굴이 일관됩니다. 이 문장으로 캐릭터 시트와 세트 이미지를 만듭니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>인물마다 외모를 묘사하는 문장을 하나 정합니다.</li><li>이미지 모델로 인물마다 캐릭터 시트를 한 장씩 만듭니다.</li><li>같은 방법으로 세트 이미지를 한 장 만듭니다.</li><li>결과 파일을 작업 폴더에 저장합니다.</li></ol>
+  
+  <ul class="tips"><li>인물 묘사 문장은 모든 프롬프트에 한 글자도 바꾸지 않고 붙입니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g3">다른 AI 도구 › AI 숏드라마 대본·캐릭터 준비하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 작업 폴더와 대본 표 만들기</button><button type="button" class="nav-b next" data-go="s3">컷별 시작 스틸 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 8 · 준비</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">컷별 시작 스틸 만들기</h2>
+  <div class="cos"><span class="co strong">이미지 생성 모델</span></div>
+  <p>영상 생성에 넣을 컷별 시작 장면을 미리 만들어 둡니다. 같은 시트와 묘사 문장을 쓰므로 컷이 바뀌어도 인물과 장면이 흔들리지 않습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>대본 표의 컷마다 시작 스틸을 만듭니다.</li><li>프롬프트에 인물 묘사 문장을 그대로 붙입니다.</li><li>파일 이름을 컷 번호에 맞춥니다.</li><li>인물 얼굴이 시트와 같은지 훑어보고 다른 컷은 다시 만듭니다.</li></ol>
+  
+  
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g3">다른 AI 도구 › AI 숏드라마 대본·캐릭터 준비하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 인물 시트와 세트 만들기</button><button type="button" class="nav-b next" data-go="s4">대사 음성에 연기 붙이기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 8 · 소리</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">대사 음성에 연기 붙이기</h2>
+  <div class="cos"><span class="co strong">ElevenLabs</span></div>
+  <p>숏드라마는 감정 연기가 필요합니다. 대사 앞 대괄호에 영어로 연기 지시를 적으면 말투를 정할 수 있고, 이 음성 파일이 입 모양을 맞추는 기준이 됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li><code>ElevenLabs</code> 보이스 라이브러리에서 인물마다 목소리를 하나씩 고릅니다.</li><li>대사 앞 대괄호에 연기 지시를 영어로 씁니다. 감정 이름보다 말투로 씁니다.</li><li>지시는 한 줄에 한 개에서 세 개까지만 붙입니다.</li><li>한 줄 안에서 말투를 바꾸려면 바꿀 지점에 대괄호를 하나 더 넣고, 쉴 곳에는 <code>beat</code>를 넣습니다.</li><li>대사 파일 이름을 컷 번호에 맞춥니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>[softly, hesitant] 저… 사실은요. [beat] [warm] 계속 당신을 기다리고 있었어요.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>대괄호 안의 말은 소리로 읽히지 않습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g4">다른 AI 도구 › AI 목소리에 연기 지시 붙이기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 컷별 시작 스틸 만들기</button><button type="button" class="nav-b next" data-go="s5">480p로 시험 생성하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 8 · 생성</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">480p로 시험 생성하기</h2>
+  <div class="cos"><span class="co strong">Higgsfield (Seedance 2.5)</span></div>
+  <p>시작 스틸, 캐릭터 시트, 대사 오디오를 함께 넣으면 인물이 일관되고 입 모양이 대사에 맞는 컷이 나옵니다. 크레딧은 이 단계부터 들기 때문에 낮은 해상도로 먼저 시험합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li><code>Higgsfield</code>에서 <code>Seedance 2.5</code>를 <code>레퍼런스</code> 모드로 둡니다.</li><li>컷의 시작 스틸, 캐릭터 시트, 대사 오디오를 넣습니다.</li><li>480p로 짧게 시험 생성합니다.</li><li>입 모양과 대사가 맞는지 확인합니다.</li></ol>
+  
+  <ul class="tips"><li>한 클립에는 대사 세 줄, 10초 이하로 묶습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g5">다른 AI 도구 › Higgsfield로 숏드라마 컷 생성하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 대사 음성에 연기 붙이기</button><button type="button" class="nav-b next" data-go="s6">견적 확인 후 1080p 생성 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 8 · 생성</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">견적 확인 후 1080p 생성</h2>
+  <div class="cos"><span class="co strong">Higgsfield (Seedance 2.5)</span></div>
+  <p>시험 결과가 괜찮으면 1080p로 본 생성을 합니다. 옵션을 잘못 넣으면 크레딧이 그대로 나가므로 제출 전에 견적과 옵션을 다시 확인합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>비용 견적 기능으로 필요한 크레딧을 확인합니다.</li><li>해상도, 길이 같은 옵션이 맞는지 다시 확인합니다.</li><li>1080p로 본 생성을 합니다.</li><li>생성된 클립을 컷 번호에 맞춰 저장합니다.</li></ol>
+  
+  <ul class="tips"><li>1화(1080p 17개 클립, 합계 105초)에 2,450크레딧이 들었고, 1080p 4초 한 컷을 다시 만드는 데는 64크레딧이 듭니다.</li><li>견적 옵션을 잘못 넣어 128크레딧이 실제로 나간 사례가 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g5">다른 AI 도구 › Higgsfield로 숏드라마 컷 생성하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 480p로 시험 생성하기</button><button type="button" class="nav-b next" data-go="s7">입·소리 맞추고 다시 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
+  <div class="dr-head"><span class="muted small">7 / 8 · 다듬기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s7">입·소리 맞추고 다시 만들기</h2>
+  <div class="cos"><span class="co strong">Higgsfield (Seedance 2.5)</span></div>
+  <p>완성 전에 컷마다 입과 소리가 맞는지 검사합니다. 고칠 컷만 같은 재료로 다시 만들고 이전 버전을 남겨 두면 비교와 되돌리기가 쉽습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>생성된 영상의 목소리를 기준으로 컷을 자릅니다.</li><li>입과 소리가 1프레임 안에서 맞는지 검사합니다.</li><li>피드백을 받아 고칠 컷을 고릅니다.</li><li>고칠 컷만 같은 시작 스틸과 시트로 다시 만듭니다.</li><li>이전 버전은 새 이름으로 남겨 둡니다.</li></ol>
+  
+  <ul class="tips"><li>한 컷을 다시 만들 때도 크레딧이 들므로 고칠 컷을 먼저 모아 한 번에 처리합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g5">다른 AI 도구 › Higgsfield로 숏드라마 컷 생성하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 견적 확인 후 1080p 생성</button><button type="button" class="nav-b next" data-go="s8">AI 콘텐츠 공개 원칙 정하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s8" aria-labelledby="t-s8">
+  <div class="dr-head"><span class="muted small">8 / 8 · 다듬기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s8">AI 콘텐츠 공개 원칙 정하기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>AI로 만든 영상은 구독자 반응이 갈릴 수 있습니다. 공개하기 전에 어떤 방식으로 내보낼지, 사람이 무엇을 검수할지 정해 신뢰를 지킵니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>이 숏드라마를 누가 볼 것인지 적습니다.</li><li>AI 콘텐츠를 기존 채널에 올릴지, 다른 채널이나 쇼츠로 분리할지 정합니다.</li><li>내보내기 전에 사람이 검수할 항목을 정합니다.</li><li>시청자 의견을 보고 원칙을 고칩니다.</li></ol>
+  
+  <ul class="tips"><li>AI가 만든 콘텐츠일수록 검수와 신뢰가 더 중요해집니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/news.html#g6">발표·소식 › AI로 만든 콘텐츠 공개 원칙 정하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=5vj8k6Ub3ck" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/5vj8k6Ub3ck/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 만든 영상, 이 채널에 계속 올려도 될까요?</b><span class="muted">커리어해커 알렉스 · 2026-10-22</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s8"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 입·소리 맞추고 다시 만들기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
