@@ -21,45 +21,52 @@
 <section class="hero">
   <div class="date"><a href="../index.html">가이드</a> › 다른 AI 도구</div>
   <h1>다른 AI 도구</h1>
-  <p>ChatGPT·Gemini 말고도 업무와 콘텐츠 제작에 바로 쓸 수 있는 AI 도구가 많습니다. 이 페이지는 Adobe Acrobat AI로 PDF 자료를 정리하고 발표 자료를 만드는 법부터 시작해, Kling 4.0으로 사진 여러 장을 영상 한 편으로 만들고, 끝으로 ElevenLabs·Higgsfield로 AI 숏드라마를 만드는 순서로 안내합니다. 위에서부터 차례로 따라 하면 문서 작업에서 영상 제작까지 단계적으로 익힐 수 있습니다.</p>
-  <div class="meta muted">ChatGPT, Gemini, 이미지·영상 생성 AI 등 Claude 이외 도구 · 영상 6개 기반 · 2026-10-25 갱신</div>
+  <p>Claude 말고도 ChatGPT·Gemini·Adobe Acrobat 같은 업무 도구와 ElevenLabs(음성), Kling·Higgsfield(영상) 같은 생성 AI를 함께 쓰면 자료 정리부터 발표 자료, AI 목소리, 짧은 영상까지 혼자 만들 수 있습니다. 먼저 Acrobat AI로 자료를 정리해 PPT 초안을 만들어 보고, 다음으로 ElevenLabs로 AI 목소리를 만들고 연기를 붙여 봅니다. 마지막으로 Kling 4.0과 Higgsfield로 영상을 만들고, 이 모두를 엮어 숏드라마 한 편까지 따라가면 됩니다.</p>
+  <div class="meta muted">ChatGPT, Gemini, 이미지·영상 생성 AI 등 Claude 이외 도구 · 영상 7개 기반 · 2026-10-27 갱신</div>
 </section>
-<section class="brief"><h2>최근 바뀐 점</h2><ul><li>Artlist의 Kling 4.0은 시작·중간·끝 프레임에 사진을 최대 10장까지 넣어 최대 30초 영상 한 편으로 만듭니다. 배경 음악과 목소리도 함께 생성됩니다.</li><li>Adobe Acrobat의 AI 기반 PDF 스페이스에 파일·이미지·웹 링크·텍스트를 최대 100개까지 넣고 요약을 받을 수 있습니다. 그 요약으로 PPTX로 내려받을 수 있는 발표 자료 초안도 만들 수 있습니다.</li><li>Higgsfield의 Seedance 2.5 레퍼런스 모드에 시작 스틸, 캐릭터 시트, 대사 오디오를 함께 넣으면 인물이 일관된 숏드라마 컷을 만들 수 있습니다.</li><li>ElevenLabs V4 API 이후 AI 음성 품질이 훨씬 나아졌다는 평가가 나왔습니다.</li></ul></section>
-<nav class="toc gtoc"><a href="#g1">Acrobat AI로 자료 요약해 PPT 만들기</a><a href="#g2">Kling 4.0으로 사진을 영상 한 편 만들기</a><a href="#g3">AI 숏드라마 대본·캐릭터 준비하기</a><a href="#g4">AI 목소리에 연기 지시 붙이기</a><a href="#g5">Higgsfield로 숏드라마 컷 생성하기</a></nav>
+<section class="brief"><h2>최근 바뀐 점</h2><ul><li>ElevenLabs의 새 모델 Eleven v4는 예전에 한글용으로 쓰던 Multilingual v2보다 억양과 감정 표현이 풍부하고 영어도 매우 자연스럽다는 평가가 나왔습니다.</li><li>Artlist에서 쓰는 Kling 4.0은 시작·중간·끝 프레임에 사진을 최대 10장 넣어 배경 음악과 목소리까지 포함된 최대 30초 영상을 한 번에 만들 수 있습니다.</li><li>Higgsfield의 Seedance 2.5 레퍼런스 모드에 시작 스틸·캐릭터 시트·대사 오디오를 함께 넣어 인물이 일관된 AI 숏드라마를 만드는 방법이 소개됐습니다.</li><li>Adobe Acrobat의 AI PDF 스페이스에 파일·웹 링크를 최대 100개까지 넣고 요약에서 바로 PPTX 발표 자료 초안까지 만들 수 있습니다.</li></ul></section>
+<nav class="toc gtoc"><a href="#g1">Acrobat AI로 자료 정리해 PPT 만들기</a><a href="#g2">ElevenLabs 음성 모델 비교하기</a><a href="#g3">즉석 복제로 내 목소리 만들기</a><a href="#g4">감정 태그로 AI 목소리 연기시키기</a><a href="#g5">Kling 4.0으로 사진을 영상 한 편 만들기</a><a href="#g6">AI로 숏드라마 1화 만들기</a></nav>
 <div class="guides"><article id="g1" class="card guide">
-  <div class="card-head"><span class="tag">입문</span><h3>1. Acrobat AI로 자료 요약해 PPT 만들기</h3></div>
-  <p>Adobe Acrobat의 AI 기반 PDF 스페이스에 보고서·기사 링크 같은 자료를 모아 넣으면 핵심 내용을 정리해 줍니다. 그 정리를 바탕으로 프레젠테이션 초안까지 만들 수 있습니다. 여러 자료를 묶어 보고서나 발표를 준비할 때 쓰면 좋습니다.</p>
-  <ol class="steps"><li>Adobe Acrobat에서 AI 기반 PDF 스페이스를 엽니다.</li><li>분석할 보고서 파일, 이미지, 기사 웹 링크, 텍스트를 자료로 넣습니다.</li><li>AI가 정리한 핵심 내용 요약을 읽습니다.</li><li>요약 속 숫자를 눌러 원문의 근거 부분을 확인합니다.</li><li>정리된 내용으로 프레젠테이션 초안을 만듭니다.</li><li>Adobe Express 편집 화면에서 글자·배경·아이콘을 하나씩 고칩니다.</li><li>완성한 슬라이드를 <code>PPTX</code>, <code>PDF</code>, <code>JPG</code>, <code>PNG</code> 중 필요한 형식으로 내려받습니다.</li><li>발표에서 나올 예상 질문과 답변도 정리해 달라고 요청해 발표를 준비합니다.</li></ol>
+  <div class="card-head"><span class="tag">입문</span><h3>1. Acrobat AI로 자료 정리해 PPT 만들기</h3></div>
+  <p>Adobe Acrobat의 AI 기반 PDF 스페이스에 보고서·기사 링크 같은 자료를 모아 핵심을 정리하고, 그 내용으로 발표 자료 초안까지 만드는 기능입니다. 여러 자료를 읽고 보고용 PPT를 빨리 만들어야 할 때 씁니다.</p>
+  <ol class="steps"><li>Adobe Acrobat에서 <code>PDF 스페이스</code>를 엽니다.</li><li>보고서 파일, 이미지, 기사 웹 링크, 텍스트 등 분석할 자료를 넣습니다.</li><li>AI에게 자료의 핵심 내용을 정리해 달라고 요청합니다.</li><li>요약 속 숫자를 눌러 원문의 해당 부분을 열고 근거가 맞는지 확인합니다.</li><li>정리된 내용으로 프레젠테이션 초안을 만들어 달라고 요청합니다.</li><li>생성된 슬라이드를 Adobe Express 편집 화면에서 글자·배경·아이콘을 하나씩 고칩니다.</li><li>완성된 슬라이드를 PPTX(또는 PDF·JPG·PNG)로 내려받습니다.</li><li>발표 예상 질문과 답변을 정리해 달라고 요청해 발표를 준비합니다.</li></ol>
   
-  <ul class="tips"><li>PDF 스페이스에는 확장자와 관계없이 파일을 최대 100개까지 넣을 수 있습니다.</li><li>요약 속 숫자를 누르면 원문 위치가 표시됩니다. 발표에 쓸 수치는 꼭 원문과 맞춰 봅니다.</li><li>영상 예시에서는 9장짜리 PPT가 만들어졌습니다. 초안으로 쓰고 세부 내용은 직접 다듬습니다.</li></ul>
+  <ul class="tips"><li>PDF 스페이스에는 확장자와 관계없이 최대 100개 파일까지 넣을 수 있습니다.</li><li>요약의 숫자를 눌러 원문을 확인하는 습관을 들이면 AI가 잘못 정리한 내용을 걸러낼 수 있습니다.</li><li>영상 예시에서는 9장짜리 PPT가 만들어졌습니다.</li></ul>
   <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=El8L3-9DnWM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/El8L3-9DnWM/mqdefault.jpg" alt="" loading="lazy"><span><b>Adobe Acrobat AI로 자료 분석부터 PPT 제작까지</b><span class="muted">온선 [온라인 선생님]  · 2026-10-22</span></span></a></div>
 </article><article id="g2" class="card guide">
-  <div class="card-head"><span class="tag">입문</span><h3>2. Kling 4.0으로 사진을 영상 한 편 만들기</h3></div>
-  <p>Artlist에서 Kling 4.0을 쓰면 사진 여러 장(최대 10장)을 시작·중간·끝 프레임에 넣어 하나로 이어지는 영상을 만들 수 있습니다. 사진마다 영상을 따로 만들어 편집 프로그램에서 이어 붙이던 과정이 필요 없습니다. 숙소·여행지 홍보 영상이나 광고를 만들 때 쓰기 좋습니다.</p>
-  <ol class="steps"><li>Artlist에서 <code>AI 비디오</code>로 이동합니다.</li><li>모델 선택에서 <code>올 모델</code>을 열고 Kling의 <code>4.0</code>을 고른 뒤 <code>유즈 모델</code>을 누릅니다.</li><li><code>스타트 프레임</code>의 <code>업로드 이미지</code>로 첫 장면 사진을 넣습니다.</li><li><code>미들 프레임</code>을 눌러 가운데 장면 사진을 순서대로 넣습니다.</li><li>마지막 장면 사진은 <code>엔드 프레임</code>으로 넣습니다.</li><li>사진 순서에 맞춰 장면 흐름을 적은 프롬프트를 입력합니다.</li><li>비율과 영상 길이(최대 30초)를 정하고 <code>제너레이트</code>를 누릅니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>사진 6장을 이 순서대로 넣어 30초짜리 숙소 홍보 영상을 Kling 4.0으로 만들려고 해. 이 순서로 영상이 자연스럽게 이어질지 검토해 주고, 장면 흐름을 적은 영상 생성용 프롬프트를 제안해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>프롬프트는 GPT나 Claude에 사진 순서를 보여 주고 검토받은 문안을 쓰면 편합니다.</li><li>장면이 너무 많으면 파트를 나눠 생성하는 편이 낫습니다.</li><li>강조할 장면(예: 수영장처럼 물이 있는 공간)은 앞이나 뒤에 둡니다.</li><li>30초 영상은 약 1분 만에 만들어졌고, 해상도는 현재 1080까지 됩니다. 배경 음악과 목소리도 함께 생성됩니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=yHriIFuq1d0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/yHriIFuq1d0/mqdefault.jpg" alt="" loading="lazy"><span><b>Kling 4.0으로 사진 여러 장을 한 편의 영상으로</b><span class="muted">온선 [온라인 선생님]  · 2026-10-23</span></span></a></div>
+  <div class="card-head"><span class="tag">입문</span><h3>2. ElevenLabs 음성 모델 비교하기</h3></div>
+  <p>ElevenLabs에서 같은 대사를 서로 다른 음성 모델로 만들어 들어 보고 어떤 모델이 내 콘텐츠에 맞는지 고르는 방법입니다. 내레이션이나 영상 목소리를 정하기 전에 먼저 해 보면 좋습니다.</p>
+  <ol class="steps"><li>Claude 같은 AI에게 한글·영어 테스트 대사를 짧게 만들어 달라고 요청합니다.</li><li>ElevenLabs에서 스피치 만들기 기능을 엽니다.</li><li>만든 한글·영어 대사를 함께 입력합니다.</li><li>모델을 <code>Eleven v4</code>로 두고 생성해 들어 봅니다.</li><li>같은 대사를 모델만 <code>Multilingual v2</code>로 바꿔 생성합니다.</li><li>억양·감정·발음 차이를 같은 대사 기준으로 비교해 쓸 모델을 정합니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>ElevenLabs 음성 모델 비교용으로 한글 대사 두 문장과 영어 대사 두 문장을 짧게 만들어 줘. 숫자와 감정이 드러나는 문장을 하나씩 넣어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>영상에서는 Eleven v4가 특히 감정 표현이 좋고 영어도 매우 자연스럽다고 평가했습니다.</li><li>예전 방식: 한글 표현을 위해 주로 Multilingual v2를 썼습니다.</li><li>반드시 같은 대사로 비교해야 모델 차이를 정확히 판단할 수 있습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a></div>
 </article><article id="g3" class="card guide">
-  <div class="card-head"><span class="tag">중급</span><h3>3. AI 숏드라마 대본·캐릭터 준비하기</h3></div>
-  <p>AI 영상 모델은 앞 컷을 기억하지 못합니다. 그래서 영상을 만들기 전에 대본 표, 캐릭터 시트, 세트, 컷별 시작 스틸을 먼저 준비해 두어야 인물과 장면이 흔들리지 않습니다. AI 숏드라마나 여러 컷짜리 영상을 만들 때 첫 단계로 합니다.</p>
-  <ol class="steps"><li>작업 폴더를 만들고, 단계가 끝날 때마다 결과 파일을 남깁니다.</li><li>대본을 표 하나로 씁니다. 한 줄이 한 컷이고 칸은 컷 번호, 샷 크기, 인물, 대사, 길이입니다.</li><li>인물마다 외모를 묘사하는 문장을 하나 정해 둡니다.</li><li>이미지 모델로 인물마다 캐릭터 시트를 한 장씩 만듭니다.</li><li>같은 방법으로 세트 이미지를 한 장 만듭니다.</li><li>컷마다 시작 스틸을 만들고 파일 이름을 컷 번호에 맞춥니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>컷 번호 | 샷 크기 | 인물 | 대사 | 길이</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>대본 표의 컷 번호를 이후 모든 파일(스틸·오디오·영상)의 기준으로 씁니다.</li><li>인물 묘사 문장은 모든 프롬프트에 한 글자도 바꾸지 않고 붙여야 얼굴이 일관됩니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
-</article><article id="g4" class="card guide">
-  <div class="card-head"><span class="tag">중급</span><h3>4. AI 목소리에 연기 지시 붙이기</h3></div>
-  <p>AI 음성으로 대사를 만들 때 대사 앞 대괄호에 영어로 연기 지시를 적으면 말투를 정할 수 있습니다. 숏드라마처럼 감정 연기가 필요한 대사 파일을 만들 때 씁니다. 영상에서는 인물마다 ElevenLabs 보이스 라이브러리에서 목소리를 골라 썼습니다.</p>
-  <ol class="steps"><li><code>ElevenLabs</code> 보이스 라이브러리에서 인물마다 목소리를 하나씩 고릅니다.</li><li>대사 앞에 대괄호로 연기 지시를 영어로 씁니다.</li><li>지시는 감정 이름보다 말투로 쓰고, 한 줄에 한 개에서 세 개까지만 붙입니다.</li><li>한 줄 안에서 말투를 바꾸려면 바꿀 지점에 대괄호를 하나 더 넣습니다.</li><li>한 박자 쉴 곳에는 <code>beat</code>를 넣습니다.</li><li>대사 파일을 만들고 파일 이름을 컷 번호에 맞춥니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>[softly, hesitant] 저… 사실은요. [beat] [warm] 계속 당신을 기다리고 있었어요.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>대괄호 안의 말은 소리로 읽히지 않고, 뒤에 오는 대사를 어떻게 말할지만 정합니다.</li><li>지시를 너무 많이 붙이지 말고 한 줄에 세 개 이하로 둡니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
-</article><article id="g5" class="card guide">
-  <div class="card-head"><span class="tag">고급</span><h3>5. Higgsfield로 숏드라마 컷 생성하기</h3></div>
-  <p>Higgsfield에서 Seedance 2.5 레퍼런스 모드에 시작 스틸, 캐릭터 시트, 대사 오디오를 함께 넣으면 인물이 일관되고 입 모양이 대사에 맞는 영상 컷이 나옵니다. 영상에서는 이렇게 1분 11초짜리 숏드라마 1화를 만들었습니다. 크레딧은 이 영상 생성 단계에서만 듭니다.</p>
-  <ol class="steps"><li><code>Higgsfield</code>에서 <code>Seedance 2.5</code>를 <code>레퍼런스</code> 모드로 둡니다.</li><li>컷의 시작 스틸, 캐릭터 시트, 대사 오디오를 넣습니다.</li><li>본 생성 전에 480p로 짧게 시험 생성해 입 모양과 대사를 확인합니다.</li><li>비용 견적 기능으로 크레딧을 확인한 뒤 1080p로 본 생성을 합니다.</li><li>생성된 영상의 목소리를 기준으로 컷을 자르고, 입과 소리가 1프레임 안에서 맞는지 검사합니다.</li><li>피드백을 받아 고칠 컷만 같은 시작 스틸과 시트로 다시 만들고, 이전 버전은 새 이름으로 남깁니다.</li></ol>
+  <div class="card-head"><span class="tag">입문</span><h3>3. 즉석 복제로 내 목소리 만들기</h3></div>
+  <p>30~40초 정도의 내 목소리 녹음만으로 ElevenLabs에서 AI 목소리를 만드는 기능입니다. 영상 내레이션이나 콘텐츠 자동화를 내 목소리로 시험해 보고 싶을 때 씁니다.</p>
+  <ol class="steps"><li>ElevenLabs에서 <code>Create Voice</code>를 선택합니다.</li><li><code>Instant Voice</code>(인스턴트 보이스)를 고릅니다.</li><li>약 30~40초 동안 숫자와 여러 종류의 문장을 일정한 톤으로 녹음합니다.</li><li>만들어진 목소리로 테스트 대사를 생성해 들어 봅니다.</li><li>직접 읽은 녹음과 같은 대사로 비교해 얼마나 비슷한지 확인합니다.</li></ol>
   
-  <ul class="tips"><li>16초까지 묶은 클립에서는 대사 타이밍이 줄마다 최대 1.5초 흔들렸습니다. 한 클립에는 대사 세 줄·10초 이하로 묶습니다.</li><li>1화(1080p 17개 클립, 합계 105초)에 2,450크레딧이 들었고, 1080p 4초 한 컷을 다시 만드는 데는 64크레딧이 듭니다.</li><li>견적 옵션을 잘못 넣어 128크레딧이 실제로 나간 사례가 있습니다. 제출 전에 옵션을 다시 확인합니다.</li></ul>
+  <ul class="tips"><li>10초만 넣어도 된다고 안내되지만 영상에서는 약 40초를 썼고, 결과는 실제 목소리와 70% 정도 비슷했습니다.</li><li>숫자·다양한 문장을 많이 녹음하고 톤을 일정하게 유지해야 품질이 안정됩니다.</li><li>더 비슷한 목소리가 필요하면 약 2시간 분량으로 학습시키는 전문 복제(PVC)를 씁니다. 계정당 하나만 만들 수 있고 영상 속 요금제는 월 5만 원 안팎이었습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a></div>
+</article><article id="g4" class="card guide">
+  <div class="card-head"><span class="tag">중급</span><h3>4. 감정 태그로 AI 목소리 연기시키기</h3></div>
+  <p>대사 안에 영어 감정·말투 태그와 문장부호를 넣어 AI 목소리의 억양과 감정을 조절하는 방법입니다. 설정 값(파라미터)이 거의 없어서 연기는 대부분 프롬프트로 정합니다.</p>
+  <ol class="steps"><li>연기를 붙일 대사를 한 줄씩 나눠 적습니다.</li><li>대사 앞에 대괄호로 <code>[whispers]</code>, <code>[sarcastic]</code>, <code>[curious]</code> 같은 영어 연기 지시를 붙입니다.</li><li>감정 이름보다 말투 위주로, 한 줄에 한 개에서 세 개까지만 붙입니다.</li><li>한 줄 안에서 말투를 바꾸고 싶으면 바꿀 지점에 대괄호 지시를 하나 더 넣습니다.</li><li>한 박자 쉬어야 할 곳에는 <code>[beat]</code>를 넣고, 말줄임표와 느낌표로 억양을 보강합니다.</li><li>한글·영어 대사를 생성해 들어 보고 직접 읽은 버전과 비교해 태그를 다듬습니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>[whispers] 오늘 회의는... 사실 취소됐어요. [beat] [curious] 그런데 왜 아무도 몰랐을까요? [sarcastic] 정말 대단한 공지네요!</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>대괄호 안의 말은 소리로 읽히지 않고, 뒤에 오는 대사를 어떻게 말할지만 정합니다.</li><li>태그를 너무 많이 붙이면 오히려 어색해지니 한 줄에 세 개를 넘기지 않습니다.</li><li>어떤 태그가 잘 먹히는지 모르겠으면 Claude 같은 AI에게 감정 표현용 프롬프트 설계 방법을 찾아 달라고 요청합니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+</article><article id="g5" class="card guide">
+  <div class="card-head"><span class="tag">중급</span><h3>5. Kling 4.0으로 사진을 영상 한 편 만들기</h3></div>
+  <p>Artlist에서 Kling 4.0을 써서 사진을 최대 10장까지 시작·중간·끝 프레임에 넣고 하나의 영상으로 만드는 기능입니다. 숙소·여행지 홍보 영상이나 광고처럼 여러 장면을 이어야 할 때 편집 프로그램 없이 만들 수 있습니다.</p>
+  <ol class="steps"><li>Artlist에서 <code>AI 비디오</code>로 이동합니다.</li><li>모델 선택에서 <code>올 모델</code>을 열고 Kling의 <code>4.0</code>을 고른 뒤 <code>유즈 모델</code>을 누릅니다.</li><li><code>스타트 프레임</code>의 <code>업로드 이미지</code>로 첫 장면 사진을 넣습니다.</li><li><code>미들 프레임</code>을 눌러 두 번째, 세 번째 장면 사진을 순서대로 넣습니다.</li><li>마지막 사진은 <code>엔드 프레임</code>으로 넣습니다.</li><li>사진 순서에 맞춰 장면 흐름을 적은 프롬프트를 입력합니다.</li><li>비율과 영상 길이(최대 30초)를 정하고 <code>제너레이트</code>를 누릅니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>숙소 홍보용 30초 영상을 Kling 4.0으로 만들려고 해. 첨부한 사진 순서대로 장면이 이어지게 하고 싶어. 이 순서로 영상이 자연스럽게 나올지 검토하고, 장면 흐름을 적은 영상 프롬프트를 써 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>예전 방식: 사진마다 영상을 따로 만들어 편집 프로그램에서 이어 붙였지만, 이제 한 번에 만들어집니다.</li><li>프롬프트는 GPT나 Claude에 사진 순서를 보여 주고 검토받은 문안을 쓰면 편합니다.</li><li>장면이 너무 많으면 파트를 나눠 생성하고, 강조할 장면은 앞뒤에 배치합니다.</li><li>30초 영상 생성에 약 1분이 걸렸고, 해상도는 1080까지, 배경 음악과 목소리도 함께 만들어집니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=yHriIFuq1d0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/yHriIFuq1d0/mqdefault.jpg" alt="" loading="lazy"><span><b>Kling 4.0으로 사진 여러 장을 한 편의 영상으로</b><span class="muted">온선 [온라인 선생님]  · 2026-10-23</span></span></a></div>
+</article><article id="g6" class="card guide">
+  <div class="card-head"><span class="tag">고급</span><h3>6. AI로 숏드라마 1화 만들기</h3></div>
+  <p>대본·얼굴·목소리·영상·편집·고치기의 6단계로 배우와 세트 없이 AI만으로 1분 남짓한 숏드라마를 만드는 방법입니다. 영상 모델은 앞 컷을 기억하지 못하므로 캐릭터 시트와 시작 스틸을 먼저 만들어 인물을 일관되게 유지하는 것이 핵심입니다.</p>
+  <ol class="steps"><li>작업 폴더를 만들고 단계가 끝날 때마다 결과 파일을 남깁니다.</li><li>대본을 표 하나로 씁니다. 한 줄이 한 컷이고, 칸은 컷 번호·샷 크기·인물·대사·길이입니다.</li><li>이미지 모델로 인물마다 캐릭터 시트 한 장, 세트 한 장, 컷마다 시작 스틸을 만듭니다.</li><li><code>ElevenLabs</code> 보이스 라이브러리에서 인물마다 목소리를 하나씩 골라 대사 파일을 만들고, 파일 이름을 컷 번호와 맞춥니다.</li><li><code>Higgsfield</code>에서 <code>Seedance 2.5</code>를 <code>레퍼런스</code> 모드로 두고 시작 스틸·캐릭터 시트·대사 오디오를 넣어 컷을 생성합니다.</li><li>생성된 영상의 목소리를 기준으로 컷을 자르고, 입 모양과 소리가 1프레임 안에서 맞는지 검사합니다.</li><li>피드백을 받아 고칠 컷만 같은 시작 스틸과 시트로 다시 만들고, 이전 버전은 새 이름으로 남깁니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>로맨스 판타지 숏드라마 1화 대본을 표 하나로 써 줘. 한 줄이 한 컷이고, 칸은 컷 번호, 샷 크기, 인물, 대사, 길이(초)로 해 줘. 전체 길이는 1분 남짓으로 맞춰 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>본 생성 전에 480p 짧은 시험으로 입 모양과 대사를 먼저 확인합니다.</li><li>인물 묘사 문장은 모든 프롬프트에 한 글자도 바꾸지 않고 붙여야 얼굴이 유지됩니다.</li><li>한 클립은 대사 세 줄·10초 이하로 묶습니다. 16초까지 묶었을 때 대사 타이밍이 줄마다 최대 1.5초 흔들렸습니다.</li><li>크레딧은 영상 단계에서만 듭니다(1화 전체 2,450, 1080p 4초 한 컷 재생성 64). 제출 전 비용 견적 기능으로 확인하되, 견적 옵션을 잘못 넣으면 실제로 크레딧이 나갈 수 있으니 주의합니다.</li></ul>
   <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
 </article></div>
 <p><a href="../videos.html?cat=other-ai">이 분야 영상 전체 보기 →</a></p>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>앱 화면 기획부터 구현하기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="앱 화면 기획부터 구현하기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="https://changhoonchoi-droid.github.io/">🏠 홈</a><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › 앱 화면 기획부터 구현하기</div>
+  <h1>앱 화면 기획부터 구현하기</h1>
+  <p>만들고 싶은 웹·앱 화면을 말로 기획하고, Claude 디자인 시안과 클릭형 프로토타입으로 확인한 뒤 구현·검증·PR까지 이어 갑니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 시안과 프로토타입을 거쳐 구현되고 브라우저 검증까지 끝난 화면, 그리고 GitHub 풀 리퀘스트.</span><span><b>난이도</b> 고급</span>
+    <span><b>시간</b> 처음 반나절 이상</span><span><b>단계</b> 8개</span></div>
+  <div class="cos"><span class="co">Claude Code</span><span class="co">Claude Design</span><span class="co">Chrome DevTools MCP</span><span class="co">GitHub</span><span class="co">클라우드 세션</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-10-27 갱신</p>
+<div class="flow" style="--cols:3"><div class="phase"><div class="phase-h"><span>1</span>기획·시안</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">인터뷰로 화면 스펙 정하기</span><span class="ns">대상 사용자만 주고 질문에 답하기</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">디자인 시안 여러 개 받기</span><span class="ns">현재 앱을 바탕으로 여러 방향 탐색</span>
+  <span class="ntool">Claude Design</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">댓글로 시안 다듬기</span><span class="ns">잘된 점·아쉬운 점을 댓글로 남기기</span>
+  <span class="ntool">Claude Design</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">클릭형 프로토타입 눌러 보기</span><span class="ns">실제처럼 눌러 보며 흐름 확인</span>
+  <span class="ntool">Claude Design</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>구현</div>
+  <div class="nodes"><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">프로토타입대로 구현하기</span><span class="ns">build 지시, 큰 수정은 effort high</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">브라우저 검증 스킬 만들기</span><span class="ns">verify로 클릭·성능까지 스스로 확인</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>마무리</div>
+  <div class="nodes"><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="num">7</span>
+  <span class="nbody"><span class="nt">클라우드 세션에 수정 맡기기</span><span class="ns">노트북을 닫아도 남은 수정 계속 진행</span>
+  <span class="ntool">클라우드 세션</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s8" aria-haspopup="dialog">
+  <span class="num">8</span>
+  <span class="nbody"><span class="nt">검토하고 PR 올리기</span><span class="ns">diff를 검토하고 PR로 마무리</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 8 · 기획·시안</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">인터뷰로 화면 스펙 정하기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>무엇을 만들지 막연하면 Claude가 질문하고 내가 답하는 방식으로 스펙을 만듭니다. 시안을 만들기 전에 누가 무엇을 하려고 쓰는지 분명해야 시안도 좋아집니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>작업할 저장소 폴더에서 Claude Code를 열고 <code>Shift+Tab</code>으로 auto mode로 전환합니다.</li><li><code>/effort</code>로 노력 수준을 정합니다.</li><li>관심 영역(대상 사용자, 해결할 문제)만 주고 ask user question 도구로 질문하라고 합니다.</li><li>질문에 차례로 답한 뒤 스펙을 검토합니다.</li><li>스펙을 정보 밀도가 높은 HTML 파일로 받아 먼저 읽어 봅니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>사내 회의실 예약 웹앱의 첫 화면을 새로 만들고 싶어. 대상은 회의실을 자주 잡는 팀장과 총무 담당자야. 바로 만들지 말고 ask user question 도구로 필요한 질문을 하나씩 해서 스펙을 HTML 파일로 정리해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>빠르게 스펙을 반복할 때는 <code>/fast</code> 모드가 유용합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g7">프롬프트·활용 요령 › Claude에게 인터뷰시켜 스펙 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=IlqJqcl8ONE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/IlqJqcl8ONE/mqdefault.jpg" alt="" loading="lazy"><span><b>앤트로픽 방식의 Claude Code 활용법</b><span class="muted">Claude (공식) · 2026-05-23</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">디자인 시안 여러 개 받기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 8 · 기획·시안</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">디자인 시안 여러 개 받기</h2>
+  <div class="cos"><span class="co strong">Claude Design</span></div>
+  <p>코드로 바로 만들기 전에 Claude 디자인으로 여러 시안을 탐색합니다. 말로 설명하기보다 시안을 보고 고르는 편이 빠릅니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude Code에서 작업할 저장소(repo)를 연결합니다.</li><li><code>Artifacts</code> 탭으로 이동해 새 디자인을 만듭니다.</li><li>현재 앱과 스펙을 살펴보고 여러 시안을 만들어 달라고 요청합니다.</li><li>Claude가 작업하는 동안 다른 일을 하다 돌아와 결과를 봅니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>현재 앱과 방금 정리한 스펙을 살펴보고, 회의실 예약 첫 화면 시안을 서로 다른 방향으로 3개 만들어 줘. 하나는 달력 중심, 하나는 빈 회의실 목록 중심으로 해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>원하는 느낌을 구체적으로 말할수록 결과가 좋아집니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g8">문서·슬라이드·디자인 만들기 › Claude 디자인으로 시안부터 구현까지</a><a class="refl" href="../guide/news.html#g3">발표·소식 › 대화에서 슬라이드·문서 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=COJAZQM1aeQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/COJAZQM1aeQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 디자인으로 앱 온보딩 만들기</b><span class="muted">Claude (공식) · 2026-10-02</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Uvl-tRga98g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Uvl-tRga98g/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Design: 프롬프트에서 제품까지</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 인터뷰로 화면 스펙 정하기</button><button type="button" class="nav-b next" data-go="s3">댓글로 시안 다듬기 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 8 · 기획·시안</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">댓글로 시안 다듬기</h2>
+  <div class="cos"><span class="co strong">Claude Design</span></div>
+  <p>시안마다 잘된 점과 아쉬운 점을 댓글로 남겨 방향을 좁힙니다. 세부 사항은 에디터에서 직접 고칠 수 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>시안마다 잘된 점과 아쉬운 점을 댓글로 남깁니다.</li><li>마음에 들지 않는 세부 사항은 에디터에서 직접 고칩니다.</li><li>필요하면 새 시안을 더 요청합니다.</li><li>하나의 방향으로 좁혀질 때까지 반복합니다.</li></ol>
+  
+  <ul class="tips"><li>Claude Design은 문서보다 프로토타입을 먼저 만들어 보는 방식에 맞춰 만들어졌습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g8">문서·슬라이드·디자인 만들기 › Claude 디자인으로 시안부터 구현까지</a><a class="refl" href="../guide/create.html#g3">문서·슬라이드·디자인 만들기 › 코멘트로 결과물 일부만 고치기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=COJAZQM1aeQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/COJAZQM1aeQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 디자인으로 앱 온보딩 만들기</b><span class="muted">Claude (공식) · 2026-10-02</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Uvl-tRga98g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Uvl-tRga98g/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Design: 프롬프트에서 제품까지</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 디자인 시안 여러 개 받기</button><button type="button" class="nav-b next" data-go="s4">클릭형 프로토타입 눌러 보기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 8 · 기획·시안</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">클릭형 프로토타입 눌러 보기</h2>
+  <div class="cos"><span class="co strong">Claude Design</span></div>
+  <p>정적인 시안만으로는 화면 사이 흐름의 문제를 놓치기 쉽습니다. 클릭해 볼 수 있는 프로토타입으로 실제 사용 순서를 확인한 뒤 구현으로 넘어갑니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>선택한 시안으로 클릭형 프로토타입(click-through prototype)을 만들어 달라고 요청합니다.</li><li>대상 사용자가 되어 처음부터 끝까지 눌러 봅니다.</li><li>막히는 곳은 댓글로 남겨 고칩니다.</li><li>만족하면 구현으로 넘어갑니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 시안으로 클릭해 볼 수 있는 프로토타입을 만들어 줘. 회의실 선택 → 시간 선택 → 예약 완료까지 세 화면이 이어지게 해 줘.</pre><button class="copy" type="button">복사</button></div>
+  
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g8">문서·슬라이드·디자인 만들기 › Claude 디자인으로 시안부터 구현까지</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=COJAZQM1aeQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/COJAZQM1aeQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 디자인으로 앱 온보딩 만들기</b><span class="muted">Claude (공식) · 2026-10-02</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 댓글로 시안 다듬기</button><button type="button" class="nav-b next" data-go="s5">프로토타입대로 구현하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 8 · 구현</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">프로토타입대로 구현하기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>프로토타입이 확정되면 Claude에게 구현을 지시합니다. 여러 파일에 걸친 수정이면 effort를 high로 올리고, 읽기만 하는 탐색은 작은 모델에 맡겨 비용을 아낍니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>프로토타입에 만족하면 Claude에게 구현(build)을 지시합니다.</li><li>여러 파일·프로젝트 전체를 바꾸는 수정이면 <code>/effort</code>를 <code>high</code>로 올립니다.</li><li>읽기만 하는 탐색은 Sonnet 같은 작은 모델의 서브에이전트에 맡깁니다.</li><li>진행 상황을 보다가 방향이 틀리면 중단하고 정보를 더합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>확정한 프로토타입대로 구현해 줘. 완성 기준은 세 화면이 프로토타입과 같은 순서로 이어지고, 예약 완료 화면에 선택한 회의실과 시간이 표시되는 거야.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>서브에이전트를 너무 많이 만들면 메인 에이전트와 소통이 어긋날 수 있으니 단순한 구성에서 시작합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g8">문서·슬라이드·디자인 만들기 › Claude 디자인으로 시안부터 구현까지</a><a class="refl" href="../guide/prompting.html#g6">프롬프트·활용 요령 › 작업에 맞는 모델·effort 고르기</a><a class="refl" href="../guide/code-advanced.html#g1">Claude Code 고급 › 서브에이전트를 작은 모델로 돌리기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=COJAZQM1aeQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/COJAZQM1aeQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 디자인으로 앱 온보딩 만들기</b><span class="muted">Claude (공식) · 2026-10-02</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=jKRl_CSVxyI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/jKRl_CSVxyI/mqdefault.jpg" alt="" loading="lazy"><span><b>Opus 5.5를 일상 모델로 쓰는 요령</b><span class="muted">Claude (공식) · 2026-09-23</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 클릭형 프로토타입 눌러 보기</button><button type="button" class="nav-b next" data-go="s6">브라우저 검증 스킬 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 8 · 구현</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">브라우저 검증 스킬 만들기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>테스트와 타입 검사만으로는 화면이 의도대로 동작하는지 증명되지 않습니다. 브라우저에서 클릭하고 측정하는 확인 절차를 스킬로 만들어 두면 Claude가 확인 → 수정 → 재확인을 반복합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li><code>verify</code> 스킬로 앱을 실행해 변경 사항을 확인하게 합니다.</li><li>성공한 절차가 프로젝트 스킬로 저장됐는지 확인합니다.</li><li><code>claude mcp add</code>로 Chrome DevTools MCP를 연결하고, 레이아웃 시프트 같은 성능 측정 항목을 스킬에 더합니다.</li><li>항목마다 숫자로 된 통과 기준과 실패 시 할 일을 적습니다.</li><li>UI 변경을 요청하고 Claude가 스스로 고치고 다시 확인하는지 지켜봅니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>회의실 예약 화면 변경을 마친 뒤 verify 스킬로 서버를 띄우고 세 화면을 직접 클릭해 확인해 줘. 레이아웃 시프트도 측정하고, 기준을 넘으면 고친 뒤 다시 확인해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>성능 예산, 접근성 체크리스트, 디자인 시스템 규칙을 통과 기준으로 삼아 보세요.</li><li>쓰지 않는 MCP 서버는 <code>/mcp</code>에서 꺼 컨텍스트를 아낍니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/code-advanced.html#g2">Claude Code 고급 › verify 스킬로 검증 루프 만들기</a><a class="refl" href="../guide/connect.html#g7">MCP·커넥터 연결 › 브라우저 확인 절차를 검증 스킬로 만들기</a><a class="refl" href="../guide/connect.html#g6">MCP·커넥터 연결 › Claude Code에 MCP 서버 연결하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=mQZB0l-rhxE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mQZB0l-rhxE/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 검증 루프 만들기</b><span class="muted">Claude (공식) · 2026-09-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Hth_tLaC2j8" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Hth_tLaC2j8/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 1년 회고: 검증·루틴·오토 모드</b><span class="muted">Claude (공식) · 2026-06-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=kkBFmwkDzdo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/kkBFmwkDzdo/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code에서 MCP 연결하고 관리하기</b><span class="muted">Claude (공식) · 2026-05-09</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 프로토타입대로 구현하기</button><button type="button" class="nav-b next" data-go="s7">클라우드 세션에 수정 맡기기 →</button></div>
+</dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
+  <div class="dr-head"><span class="muted small">7 / 8 · 마무리</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s7">클라우드 세션에 수정 맡기기</h2>
+  <div class="cos"><span class="co strong">클라우드 세션</span></div>
+  <p>남은 수정이 크거나 퇴근 전에 맡기고 싶으면 클라우드 세션을 씁니다. 저장소를 복제해 별도 브랜치에서 작업하므로 노트북을 닫아도 일이 계속됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>지금까지의 작업을 GitHub 저장소에 커밋·푸시해 둡니다.</li><li>Claude GitHub App을 설치하고 접근할 저장소를 고릅니다.</li><li>데스크톱 앱에서 <code>Local</code> 대신 <code>Cloud</code>를 선택하고 저장소·환경·브랜치를 고릅니다.</li><li>작업을 맡기고 노트북을 닫습니다.</li><li>휴대폰 Claude 앱의 <code>Code</code> 탭에서 질문에 답하거나 방향을 바꿉니다.</li></ol>
+  
+  <ul class="tips"><li>세션은 저장소를 새로 복제해 시작하므로 커밋·푸시한 내용만 쓸 수 있습니다. 개인 설정·스킬이 필요한 작업은 로컬에서 돌립니다.</li><li>Pro·Max·Team 플랜에서 쓸 수 있고 로컬 세션과 같은 한도를 씁니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/code-advanced.html#g3">Claude Code 고급 › 클라우드 세션으로 작업 맡기기</a><a class="refl" href="../guide/code-basics.html#g9">Claude Code 기본 › 클라우드 세션으로 작업 맡기기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=-OH1y7CjIew" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/-OH1y7CjIew/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 클라우드 세션으로 외출 중에도 코딩하기</b><span class="muted">Claude (공식) · 2026-10-13</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=0kILa02vKuI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/0kILa02vKuI/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 설치하기</b><span class="muted">Claude (공식) · 2026-05-14</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 브라우저 검증 스킬 만들기</button><button type="button" class="nav-b next" data-go="s8">검토하고 PR 올리기 →</button></div>
+</dialog><dialog class="drawer" id="d-s8" aria-labelledby="t-s8">
+  <div class="dr-head"><span class="muted small">8 / 8 · 마무리</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s8">검토하고 PR 올리기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>작업이 끝나면 변경 내용을 직접 검토하고 풀 리퀘스트로 올립니다. CI 실패와 리뷰 코멘트 반영까지 Claude가 챙기게 할 수 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>변경 내용(diff)을 검토하고 필요한 곳에 코멘트를 남깁니다.</li><li>서브에이전트 코드 리뷰어로 한 번 더 점검하게 합니다.</li><li>문제가 없으면 <code>Create PR</code>을 눌러 풀 리퀘스트를 엽니다.</li><li>CI가 실패하거나 리뷰 코멘트가 달리면 Claude가 수정을 푸시하는지 확인합니다.</li><li>병합할 준비가 되면 Claude에게 병합을 요청합니다.</li></ol>
+  
+  <ul class="tips"><li>diff에 남긴 코멘트는 다음 메시지와 함께 Claude에게 전달됩니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/code-advanced.html#g3">Claude Code 고급 › 클라우드 세션으로 작업 맡기기</a><a class="refl" href="../guide/code-advanced.html#g6">Claude Code 고급 › PR 관리와 매일 점검 루틴 만들기</a><a class="refl" href="../guide/code-basics.html#g7">Claude Code 기본 › 결과 검증하고 커밋하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=-OH1y7CjIew" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/-OH1y7CjIew/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 클라우드 세션으로 외출 중에도 코딩하기</b><span class="muted">Claude (공식) · 2026-10-13</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=omihvjf0A2k" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/omihvjf0A2k/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code Projects 시작하기</b><span class="muted">Claude (공식) · 2026-10-09</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=xJQuF02NAK8" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/xJQuF02NAK8/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code의 탐색→계획→코딩→커밋 흐름</b><span class="muted">Claude (공식) · 2026-05-17</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s8"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 클라우드 세션에 수정 맡기기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>

@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>유튜브 영상 만들기 | AI 활용 따라하기</title>
+<title>AI로 유튜브 영상 만들기 | AI 활용 따라하기</title>
 <meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
-<meta property="og:title" content="유튜브 영상 만들기 | AI 활용 따라하기">
+<meta property="og:title" content="AI로 유튜브 영상 만들기 | AI 활용 따라하기">
 <meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../../assets/style.css">
@@ -19,165 +19,165 @@
 </header>
 <main class="wrap">
 <section class="hero">
-  <div class="date"><a href="../index.html">목표별 지도</a> › 유튜브 영상 만들기</div>
-  <h1>유튜브 영상 만들기</h1>
-  <p>기획부터 대본, 장면 영상, 음성, 검수, 업로드 준비까지 단계를 나눠 AI에게 맡기되, 내 해석과 확인 지점은 직접 지키는 영상 제작 흐름을 만듭니다.</p>
-  <div class="wf-facts"><span><b>결과물</b> 내 해석이 담긴 대본과 장면 영상·음성, 제목·썸네일 문구까지 갖춘 유튜브 영상 한 편, 그리고 다음 편에 다시 쓸 작업 규칙</span><span><b>난이도</b> 중급</span>
-    <span><b>시간</b> 처음 4~6시간 (편집 도구 익히는 시간 별도)</span><span><b>단계</b> 9개</span></div>
-  <div class="cos"><span class="co">Claude</span><span class="co">Claude Code (Skills)</span><span class="co">Kling 4.0 (Artlist)</span><span class="co">ElevenLabs</span><span class="co">Codex</span></div>
+  <div class="date"><a href="../index.html">목표별 지도</a> › AI로 유튜브 영상 만들기</div>
+  <h1>AI로 유튜브 영상 만들기</h1>
+  <p>원본 자료에 내 해석을 더해 대본을 쓰고, AI 목소리와 영상 생성 도구로 영상을 만든 뒤 검수·공개 방침까지 정합니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 내 의견이 담긴 대본, 내 목소리(또는 고른 AI 목소리) 내레이션, 사진을 이어 만든 영상 한 편과 다음 편에 쓸 편집 스킬.</span><span><b>난이도</b> 중급</span>
+    <span><b>시간</b> 처음 3~4시간</span><span><b>단계</b> 9개</span></div>
+  <div class="cos"><span class="co">Claude</span><span class="co">ElevenLabs</span><span class="co">Artlist(Kling 4.0)</span><span class="co">Claude Code</span><span class="co">Codex</span></div>
 </section>
 <div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
   <button type="button" id="reset" class="linkish small">처음부터</button></div>
-<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-10-25 갱신</p>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-10-27 갱신</p>
 <div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>기획</div>
   <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
   <span class="num">1</span>
-  <span class="nbody"><span class="nt">AI 콘텐츠 공개 원칙 정하기</span><span class="ns">AI를 어디까지 쓸지 채널 원칙 정하기</span>
-  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">인기 주제·포맷 조사하기</span><span class="ns">관심 받는 주제와 형식을 먼저 찾기</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
   <span class="num">2</span>
-  <span class="nbody"><span class="nt">주제·포맷 리서치 맡기기</span><span class="ns">사람들이 관심 갖는 주제와 포맷 조사</span>
-  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>대본</div>
+  <span class="nbody"><span class="nt">AI 인터뷰로 대본 쓰기</span><span class="ns">질문에 답하며 내 해석을 대본에 담기</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>목소리</div>
   <div class="nodes"><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
   <span class="num">3</span>
-  <span class="nbody"><span class="nt">인터뷰받아 대본 쓰기</span><span class="ns">Claude의 질문에 답해 내 해석 담기</span>
-  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">음성 모델 비교해 고르기</span><span class="ns">같은 대사로 v4와 v2를 들어 보기</span>
+  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
   <span class="num">4</span>
-  <span class="nbody"><span class="nt">긴 원본을 여러 편으로 나누기</span><span class="ns">라이브·녹취 한 편에서 편수까지 정하기</span>
-  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>제작</div>
-  <div class="nodes"><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">내 목소리 복제하기</span><span class="ns">30~40초 녹음으로 AI 목소리 만들기</span>
+  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
   <span class="num">5</span>
-  <span class="nbody"><span class="nt">사진으로 장면 영상 만들기</span><span class="ns">사진 여러 장을 이어 한 편의 장면으로</span>
-  <span class="ntool">Kling 4.0 (Artlist)</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">감정 태그로 내레이션 만들기</span><span class="ns">대괄호 연기 지시로 억양 조절</span>
+  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>영상</div>
+  <div class="nodes"><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
   <span class="num">6</span>
-  <span class="nbody"><span class="nt">목소리·연기 지시 입히기</span><span class="ns">내 목소리 또는 AI 목소리로 대사 입히기</span>
-  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>검수·공개</div>
-  <div class="nodes"><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">사진 이어 영상 만들기</span><span class="ns">Kling 4.0에 사진 최대 10장 넣기</span>
+  <span class="ntool">Artlist(Kling 4.0)</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
   <span class="num">7</span>
-  <span class="nbody"><span class="nt">다른 AI로 교차 검수하기</span><span class="ns">Claude 결과는 Codex로, 반대도 확인</span>
-  <span class="ntool">Codex</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s8" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">다른 AI로 교차 검수하기</span><span class="ns">Claude 결과는 Codex가, 반대도 검증</span>
+  <span class="ntool">Codex</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>공개</div>
+  <div class="nodes"><button class="node" type="button" data-id="s8" aria-haspopup="dialog">
   <span class="num">8</span>
-  <span class="nbody"><span class="nt">썸네일·제목 정하고 올리기</span><span class="ns">패키징은 맡기고 올리기 전엔 직접 확인</span>
+  <span class="nbody"><span class="nt">공개 방식 정하고 올리기</span><span class="ns">AI 사용을 밝히고 제목·썸네일 정하기</span>
   <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s9" aria-haspopup="dialog">
   <span class="num">9</span>
-  <span class="nbody"><span class="nt">반응 보고 규칙을 스킬로</span><span class="ns">시청 반응 반영하고 작업 규칙 저장</span>
-  <span class="ntool">Claude Code (Skills)</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+  <span class="nbody"><span class="nt">편집 규칙 스킬로 저장하기</span><span class="ns">다음 편부터 원본만 넘기면 자동 적용</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
 <dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
   <div class="dr-head"><span class="muted small">1 / 9 · 기획</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s1">AI 콘텐츠 공개 원칙 정하기</h2>
-  <div class="cos"><span class="co strong">Claude 앱</span></div>
-  <p>AI로 자동화하면 시간은 줄지만 구독자 반응은 갈릴 수 있습니다. 만들기 전에 AI 결과물을 어떻게 내보낼지 원칙을 정해 두면 신뢰를 지키기 쉽습니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>만들 콘텐츠가 무엇이고 누가 볼 것인지 적습니다.</li><li>네 가지 가운데 하나를 고릅니다: ① AI로 다 해 보기 ② AI 콘텐츠는 다른 채널이나 쇼츠로 분리 ③ AI를 쓰되 사람의 몫을 넣기 ④ AI 쓰지 않기.</li><li>내보내기 전에 사람이 검수할 항목을 정합니다.</li><li>시청자에게 의견을 묻고 반응을 보며 원칙을 고칩니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>내 채널은 30대 직장인 대상 재테크 채널이야. AI로 만든 영상을 올릴 때 나올 수 있는 구독자 반응을 정리하고, AI로 다 하기·별도 채널로 분리·사람 몫 넣기·AI 안 쓰기 네 가지의 장단점을 표로 비교해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>영상에서는 사람이 만든 콘텐츠의 가치가 완벽함보다 진실성에 있다고 봅니다.</li><li>AI가 만든 콘텐츠일수록 검수와 신뢰가 더 중요해집니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/news.html#g6">발표·소식 › AI로 만든 콘텐츠 공개 원칙 정하기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=5vj8k6Ub3ck" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/5vj8k6Ub3ck/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 만든 영상, 이 채널에 계속 올려도 될까요?</b><span class="muted">커리어해커 알렉스 · 2026-10-22</span></span></a></div>
+  <h2 id="t-s1">인기 주제·포맷 조사하기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>콘텐츠 파이프라인의 첫 단계는 기획·리서치입니다. 사람들이 관심 갖는 주제와 포맷을 Claude에 조사시키고, 내가 직접 보고 들은 원본 자료 가운데 다룰 것을 고릅니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>다루고 싶은 분야와 대상 시청자를 정합니다.</li><li>사람들이 관심 갖는 주제와 영상 포맷을 웹 검색으로 조사해 달라고 합니다.</li><li>제시된 출처를 직접 열어 내용이 맞는지 확인합니다.</li><li>다룰 원본 영상이나 글을 직접 보고 듣습니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>30~40대 직장인이 관심 갖는 AI 업무 활용 유튜브 주제와 포맷(롱폼·쇼츠)을 웹 검색으로 조사해서 표로 정리해 줘. 출처 링크도 함께 붙여 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>남의 파이프라인 화면을 캡처해 Claude에 붙여 넣고 내 상황에 맞게 바꿔 달라고 하면 출발이 쉽습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g10">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a><a class="refl" href="../guide/prompting.html#g1">프롬프트·활용 요령 › AI에게서 더 나은 답 얻기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=j1Vk6Y-23CY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/j1Vk6Y-23CY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI와 대화하면 실제로 무슨 일이 일어날까?</b><span class="muted">Claude (공식) · 2026-08-05</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
-  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">주제·포맷 리서치 맡기기 →</button></div>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">AI 인터뷰로 대본 쓰기 →</button></div>
 </dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
   <div class="dr-head"><span class="muted small">2 / 9 · 기획</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s2">주제·포맷 리서치 맡기기</h2>
+  <h2 id="t-s2">AI 인터뷰로 대본 쓰기</h2>
   <div class="cos"><span class="co strong">Claude</span></div>
-  <p>기획·리서치 단계에서는 사람들이 관심을 갖는 주제와 포맷을 Claude에게 조사시킵니다. 최신 정보가 필요한 조사라 출처를 직접 확인합니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>내 채널의 대상과 다루고 싶은 분야를 알려 줍니다.</li><li>사람들이 관심을 갖는 주제와 영상 포맷을 조사해 달라고 요청합니다.</li><li>웹 검색을 했는지 묻고, 나온 출처를 직접 열어 확인합니다.</li><li>참고하고 싶은 다른 사람의 제작 파이프라인 화면이 있으면 캡처해 붙이고 내 상황에 맞게 바꿔 달라고 합니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>30대 직장인 대상 재테크 유튜브 채널을 준비하고 있어. 웹 검색으로 최근 이 분야에서 반응이 좋은 주제와 영상 포맷(롱폼·쇼츠, 길이, 구성)을 조사해서 표로 정리하고, 근거 출처를 함께 적어 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>AI가 웹 검색을 했으리라 짐작하지 말고 직접 물어봅니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a><a class="refl" href="../guide/prompting.html#g1">프롬프트·활용 요령 › 내 상황을 알려 주고 더 나은 답 받기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=j1Vk6Y-23CY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/j1Vk6Y-23CY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI와 대화하면 실제로 무슨 일이 일어날까?</b><span class="muted">Claude (공식) · 2026-08-05</span></span></a></div>
+  <p>남의 자료를 그냥 번역·요약하면 차별점이 없습니다. Claude가 질문하고 내가 답하는 인터뷰로 내 의견을 더한 뒤, 그 내용을 바탕으로 대본을 만듭니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude에 이 자료로 롱폼 콘텐츠를 만들어 보자고 제안합니다.</li><li>자료를 본 사람이 궁금해할 질문을 뽑아 나를 인터뷰하게 합니다.</li><li>질문마다 말로 소감과 의견을 풀어 답합니다.</li><li>인터뷰 내용을 바탕으로 내 말투를 살린 대본과 스토리보드를 만들게 합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 영상을 본 사람이 궁금해할 질문을 뽑아서 나를 인터뷰해 줘. 한 번에 한 질문씩 물어보고, 내 답을 모아 롱폼 대본으로 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>번역기 수준의 자막 콘텐츠는 차별점이 없으니 내 해석이 들어가는 부분을 꼭 남깁니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g9">업무 자동화·에이전트 › AI 인터뷰로 내 해석 더하기</a><a class="refl" href="../guide/prompting.html#g7">프롬프트·활용 요령 › Claude에게 인터뷰시켜 스펙 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← AI 콘텐츠 공개 원칙 정하기</button><button type="button" class="nav-b next" data-go="s3">인터뷰받아 대본 쓰기 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 인기 주제·포맷 조사하기</button><button type="button" class="nav-b next" data-go="s3">음성 모델 비교해 고르기 →</button></div>
 </dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
-  <div class="dr-head"><span class="muted small">3 / 9 · 대본</span>
+  <div class="dr-head"><span class="muted small">3 / 9 · 목소리</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s3">인터뷰받아 대본 쓰기</h2>
-  <div class="cos"><span class="co strong">Claude</span></div>
-  <p>번역이나 자막만 단 결과물은 누구나 만들 수 있습니다. Claude가 나를 인터뷰하게 하고, 내 답을 바탕으로 대본을 쓰게 하면 내 해석이 들어간 차별점이 생깁니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>소재가 되는 원본 영상이나 글을 직접 보고 듣습니다.</li><li>Claude에 이 자료로 롱폼 콘텐츠를 만들자고 던집니다.</li><li>시청자가 궁금해할 질문을 뽑아 나를 인터뷰하게 시킵니다.</li><li>질문마다 소감과 의견을 말로 풀어 답합니다.</li><li>인터뷰 내용과 내 말투를 반영해 대본과 스토리보드를 짜게 합니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 영상으로 롱폼을 만들어 보자. 단순 번역 말고, 이 영상을 본 사람이 궁금해할 질문을 뽑아서 나를 인터뷰해 줘. 내 답을 바탕으로 대본을 써 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>&#x27;더 좋게 만들어&#x27; 같은 막연한 요청보다 질문에 답하는 편이 결과가 좋습니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g6">업무 자동화·에이전트 › 인터뷰 방식으로 내 해석 더하기</a><a class="refl" href="../guide/prompting.html#g7">프롬프트·활용 요령 › Claude에게 인터뷰받아 요구사항 정하기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a></div>
-  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 주제·포맷 리서치 맡기기</button><button type="button" class="nav-b next" data-go="s4">긴 원본을 여러 편으로 나누기 →</button></div>
-</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
-  <div class="dr-head"><span class="muted small">4 / 9 · 대본</span>
-    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s4">긴 원본을 여러 편으로 나누기</h2>
-  <div class="cos"><span class="co strong">Claude</span></div>
-  <p>라이브 방송처럼 긴 자료가 있으면 Claude에 통째로 넘기고 몇 편으로 나눌지까지 맡깁니다. 한 크리에이터는 라이브 한 편에서 롱폼 5편과 쇼츠 22편을 얻었습니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>라이브 녹취나 긴 원본 전체를 Claude에게 넘깁니다.</li><li>롱폼과 쇼츠를 각각 몇 편으로 나눌지 Claude가 정하게 합니다.</li><li>편마다 제목, 핵심 내용, 원본 속 해당 구간을 표로 받습니다.</li><li>만들 편을 골라 위 인터뷰 방식으로 대본을 다듬습니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>첨부한 라이브 방송 녹취 전체를 보고, 롱폼 영상과 쇼츠로 각각 몇 편을 만들면 좋을지 직접 정해 주세요. 편마다 제목, 핵심 내용, 녹취 속 해당 구간을 표로 정리해 주세요.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>이 크리에이터도 처음에는 영상 하나에 약 30시간이 걸렸습니다. 작업 흐름을 갖춘 뒤에야 속도가 붙었습니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g8">프롬프트·활용 요령 › 긴 자료 하나로 결과물 여러 개 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a></div>
-  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 인터뷰받아 대본 쓰기</button><button type="button" class="nav-b next" data-go="s5">사진으로 장면 영상 만들기 →</button></div>
-</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
-  <div class="dr-head"><span class="muted small">5 / 9 · 제작</span>
-    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s5">사진으로 장면 영상 만들기</h2>
-  <div class="cos"><span class="co strong">Kling 4.0 (Artlist)</span></div>
-  <p>Kling 4.0은 사진 최대 10장을 시작·중간·끝 프레임에 넣어 하나로 이어지는 영상을 만듭니다. 사진마다 영상을 따로 만들어 이어 붙이던 과정이 필요 없습니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>Artlist에서 <code>AI 비디오</code>로 이동합니다.</li><li><code>올 모델</code>을 열고 Kling의 <code>4.0</code>을 고른 뒤 <code>유즈 모델</code>을 누릅니다.</li><li><code>스타트 프레임</code>의 <code>업로드 이미지</code>로 첫 장면 사진을 넣습니다.</li><li><code>미들 프레임</code>에 가운데 장면 사진을 순서대로 넣고, 마지막 사진은 <code>엔드 프레임</code>에 넣습니다.</li><li>사진 순서에 맞춰 장면 흐름을 적은 프롬프트를 입력합니다.</li><li>비율과 영상 길이(최대 30초)를 정하고 <code>제너레이트</code>를 누릅니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>사진 6장을 이 순서대로 넣어 30초짜리 영상을 Kling 4.0으로 만들려고 해. 이 순서로 영상이 자연스럽게 이어질지 검토해 주고, 장면 흐름을 적은 영상 생성용 프롬프트를 제안해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>장면이 너무 많으면 파트를 나눠 생성하는 편이 낫습니다.</li><li>해상도는 현재 1080까지 되고, 배경 음악과 목소리도 함께 생성됩니다.</li><li>설명용 모션 그래픽은 HTML 코드로 영상을 만드는 Hyperframes 같은 도구를 쓴 사례가 있습니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g2">다른 AI 도구 › Kling 4.0으로 사진을 영상 한 편 만들기</a><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=yHriIFuq1d0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/yHriIFuq1d0/mqdefault.jpg" alt="" loading="lazy"><span><b>Kling 4.0으로 사진 여러 장을 한 편의 영상으로</b><span class="muted">온선 [온라인 선생님]  · 2026-10-23</span></span></a></div>
-  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 긴 원본을 여러 편으로 나누기</button><button type="button" class="nav-b next" data-go="s6">목소리·연기 지시 입히기 →</button></div>
-</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
-  <div class="dr-head"><span class="muted small">6 / 9 · 제작</span>
-    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s6">목소리·연기 지시 입히기</h2>
+  <h2 id="t-s3">음성 모델 비교해 고르기</h2>
   <div class="cos"><span class="co strong">ElevenLabs</span></div>
-  <p>알렉스의 파이프라인은 내레이션에 본인 목소리를 씁니다. 인물 대사처럼 다른 목소리가 필요하면 AI 음성을 쓰고, 대괄호 연기 지시로 말투를 정합니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>내레이션은 내 목소리로 녹음합니다.</li><li>인물 목소리가 필요하면 <code>ElevenLabs</code> 보이스 라이브러리에서 인물마다 목소리를 하나씩 고릅니다.</li><li>대사 앞 대괄호에 영어로 연기 지시를 씁니다. 감정 이름보다 말투로, 한 줄에 한 개에서 세 개까지만 붙입니다.</li><li>한 박자 쉴 곳에는 <code>beat</code>를 넣습니다.</li><li>음성 파일 이름을 대본의 장면 번호에 맞춥니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>[softly, hesitant] 저… 사실은요. [beat] [warm] 계속 당신을 기다리고 있었어요.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>대괄호 안의 말은 소리로 읽히지 않고 뒤에 오는 대사를 어떻게 말할지만 정합니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g4">다른 AI 도구 › AI 목소리에 연기 지시 붙이기</a><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <p>내레이션 목소리를 정하기 전에 같은 대사를 서로 다른 음성 모델로 만들어 비교합니다. 같은 대사로 들어야 모델 차이를 정확히 판단할 수 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude에게 한글·영어 테스트 대사를 짧게 만들어 달라고 요청합니다.</li><li>ElevenLabs에서 스피치 만들기 기능을 엽니다.</li><li>만든 한글·영어 대사를 함께 입력합니다.</li><li>모델을 <code>Eleven v4</code>로 두고 생성해 들어 봅니다.</li><li>같은 대사를 모델만 <code>Multilingual v2</code>로 바꿔 생성합니다.</li><li>억양·감정·발음 차이를 비교해 쓸 모델을 정합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>ElevenLabs 음성 모델 비교용으로 한글 대사 두 문장과 영어 대사 두 문장을 짧게 만들어 줘. 숫자와 감정이 드러나는 문장을 하나씩 넣어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>예전 방식: 한글 표현을 위해 주로 Multilingual v2를 썼습니다. 최근 영상에서는 Eleven v4가 감정 표현이 좋고 영어도 매우 자연스럽다고 평가했습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g2">다른 AI 도구 › ElevenLabs 음성 모델 비교하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← AI 인터뷰로 대본 쓰기</button><button type="button" class="nav-b next" data-go="s4">내 목소리 복제하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 9 · 목소리</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">내 목소리 복제하기</h2>
+  <div class="cos"><span class="co strong">ElevenLabs</span></div>
+  <p>영상을 내 목소리로 내고 싶다면 짧은 녹음만으로 AI 목소리를 만들 수 있습니다. 직접 읽은 녹음과 비교해 얼마나 비슷한지 확인한 뒤 쓸지 정합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>ElevenLabs에서 <code>Create Voice</code>를 선택합니다.</li><li><code>Instant Voice</code>를 고릅니다.</li><li>약 30~40초 동안 숫자와 여러 종류의 문장을 일정한 톤으로 녹음합니다.</li><li>만들어진 목소리로 테스트 대사를 생성해 들어 봅니다.</li><li>직접 읽은 녹음과 같은 대사로 비교합니다.</li></ol>
+  
+  <ul class="tips"><li>영상에서는 약 40초를 녹음했고 결과는 실제 목소리와 70% 정도 비슷했습니다.</li><li>더 비슷한 목소리가 필요하면 약 2시간 분량으로 학습시키는 전문 복제(PVC)를 씁니다. 계정당 하나만 만들 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g3">다른 AI 도구 › 즉석 복제로 내 목소리 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 음성 모델 비교해 고르기</button><button type="button" class="nav-b next" data-go="s5">감정 태그로 내레이션 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 9 · 목소리</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">감정 태그로 내레이션 만들기</h2>
+  <div class="cos"><span class="co strong">ElevenLabs</span></div>
+  <p>설정 값이 거의 없어 AI 목소리의 연기는 대부분 대사 안의 태그와 문장부호로 정합니다. 한 줄씩 나눠 태그를 붙이고 들어 보며 다듬습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>대본을 한 줄씩 나눠 적습니다.</li><li>대사 앞에 <code>[whispers]</code>, <code>[sarcastic]</code>, <code>[curious]</code> 같은 영어 연기 지시를 붙입니다.</li><li>감정 이름보다 말투 위주로, 한 줄에 한 개에서 세 개까지만 붙입니다.</li><li>쉬어야 할 곳에는 <code>[beat]</code>를 넣고 말줄임표·느낌표로 억양을 보강합니다.</li><li>생성해 들어 보고 직접 읽은 버전과 비교해 태그를 다듬습니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>[whispers] 오늘 회의는... 사실 취소됐어요. [beat] [curious] 그런데 왜 아무도 몰랐을까요? [sarcastic] 정말 대단한 공지네요!</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>대괄호 안의 말은 소리로 읽히지 않고, 뒤에 오는 대사를 어떻게 말할지만 정합니다.</li><li>태그를 너무 많이 붙이면 오히려 어색해집니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g4">다른 AI 도구 › 감정 태그로 AI 목소리 연기시키기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 내 목소리 복제하기</button><button type="button" class="nav-b next" data-go="s6">사진 이어 영상 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 9 · 영상</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">사진 이어 영상 만들기</h2>
+  <div class="cos"><span class="co strong">Artlist(Kling 4.0)</span></div>
+  <p>Kling 4.0은 사진을 시작·중간·끝 프레임에 넣어 하나의 영상으로 만들어 줍니다. 편집 프로그램 없이 여러 장면을 이은 영상을 만들 수 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Artlist에서 <code>AI 비디오</code>로 이동합니다.</li><li>모델 선택에서 <code>올 모델</code>을 열고 Kling의 <code>4.0</code>을 고른 뒤 <code>유즈 모델</code>을 누릅니다.</li><li><code>스타트 프레임</code>의 <code>업로드 이미지</code>로 첫 장면 사진을 넣습니다.</li><li><code>미들 프레임</code>에 중간 장면 사진을 순서대로 넣고, 마지막 사진은 <code>엔드 프레임</code>에 넣습니다.</li><li>사진 순서에 맞춰 장면 흐름을 적은 프롬프트를 입력합니다.</li><li>비율과 영상 길이(최대 30초)를 정하고 <code>제너레이트</code>를 누릅니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>유튜브 영상 도입부용 30초 영상을 Kling 4.0으로 만들려고 해. 첨부한 사진 순서대로 장면이 이어지게 하고 싶어. 이 순서로 영상이 자연스럽게 나올지 검토하고, 장면 흐름을 적은 영상 프롬프트를 써 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>예전 방식: 사진마다 영상을 따로 만들어 편집 프로그램에서 이어 붙였지만, 이제 한 번에 만들어집니다.</li><li>장면이 너무 많으면 파트를 나눠 생성하고, 강조할 장면은 앞뒤에 배치합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g5">다른 AI 도구 › Kling 4.0으로 사진을 영상 한 편 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=yHriIFuq1d0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/yHriIFuq1d0/mqdefault.jpg" alt="" loading="lazy"><span><b>Kling 4.0으로 사진 여러 장을 한 편의 영상으로</b><span class="muted">온선 [온라인 선생님]  · 2026-10-23</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 사진으로 장면 영상 만들기</button><button type="button" class="nav-b next" data-go="s7">다른 AI로 교차 검수하기 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 감정 태그로 내레이션 만들기</button><button type="button" class="nav-b next" data-go="s7">다른 AI로 교차 검수하기 →</button></div>
 </dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
-  <div class="dr-head"><span class="muted small">7 / 9 · 검수·공개</span>
+  <div class="dr-head"><span class="muted small">7 / 9 · 영상</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
   <h2 id="t-s7">다른 AI로 교차 검수하기</h2>
   <div class="cos"><span class="co strong">Codex</span></div>
-  <p>한 모델이 놓친 실수는 다른 모델이 잡기 쉽습니다. Claude가 만든 것은 Codex가, Codex가 만든 것은 Claude가 따로 검증하게 하고, 숫자와 사실은 사람이 최종 확인합니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>Claude가 만든 대본과 결과물을 Codex에 넘겨 검수를 맡깁니다.</li><li>Codex가 만든 결과물은 반대로 Claude가 검수하게 합니다.</li><li>사실 확인이 필요한 숫자·이름·날짜를 표로 뽑게 합니다.</li><li>표의 항목을 출처와 직접 맞춰 보고, 근거가 약한 문장은 고치거나 뺍니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 대본에서 사실 확인이 필요한 숫자, 이름, 날짜를 모두 찾아 표로 정리하고, 근거가 약한 문장은 &#x27;확인 필요&#x27;로 표시해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>잘 알려지지 않은 세부 사항이나 최근 사건은 AI가 틀리기 쉬운 영역입니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a><a class="refl" href="../guide/prompting.html#g2">프롬프트·활용 요령 › AI 답변을 검증하며 쓰기</a></div>
+  <p>한 모델이 만든 결과를 다른 AI가 검증하면 놓친 실수를 잡기 쉽습니다. 대본의 사실관계와 자막·영상 오류를 공개 전에 걸러 냅니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude가 만든 대본·자막은 Codex에, Codex가 만든 것은 Claude에 검증을 맡깁니다.</li><li>숫자·날짜·고유명사는 출처를 열어 직접 확인합니다.</li><li>영상을 처음부터 끝까지 보며 목소리와 자막이 맞는지 확인합니다.</li><li>지적된 부분을 고쳐 다시 만듭니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 대본에서 사실관계가 틀렸거나 근거가 약한 문장을 모두 찾아 줘. 숫자·날짜·고유명사는 따로 표시하고, 모르는 부분은 모른다고 말해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>깔끔한 화면이나 자신 있는 말투는 정확성의 증거가 아닙니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g10">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a><a class="refl" href="../guide/prompting.html#g2">프롬프트·활용 요령 › AI 답변 검증하며 쓰기</a></div>
   <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=cIMlBw2nqfA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/cIMlBw2nqfA/mqdefault.jpg" alt="" loading="lazy"><span><b>AI의 답을 얼마나 믿어도 될까?</b><span class="muted">Claude (공식) · 2026-08-11</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 목소리·연기 지시 입히기</button><button type="button" class="nav-b next" data-go="s8">썸네일·제목 정하고 올리기 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 사진 이어 영상 만들기</button><button type="button" class="nav-b next" data-go="s8">공개 방식 정하고 올리기 →</button></div>
 </dialog><dialog class="drawer" id="d-s8" aria-labelledby="t-s8">
-  <div class="dr-head"><span class="muted small">8 / 9 · 검수·공개</span>
+  <div class="dr-head"><span class="muted small">8 / 9 · 공개</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s8">썸네일·제목 정하고 올리기</h2>
+  <h2 id="t-s8">공개 방식 정하고 올리기</h2>
   <div class="cos"><span class="co strong">Claude</span></div>
-  <p>패키징 단계에서 썸네일과 제목을 만들고 업로드까지 맡길 수 있습니다. 공개는 되돌리기 어려운 지점이므로 올리기 전에 내가 확인하는 단계를 둡니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>대본을 넘기고 제목 후보와 썸네일 문구를 만들게 합니다.</li><li>영상 내용과 다르지 않은지 확인하고 하나를 고릅니다.</li><li>많이 생성하는 작업이면 작업 종류마다 크레딧 상한을 정해 둡니다.</li><li>업로드 전에 영상, 제목, 설명을 직접 확인한 뒤 공개합니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 대본으로 유튜브 제목 후보 5개와 썸네일 문구 3개를 제안해 줘. 클릭을 끌되 영상 내용과 다르지 않게 하고, 후보마다 노리는 시청자를 한 줄로 적어 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>알렉스의 크레딧 상한(쇼츠 500, 롱폼 1,500)은 예시일 뿐이니 내 요금제에 맞게 정하세요.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a><a class="refl" href="../guide/automation.html#g10">업무 자동화·에이전트 › 사람이 확인할 지점 설계하기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a></div>
+  <p>AI로 만든 영상은 어떤 방침으로 공개할지 먼저 정해야 시청자의 신뢰를 지킬 수 있습니다. 방침을 정한 뒤 제목과 썸네일 문구를 만들고 공개합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>네 가지 선택지(① AI로 다 하기 ② AI 콘텐츠는 다른 채널·쇼츠로 분리 ③ AI를 쓰되 사람의 몫 넣기 ④ AI 쓰지 않기) 중 내 방침을 고릅니다.</li><li>제목과 썸네일 문구 후보를 만들게 해 고릅니다.</li><li>AI를 썼다는 점을 시청자에게 솔직하게 알립니다.</li><li>공개 후 이탈 구간, 좋아요 많은 댓글을 보고 다음 기획을 고칩니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 대본으로 만든 영상의 유튜브 제목 후보 5개와 썸네일 문구 후보 5개를 만들어 줘. 과장된 표현은 빼고, 영상에서 실제로 다루는 내용만 써 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>영상에서는 사람의 가치가 완벽함보다 진실성에 있다고 봅니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/news.html#g6">발표·소식 › AI로 만든 콘텐츠 공개 방식 정하기</a><a class="refl" href="../guide/automation.html#g10">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a><a class="refl" href="../guide/automation.html#g9">업무 자동화·에이전트 › AI 인터뷰로 내 해석 더하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=5vj8k6Ub3ck" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/5vj8k6Ub3ck/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 만든 영상, 이 채널에 계속 올려도 될까요?</b><span class="muted">커리어해커 알렉스 · 2026-10-22</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s8"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 다른 AI로 교차 검수하기</button><button type="button" class="nav-b next" data-go="s9">반응 보고 규칙을 스킬로 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 다른 AI로 교차 검수하기</button><button type="button" class="nav-b next" data-go="s9">편집 규칙 스킬로 저장하기 →</button></div>
 </dialog><dialog class="drawer" id="d-s9" aria-labelledby="t-s9">
-  <div class="dr-head"><span class="muted small">9 / 9 · 검수·공개</span>
+  <div class="dr-head"><span class="muted small">9 / 9 · 공개</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s9">반응 보고 규칙을 스킬로</h2>
-  <div class="cos"><span class="co strong">Claude Code (Skills)</span></div>
-  <p>올린 뒤의 반응 데이터에서 다음 편을 고칠 단서를 얻습니다. 컷 편집·모션 그래픽처럼 반복되는 규칙은 스킬로 만들어 두면 다음부터는 원본만 넘겨도 흐름이 돌아갑니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>시청자가 빠져나간 구간을 확인하고 원인을 정리합니다.</li><li>좋아요가 많은 댓글에서 후속편 기획을 얻습니다.</li><li>반복해서 준 피드백과 컷 편집·모션 그래픽 규칙을 모읍니다.</li><li>모은 규칙을 스킬로 만들어 다음 작업에서 불러 씁니다.</li></ol>
-  
-  <ul class="tips"><li>알렉스는 본인이 말하는 구간에서 시청자가 빠져나간 것을 확인하고 수정했습니다.</li><li>규칙을 스킬로 만들어 두면 라이브 영상만 넘겨도 편수까지 Claude가 정해 작업이 돌아갑니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g9">업무 자동화·에이전트 › 내 피드백을 스킬로 쌓아 두기</a><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a></div>
+  <h2 id="t-s9">편집 규칙 스킬로 저장하기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>컷 편집·모션 그래픽처럼 매번 같은 규칙은 스킬로 저장해 두면 원본 하나만 넘겨도 여러 편이 만들어집니다. 크레딧이 크게 나가거나 되돌리기 어려운 지점에는 내 확인 단계를 둡니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>이번 편에서 반복된 컷 편집·자막·모션 규칙을 정리합니다.</li><li>정리한 규칙을 스킬로 저장해 달라고 요청합니다.</li><li>피드백할 때마다 스킬이나 규칙에 남겨 같은 지적을 반복하지 않게 합니다.</li><li>쇼츠·롱폼처럼 작업 종류별 크레딧 상한을 정합니다.</li><li>업로드처럼 되돌리기 어려운 단계는 실행 전에 내 확인을 받게 합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이번 영상에서 내가 고친 컷 편집 규칙(말 사이 긴 공백 자르기, 핵심 숫자는 자막 강조)을 스킬로 저장해서 다음 편부터 자동으로 적용해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>라이브 한 편을 넘겨 롱폼 5편·쇼츠 22편을 얻은 사례가 있습니다.</li><li>영상 속 크레딧 상한(쇼츠 500, 롱폼 1,500)은 그 사람의 값이니 내 요금제에 맞게 정합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g10">업무 자동화·에이전트 › 콘텐츠 자동화 파이프라인 만들기</a><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 사람 확인 지점 설계하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=9GtcbnmldcY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/9GtcbnmldcY/mqdefault.jpg" alt="" loading="lazy"><span><b>Shopify CTO가 말하는 AI 전략과 배벨 토큰 전략</b><span class="muted">Claude (공식) · 2026-10-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=eSP7PLTXNy8" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/eSP7PLTXNy8/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 루틴으로 먼저 일하는 에이전트 만들기</b><span class="muted">Claude (공식) · 2026-05-20</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s9"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s8">← 썸네일·제목 정하고 올리기</button><span></span></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s8">← 공개 방식 정하고 올리기</button><span></span></div>
 </dialog>
 </main>
 <footer class="foot">
