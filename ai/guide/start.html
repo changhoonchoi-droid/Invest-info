@@ -21,46 +21,53 @@
 <section class="hero">
   <div class="date"><a href="../index.html">가이드</a> › Claude 시작하기</div>
   <h1>Claude 시작하기</h1>
-  <p>Claude를 처음 쓰는 직장인이 AI가 답을 만드는 방식을 알고, 내 정보와 메모리 설정을 점검하고, 작업에 맞는 모델을 고르는 법까지 순서대로 익히는 페이지입니다. 앞의 입문 가이드 두 개로 기본 사용 습관을 잡고, 모델·effort 고르기와 데스크톱 앱 연결로 넘어가세요. 조직 관리자라면 마지막 가이드에서 팀 전체의 모델 기본값을 정할 수 있습니다.</p>
-  <div class="meta muted">가입·요금제·모델 선택·앱(웹/데스크톱/모바일) 기본 사용·설정 · 영상 5개 기반 · 2026-10-25 갱신</div>
+  <p>「Claude 시작하기」에서는 Claude가 답을 만드는 원리, 모델과 노력 수준(effort) 고르기, 메모리·학습 같은 개인정보 설정, 데스크톱 앱의 Cowork로 작업을 통째로 맡기는 방법까지 차례로 익힙니다. 처음이라면 답변 원리와 모델 선택부터 보고, 개인정보 설정을 점검한 다음 Cowork와 브라우저 연동으로 넘어가세요. 조직 관리자라면 마지막의 조직 기본값 설정 가이드도 함께 보세요.</p>
+  <div class="meta muted">가입·요금제·모델 선택·앱(웹/데스크톱/모바일) 기본 사용·설정 · 영상 6개 기반 · 2026-10-29 갱신</div>
 </section>
-<section class="brief"><h2>최근 바뀐 점</h2><ul><li>이미 유료로 쓰고 있는 Claude를 AI 웹 브라우저 어사이드(Aside)에 연결하면 어사이드 비용을 따로 내지 않고, AI에게 웹에서 클릭하고 입력하는 일을 시킬 수 있다고 소개되었습니다.</li></ul></section>
-<nav class="toc gtoc"><a href="#g1">AI가 답을 만드는 원리 알고 질문하기</a><a href="#g2">메모리·개인정보 설정 점검하기</a><a href="#g3">작업에 맞는 모델과 effort 고르기</a><a href="#g4">Claude를 어사이드 브라우저에 연결하기</a><a href="#g5">조직의 모델 기본값 정하기</a></nav>
+<section class="brief"><h2>최근 바뀐 점</h2><ul><li>AI 웹 브라우저 어사이드(Aside)에 이미 결제 중인 Claude나 GPT를 연결하면 별도 비용 없이 AI에게 클릭·입력 같은 브라우저 일을 시킬 수 있다는 입문 수업이 나왔습니다.</li><li>어사이드는 크롬의 로그인 정보를 가져올 수 있어서 메일이나 사내 사이트처럼 로그인이 필요한 곳에서도 AI에게 일을 시킬 수 있다고 소개됐습니다.</li></ul></section>
+<nav class="toc gtoc"><a href="#g1">Claude 답변 원리 알고 잘 묻기</a><a href="#g2">작업에 맞는 모델과 effort 고르기</a><a href="#g3">메모리·학습 설정 점검하기</a><a href="#g4">Cowork로 작업 통째로 맡기기</a><a href="#g5">어사이드 브라우저에 Claude 연결하기</a><a href="#g6">관리자: 조직 모델 기본값 정하기</a></nav>
 <div class="guides"><article id="g1" class="card guide">
-  <div class="card-head"><span class="tag">입문</span><h3>1. AI가 답을 만드는 원리 알고 질문하기</h3></div>
-  <p>Claude는 정해진 답을 꺼내 오지 않습니다. 내 메시지, 올린 문서, 메모리, 대화 기록 전체를 보고 다음 단어를 예측하면서 답을 새로 씁니다. 이 원리를 알면 맥락을 충분히 주는 법, 여러 버전을 받아 보는 법, 틀린 답을 걸러 내는 법을 익힐 수 있습니다.</p>
-  <ol class="steps"><li>질문할 때 목적, 대상, 원하는 형식 같은 배경을 메시지에 함께 적습니다.</li><li>참고할 자료가 있으면 문서를 대화에 올려 Claude가 함께 보게 합니다.</li><li>답이 마음에 들지 않으면 같은 내용을 다른 버전으로 다시 써 달라고 합니다.</li><li>최근 사건이나 최신 수치는 모델이 학습 시점(training cutoff) 이후 내용을 확실히 모를 수 있으니 출처를 따로 확인합니다.</li><li>다른 주제를 시작할 때는 새 대화를 엽니다. 새 대화는 이전 맥락 없이 빈 상태로 시작한다는 점을 기억합니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>아래 메일 초안을 정중한 버전, 간결한 버전, 친근한 버전 세 가지로 다시 써 줘. 받는 사람은 거래처 담당자야.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>AI는 틀린 내용도 자신 있게 말할 수 있으니 숫자·날짜·고유명사는 꼭 확인합니다.</li><li>답은 매번 새로 만들어지므로 같은 질문에도 결과가 조금씩 다를 수 있습니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=j1Vk6Y-23CY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/j1Vk6Y-23CY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI와 대화하면 실제로 무슨 일이 일어날까?</b><span class="muted">Claude (공식) · 2026-08-05</span></span></a></div>
+  <div class="card-head"><span class="tag">입문</span><h3>1. Claude 답변 원리 알고 잘 묻기</h3></div>
+  <p>Claude는 학습한 내용을 바탕으로 다음 단어를 예측해 답을 한 단어씩 씁니다. 이때 내 메시지뿐 아니라 업로드한 문서, 메모리, 대화 기록 전체를 함께 고려합니다. 이 원리를 알면 답을 여러 버전으로 받아 보고, 최신 사실은 따로 확인하는 습관을 들일 수 있습니다.</p>
+  <ol class="steps"><li>질문할 때 필요한 배경 자료(문서·이전 대화 내용)를 같은 대화 안에 함께 줍니다.</li><li>정해진 답을 꺼내는 게 아니라 새로 생성하는 방식이므로, 마음에 들지 않으면 다른 버전을 요청합니다.</li><li>주제가 바뀌면 새 대화를 시작합니다. 새 대화는 이전 맥락이 없는 빈 상태로 시작합니다.</li><li>최근 사건이나 수치처럼 학습 시점(training cutoff) 이후의 정보는 검색 도구를 쓰거나 직접 출처를 확인합니다.</li><li>답이 자신 있게 들려도 사실관계는 한 번 더 검증한 뒤 업무에 씁니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>아래 메일 초안을 더 정중한 버전, 더 간결한 버전, 더 친근한 버전으로 각각 써 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>AI는 틀린 내용도 자신 있게 말할 수 있으니 중요한 숫자·날짜·인용은 반드시 원문과 대조하세요.</li><li>Claude가 기억하는 범위는 지금 대화와 계정에 저장된 메모리까지입니다. 모델 자체가 지난 대화를 기억하는 것은 아닙니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=j1Vk6Y-23CY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/j1Vk6Y-23CY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI와 대화하면 실제로 무슨 일이 일어날까?</b><span class="muted">Claude (공식) · 2026-08-05</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ANDl5Tkru7g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ANDl5Tkru7g/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 나에 대해 무엇을 알고 있을까</b><span class="muted">Claude (공식) · 2026-08-13</span></span></a></div>
 </article><article id="g2" class="card guide">
-  <div class="card-head"><span class="tag">입문</span><h3>2. 메모리·개인정보 설정 점검하기</h3></div>
-  <p>Claude에 입력한 정보는 대화, 계정에 저장되는 메모리, 제공사 시스템, 향후 모델 학습의 네 곳으로 갈 수 있습니다. 업무에 쓰기 전에 설정을 한 번 점검하고 정보를 공유하는 습관을 잡아 두면 회사 정보와 개인정보를 지킬 수 있습니다.</p>
-  <ol class="steps"><li>계정이나 개인정보 설정에서 메모리, 대화 기록, 연결된 앱, 학습 사용 토글을 확인합니다.</li><li>저장된 메모리 가운데 틀리거나 필요 없는 내용을 고치거나 지웁니다.</li><li>메모리가 필요 없으면 꺼 둡니다.</li><li>정보를 입력하기 전에 그 정보가 이번 대화에만 쓰일지, 메모리에 저장될지, 학습에 쓰일 수 있을지 생각합니다.</li><li>메일 문구 다듬기처럼 실명이 필요 없는 작업은 이름을 [고객명] 같은 자리표시자로 바꿔 입력합니다.</li><li>기밀이나 규제 대상 데이터는 비즈니스·엔터프라이즈 플랜을 쓰고, 문서에서 데이터 처리 조건을 확인합니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>[고객명]님께 보낼 납품 일정 변경 안내 메일을 정중하게 다듬어 줘. 변경된 날짜는 [변경일]이야.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>메모리는 모델 안이 아니라 계정에 저장되며, 제품에 따라 처음부터 켜져 있을 수 있습니다.</li><li>조직이 Claude를 도입하면 모델 학습은 기본적으로 꺼져 있습니다.</li><li>정책은 제공사마다 다르니 쓰는 도구의 개인정보 처리방침과 데이터 보관 설정을 직접 확인합니다.</li><li>일상적인 용도에는 일반 소비자용 버전으로 충분한 경우가 많습니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=ANDl5Tkru7g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ANDl5Tkru7g/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 나에 대해 무엇을 알고 있을까</b><span class="muted">Claude (공식) · 2026-08-13</span></span></a></div>
-</article><article id="g3" class="card guide">
-  <div class="card-head"><span class="tag">중급</span><h3>3. 작업에 맞는 모델과 effort 고르기</h3></div>
-  <p>작업 비용은 모델, effort(추론 노력), 캐시 세 가지로 정해집니다. 더 똑똑한 모델은 적은 단계로 일을 끝내서 총비용이 오히려 낮아질 수 있습니다. 작업 종류에 맞게 모델과 effort를 고르면 품질과 비용을 함께 챙길 수 있습니다.</p>
-  <ol class="steps"><li>할 일이 심층 조사처럼 열린 작업인지, 요약이나 메일 초안처럼 반복 작업인지 먼저 나눕니다.</li><li>열린 작업은 Fable 5.1을 고르고 effort를 medium으로 시작합니다.</li><li>결과가 부족하면 effort를 한 단계씩 올려 다시 시켜 봅니다.</li><li>요약, 메일 초안 같은 반복 작업은 Opus나 Sonnet을 고릅니다.</li><li>긴 문서를 한 번에 다뤄야 하면 컨텍스트 윈도우가 큰 모델을 고려합니다. Sonnet 4.6은 100만 토큰 컨텍스트를 베타로 제공합니다.</li></ol>
+  <div class="card-head"><span class="tag">입문</span><h3>2. 작업에 맞는 모델과 effort 고르기</h3></div>
+  <p>Claude 작업의 비용과 품질은 모델, effort(추론 노력), 캐시 세 가지로 정해집니다. 더 똑똑한 모델은 적은 단계로 일을 끝내서 오히려 총비용이 낮아질 수 있습니다. 작업 성격에 맞춰 모델과 effort를 고르면 품질과 비용을 함께 챙길 수 있습니다.</p>
+  <ol class="steps"><li>먼저 할 일이 &#x27;열린 작업&#x27;(심층 조사, 긴 분석)인지 &#x27;반복 작업&#x27;(요약, 메일 초안)인지 구분합니다.</li><li>심층 조사처럼 열린 작업은 Fable 5.1 모델을 medium effort로 시작합니다.</li><li>결과가 부족하면 effort를 한 단계씩 올려 다시 시도합니다.</li><li>요약이나 메일 초안 같은 반복 작업은 Opus나 Sonnet 모델을 고릅니다.</li><li>같은 종류의 작업을 몇 번 해 본 뒤, 품질과 사용량을 비교해 자주 쓸 조합을 정합니다.</li></ol>
   
-  <ul class="tips"><li>Fable 5.1은 Fable 5와 토큰 단가가 같고 캐시 읽기 비용은 75% 낮아서, 일반 작업은 약 25%, 긴 에이전트 작업은 최대 약 45% 비용이 줄어든다고 합니다.</li><li>CursorBench에서 Fable 5.1 medium은 Fable 5 max와 비슷한 결과를 약 5분의 1 비용으로 냈습니다. 처음부터 최고 effort를 고를 필요는 없습니다.</li><li>예전 방식: 2026년 2월에는 Free·Pro 플랜의 claude.ai와 Cowork 기본 모델이 Sonnet 4.6으로 바뀌었습니다. 지금의 기본 모델은 앱에서 직접 확인하세요.</li></ul>
+  <ul class="tips"><li>Fable 5.1은 Fable 5와 토큰 단가가 같지만 캐시 읽기 비용이 75% 낮아, 일반 작업은 약 25%, 긴 에이전트 작업은 최대 약 45%까지 비용이 줄어든다고 소개됐습니다.</li><li>공식 영상의 비교에서 Fable 5.1 medium은 Fable 5 max와 비슷한 결과를 약 5분의 1 비용으로 냈습니다. 처음부터 최고 effort를 쓸 필요는 없습니다.</li><li>예전 방식: 2026년 2월에는 Sonnet 4.6이 Free·Pro 플랜의 claude.ai와 Cowork 기본 모델이었고, 100만 토큰 컨텍스트 윈도우를 베타로 제공했습니다.</li></ul>
   <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=71-8fJIGi34" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/71-8fJIGi34/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 모델과 노력 수준, 어떻게 고를까</b><span class="muted">Claude (공식) · 2026-09-18</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=2fHVTe7c--4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/2fHVTe7c--4/mqdefault.jpg" alt="" loading="lazy"><span><b>가장 강력한 Sonnet 모델, Claude Sonnet 4.6</b><span class="muted">Claude (공식) · 2026-02-17</span></span></a></div>
+</article><article id="g3" class="card guide">
+  <div class="card-head"><span class="tag">입문</span><h3>3. 메모리·학습 설정 점검하기</h3></div>
+  <p>Claude에 입력한 정보는 대화, 제품 메모리, 제공사 시스템, 향후 모델 학습의 네 곳으로 갈 수 있습니다. 메모리는 모델이 아니라 계정에 저장되는 정보라서 대부분 편집·삭제하거나 끌 수 있습니다. 업무 자료를 다루기 전에 한 번 점검해 두면 내 정보를 직접 통제할 수 있습니다.</p>
+  <ol class="steps"><li>계정 또는 개인정보 설정에서 메모리, 대화 기록, 연결된 앱, 학습 토글을 확인합니다.</li><li>저장된 메모리 중 틀리거나 필요 없는 내용을 고치거나 지웁니다.</li><li>메모리가 필요 없다면 메모리 기능을 끕니다.</li><li>정보를 입력하기 전에 그 내용이 대화, 저장 메모리, 향후 학습 중 어디에 쓰일지 생각합니다.</li><li>메일 문구 다듬기처럼 실명이 필요 없는 작업은 이름을 자리표시자로 바꿔 입력합니다.</li><li>기밀·규제 데이터를 다뤄야 한다면 비즈니스나 엔터프라이즈 플랜을 쓰고, 문서에서 데이터 처리 조건을 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>[고객명]님께 보내는 납기 지연 안내 메일을 정중하게 다듬어 줘. 납기는 [날짜]로 바뀌었어.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>제품에 따라 메모리가 기본으로 켜져 있을 수 있으니 처음 쓸 때 꼭 확인하세요.</li><li>조직이 Claude를 도입한 경우 모델 학습은 기본적으로 꺼져 있습니다.</li><li>정책은 제공사마다 다르므로 쓰는 도구의 개인정보 처리방침과 데이터 보관 설정을 직접 확인하세요.</li><li>일상적인 용도라면 일반 소비자용 버전으로도 충분한 경우가 많습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=ANDl5Tkru7g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ANDl5Tkru7g/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 나에 대해 무엇을 알고 있을까</b><span class="muted">Claude (공식) · 2026-08-13</span></span></a></div>
 </article><article id="g4" class="card guide">
-  <div class="card-head"><span class="tag">중급</span><h3>4. Claude를 어사이드 브라우저에 연결하기</h3></div>
-  <p>어사이드(Aside)는 크롬 같은 AI 웹 브라우저로, AI가 웹에서 클릭하고 입력하는 일을 대신 해 줍니다. Claude를 이미 유료로 쓰고 있다면 연결만 하면 되고 어사이드 비용은 따로 들지 않습니다. 메일 확인, 사내 사이트 조회 같은 반복적인 웹 작업을 말로 맡길 때 씁니다.</p>
-  <ol class="steps"><li>Claude 데스크톱 앱을 설치하고 로그인합니다.</li><li>어사이드 브라우저를 설치합니다.</li><li>어사이드에 지금 결제 중인 Claude(또는 GPT)를 연결합니다.</li><li>로그인이 필요한 사이트에서도 일을 시키려면 크롬의 로그인 정보를 어사이드로 가져옵니다.</li><li>메일 확인처럼 간단한 일을 말로 시켜 보고 결과를 확인합니다.</li></ol>
-  <div class="example"><div class="muted small">예시</div><pre>받은 메일함에서 오늘 온 메일을 확인해서 답장이 필요한 것만 골라 요약해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>어사이드는 한국인이 만들고 YC 투자를 받은 실리콘밸리 스타트업의 제품이라고 소개됩니다.</li><li>로그인 정보를 넘기면 AI가 그 계정으로 작업할 수 있으니, 처음에는 조회처럼 위험이 적은 일부터 맡깁니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=Hol_hJwEmog" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Hol_hJwEmog/mqdefault.jpg" alt="" loading="lazy"><span><b>왕초보를 위한 Codex·어사이드 설치와 연결</b><span class="muted">신영선의 AI탐구 · 2026-10-24</span></span></a></div>
+  <div class="card-head"><span class="tag">중급</span><h3>4. Cowork로 작업 통째로 맡기기</h3></div>
+  <p>Cowork는 단계별로 주고받는 대화 대신 작업 전체를 Claude에게 맡기는 기능입니다. 내 컴퓨터의 파일과 Google Drive·Notion·Slack 같은 서비스, Chrome 브라우저까지 다룰 수 있습니다. 파일 정리, 자료 모으기처럼 여러 단계가 필요한 일을 맡길 때 씁니다.</p>
+  <ol class="steps"><li>Pro, Max, Team, Enterprise 플랜인지 확인합니다. Cowork는 이 플랜에서 제공됩니다.</li><li>macOS 또는 Windows용 Claude 데스크톱 앱을 설치하고 로그인합니다.</li><li>Cowork에서 Claude가 작업할 폴더 접근을 허용합니다.</li><li>필요하면 Google Drive·Notion·Slack 같은 서비스를 커넥터로 연결합니다.</li><li>맡길 작업을 원하는 결과까지 구체적으로 설명합니다.</li><li>Claude가 먼저 제안하는 계획을 읽고, 맞으면 승인해 실행시킵니다.</li><li>파일을 바꾸기 전에 Claude가 권한을 요청하면 내용을 확인하고 허용합니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>다운로드 폴더를 정리해 줘. 파일 종류별로 하위 폴더를 만들어 나누고, 실행 전에 계획부터 보여 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>처음에는 다운로드 폴더처럼 망가져도 부담이 적은 폴더로 연습하세요.</li><li>브라우저 작업까지 맡기려면 Claude in Chrome을 먼저 설정해야 합니다.</li><li>계획 단계에서 범위가 넓다고 느껴지면 승인 전에 수정을 요청하세요.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=Lbml7IuGJYw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Lbml7IuGJYw/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Cowork 시작하기</b><span class="muted">Claude (공식) · 2026-05-08</span></span></a></div>
 </article><article id="g5" class="card guide">
-  <div class="card-head"><span class="tag">고급</span><h3>5. 조직의 모델 기본값 정하기</h3></div>
-  <p>조직 관리자는 구성원이 쓸 수 있는 모델, 모델별 최대 effort, 새 대화의 기본 모델을 정할 수 있습니다. 역할마다 따로 설정할 수 있어서 팀의 업무 성격에 맞게 비용과 품질을 조절할 수 있습니다.</p>
-  <ol class="steps"><li>모델 권한(entitlements)으로 사용자가 고를 수 있는 모델을 정합니다.</li><li>effort 상한(caps)으로 모델별 최대 effort를 정합니다.</li><li>기본값(defaults)으로 새 대화의 시작 모델과 effort를 정합니다.</li><li>긴 열린 작업이 많은 역할은 Fable 5.1을 기본으로 하고 effort 상한을 검토합니다.</li><li>반복 작업이 많은 역할은 Opus나 Sonnet을 기본으로 하고, Fable은 권한만 열어 둡니다.</li></ol>
+  <div class="card-head"><span class="tag">중급</span><h3>5. 어사이드 브라우저에 Claude 연결하기</h3></div>
+  <p>어사이드(Aside)는 크롬 같은 AI 웹 브라우저로, AI가 클릭하고 입력하는 일을 대신 해 줍니다. 이미 유료로 쓰는 Claude나 GPT를 연결하면 어사이드에는 따로 돈을 내지 않아도 된다고 소개됩니다. 메일 확인이나 사내 사이트 조회처럼 반복되는 브라우저 업무를 맡길 때 씁니다.</p>
+  <ol class="steps"><li>Claude 데스크톱 앱을 설치하고 로그인합니다.</li><li>어사이드(Aside) 브라우저를 설치합니다.</li><li>어사이드에 이미 결제 중인 Claude(또는 GPT)를 연결합니다.</li><li>크롬의 로그인 정보를 어사이드로 가져와 로그인이 필요한 사이트도 쓸 수 있게 합니다.</li><li>할 일을 말로 설명해 AI에게 시키고, AI가 화면에서 클릭·입력하는 과정을 지켜봅니다.</li><li>결과를 확인하고 필요하면 이어서 다음 지시를 내립니다.</li></ol>
+  <div class="example"><div class="muted small">예시</div><pre>받은 메일함에서 오늘 온 메일을 확인해서 답장이 필요한 것만 골라 정리해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>로그인 정보를 넘기는 만큼 회사 보안 규정에 맞는지 먼저 확인하세요.</li><li>영상 실습에서는 메일 확인, 사내 물류 사이트의 반품 확인, 인스타그램 계정 탐색을 시켜 봤습니다. 이런 조회 업무부터 시작하면 좋습니다.</li><li>어사이드는 한국인이 만든, YC 투자를 받은 실리콘밸리 스타트업의 제품으로 소개됩니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=Hol_hJwEmog" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Hol_hJwEmog/mqdefault.jpg" alt="" loading="lazy"><span><b>왕초보를 위한 Codex·어사이드 설치와 연결</b><span class="muted">신영선의 AI탐구 · 2026-10-24</span></span></a></div>
+</article><article id="g6" class="card guide">
+  <div class="card-head"><span class="tag">고급</span><h3>6. 관리자: 조직 모델 기본값 정하기</h3></div>
+  <p>Team·Enterprise 관리자는 조직원이 쓸 수 있는 모델, 모델별 최대 effort, 새 대화의 기본 모델을 정할 수 있습니다. 역할에 맞게 설정하면 품질은 지키면서 불필요한 사용량을 줄일 수 있습니다.</p>
+  <ol class="steps"><li>모델 권한(entitlements)으로 사용자가 고를 수 있는 모델을 정합니다.</li><li>effort 상한(caps)으로 모델별 최대 effort를 정합니다.</li><li>기본값(defaults)으로 새 대화가 시작할 모델과 effort를 정합니다.</li><li>긴 열린 작업이 많은 역할은 Fable 5.1을 기본으로 하고 effort 상한을 검토합니다.</li><li>반복 작업이 많은 역할은 Opus나 Sonnet을 기본으로 하고, Fable은 권한만 열어 둡니다.</li></ol>
   
-  <ul class="tips"><li>역할별로 따로 설정할 수 있습니다.</li><li>작업 비용은 모델, effort, 캐시 세 가지로 정해지니 기본값을 바꾼 뒤 사용량을 함께 살펴봅니다.</li></ul>
-  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=71-8fJIGi34" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/71-8fJIGi34/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 모델과 노력 수준, 어떻게 고를까</b><span class="muted">Claude (공식) · 2026-09-18</span></span></a></div>
+  <ul class="tips"><li>권한·상한·기본값은 역할별로 따로 설정할 수 있습니다.</li><li>조직 도입 시 모델 학습은 기본적으로 꺼져 있다는 점도 구성원에게 함께 안내하면 좋습니다.</li></ul>
+  <div class="muted small">참고 영상</div><div class="vchips"><a class="vchip" href="https://www.youtube.com/watch?v=71-8fJIGi34" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/71-8fJIGi34/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 모델과 노력 수준, 어떻게 고를까</b><span class="muted">Claude (공식) · 2026-09-18</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ANDl5Tkru7g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ANDl5Tkru7g/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 나에 대해 무엇을 알고 있을까</b><span class="muted">Claude (공식) · 2026-08-13</span></span></a></div>
 </article></div>
 <p><a href="../videos.html?cat=start">이 분야 영상 전체 보기 →</a></p>
 </main>
