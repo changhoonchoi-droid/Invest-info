@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>반복 보고 업무 자동화하기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="반복 보고 업무 자동화하기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="https://changhoonchoi-droid.github.io/">🏠 홈</a><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › 반복 보고 업무 자동화하기</div>
+  <h1>반복 보고 업무 자동화하기</h1>
+  <p>매주 같은 방식으로 하는 보고 업무 하나를 골라 Cowork 예약 작업으로 정해진 시각에 자동 실행되게 만듭니다. 보고 형식은 스킬로 고정하고, 메일 발송처럼 되돌리기 어려운 일은 승인을 받게 설계합니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 매주 정해진 시각에 주간 보고서와 메일 초안을 알아서 만들어 두는 예약 작업이 남습니다.</span><span><b>난이도</b> 입문</span>
+    <span><b>시간</b> 처음 1~2시간 + 2~3주 지켜보며 다듬기</span><span><b>단계</b> 7개</span></div>
+  <div class="cos"><span class="co">Cowork</span><span class="co">커넥터</span><span class="co">Skills</span><span class="co">Claude 모바일 앱</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-11-02 갱신</p>
+<div class="flow" style="--cols:3"><div class="phase"><div class="phase-h"><span>1</span>고르기</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">자동화할 업무 하나 고르기</span><span class="ns">가장 소모적인 반복 업무 하나만 고르기</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>연결·시험</div>
+  <div class="nodes"><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">업무 도구 커넥터 연결하기</span><span class="ns">Gmail·캘린더·드라이브를 Claude에 연결</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">한 번 직접 맡겨 보기</span><span class="ns">예약 전에 같은 일을 한 번 시켜 보기</span>
+  <span class="ntool">Cowork</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">보고 형식을 스킬로 저장하기</span><span class="ns">매번 같은 품질이 나오게 매뉴얼 저장</span>
+  <span class="ntool">Cowork</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>예약·운영</div>
+  <div class="nodes"><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">예약 작업으로 등록하기</span><span class="ns">요일·시각을 정해 자동 실행 걸기</span>
+  <span class="ntool">Cowork</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">확인 지점과 승인 규칙 정하기</span><span class="ns">메일 발송 등 되돌리기 어려운 일은 승인</span>
+  <span class="ntool">Cowork</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="num">7</span>
+  <span class="nbody"><span class="nt">결과 점검하고 스킬 다듬기</span><span class="ns">처음 몇 주는 결과 보고 규칙을 보태기</span>
+  <span class="ntool">Cowork</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 7 · 고르기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">자동화할 업무 하나 고르기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>처음부터 여러 업무를 자동화하면 실패하기 쉽습니다. 팀에서 가장 번잡한 절차 하나를 골라 지금도 필요한지, AI로 줄일 수 있는지부터 점검합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>팀에서 가장 번잡하거나 모두가 꺼리는 반복 업무 하나를 고릅니다.</li><li>그 절차가 원래 어떤 목적으로 생겼는지 적어 봅니다.</li><li>지금도 그 목적에 도움이 되는지 확인하고, 필요 없으면 없앱니다.</li><li>필요하지만 부담이 크면 Claude가 도울 수 있는 부분을 표시합니다.</li><li>줄인 뒤 결과를 누가 확인할지 정합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>우리 팀에서 매주 시간이 가장 많이 드는 일은 &#x27;월요일 아침에 지난주 실적 메일과 시트를 모아 팀장 보고서를 쓰는 일&#x27;입니다. 이 절차가 지금도 필요한지, Claude로 줄일 수 있는 부분은 어디인지, 줄이면 무엇을 따로 검증해야 하는지 점검해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>작은 반복 업무부터 시작하세요. 30분 걸리던 일이 30초로 줄어든 사례가 있습니다.</li><li>코딩 지식보다 해결할 문제를 명확하게 설명하는 것이 중요합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g1">업무 자동화·에이전트 › 자동화할 업무 하나 고르기</a><a class="refl" href="../guide/news.html#g9">발표·소식 › 소모적인 업무 절차 AI로 줄이기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=IA5LWIGqnyM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/IA5LWIGqnyM/mqdefault.jpg" alt="" loading="lazy"><span><b>AI 네이티브 엔지니어링 조직 운영하기</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=igO8iyca2_g" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/igO8iyca2_g/mqdefault.jpg" alt="" loading="lazy"><span><b>AI 네이티브 엔지니어링 조직 운영하기</b><span class="muted">Claude (공식) · 2026-05-08</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Jp83_JMK74o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Jp83_JMK74o/mqdefault.jpg" alt="" loading="lazy"><span><b>Anthropic 마케팅팀의 Claude Code 활용법</b><span class="muted">Claude (공식) · 2026-01-27</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">업무 도구 커넥터 연결하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 7 · 연결·시험</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">업무 도구 커넥터 연결하기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>보고서 재료가 메일·캘린더·드라이브에 있다면 커넥터로 연결해 Claude가 직접 읽게 합니다. 연결해 둔 커넥터는 예약 작업에서도 그대로 쓰입니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude 입력창의 <code>플러스</code> 버튼을 누릅니다.</li><li><code>커넥터</code> → <code>커넥터 추가</code> → <code>커넥터 둘러보기</code>로 들어갑니다.</li><li>Gmail, 구글 캘린더, 구글 드라이브 등 필요한 서비스를 검색합니다.</li><li>서비스 옆 <code>플러스</code> 버튼을 누르고 해당 계정으로 로그인해 인증합니다.</li><li>연결한 도구의 자료로 간단한 요약을 요청해 제대로 읽히는지 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>구글 드라이브의 &#x27;주간실적&#x27; 폴더에서 가장 최근 시트를 찾아 지난주 매출 합계와 전주 대비 변화를 알려 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>제휴 커넥터 전체 목록은 claude.com/connectors에서 볼 수 있습니다.</li><li>회사 계정을 연결하기 전에 사내 보안 규정을 확인하세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/connect.html#g1">MCP·커넥터 연결 › Claude에 커넥터 연결하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=xzLs8oiy8F0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/xzLs8oiy8F0/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 코워크 7월 업데이트와 실습 3가지</b><span class="muted">이동훈의 루트AI · 2026-08-01</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=gRLMG5YNNTo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/gRLMG5YNNTo/mqdefault.jpg" alt="" loading="lazy"><span><b>PowerPoint에서 Claude로 자료 연동·분석하기</b><span class="muted">Claude (공식) · 2026-04-16</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 자동화할 업무 하나 고르기</button><button type="button" class="nav-b next" data-go="s3">한 번 직접 맡겨 보기 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 7 · 연결·시험</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">한 번 직접 맡겨 보기</h2>
+  <div class="cos"><span class="co strong">Cowork</span></div>
+  <p>예약부터 걸면 결과가 이상해도 원인을 찾기 어렵습니다. 같은 일을 한 번 직접 맡겨 결과 형식과 빠진 자료를 확인한 뒤 예약합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude 데스크톱 앱에서 결과를 저장할 폴더를 추가하고 <code>항상 허용</code>을 고릅니다.</li><li>반복할 일을 그대로 요청하고, 메일은 보내지 말고 초안으로 남기라고 덧붙입니다.</li><li>Claude가 제안한 계획을 읽고 빠진 자료 출처가 있으면 추가로 지시합니다.</li><li>결과 보고서를 열어 형식과 숫자가 맞는지 확인합니다.</li><li>마음에 들지 않는 점을 메모해 둡니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>지난 한 주 동안 받은 메일과 구글 드라이브의 실적 시트를 보고 핵심 요약, 진행 상황, 다음 주 할 일, 리스크 순서로 주간 보고서를 만들어 줘. 팀장에게 보낼 메일은 보내지 말고 초안으로만 남겨 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>작업 도중 지시를 더해도 처음부터 다시 하지 않고 방향을 바꿔 이어 갑니다.</li><li>원본 보존은 반드시 프롬프트에 적어 둡니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g2">업무 자동화·에이전트 › Cowork에 폴더 작업 맡기기</a><a class="refl" href="../guide/automation.html#g3">업무 자동화·에이전트 › 여러 파일을 합쳐 보고서 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=fjMceSbXTRM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/fjMceSbXTRM/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 채팅·코워크·코드·디자인 한 번에 정리</b><span class="muted">이동훈의 루트AI · 2026-08-27</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=xzLs8oiy8F0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/xzLs8oiy8F0/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 코워크 7월 업데이트와 실습 3가지</b><span class="muted">이동훈의 루트AI · 2026-08-01</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=tYOI-WoLS_o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tYOI-WoLS_o/mqdefault.jpg" alt="" loading="lazy"><span><b>Cowork로 업무 위임하고 예약 작업 만들기</b><span class="muted">Claude (공식) · 2026-06-21</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 업무 도구 커넥터 연결하기</button><button type="button" class="nav-b next" data-go="s4">보고 형식을 스킬로 저장하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 7 · 연결·시험</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">보고 형식을 스킬로 저장하기</h2>
+  <div class="cos"><span class="co strong">Cowork</span></div>
+  <p>스킬은 Claude에게 업무 매뉴얼을 저장해 두는 기능입니다. 보고 순서·형식·저장 위치를 스킬로 만들어 두면 예약 실행 때마다 같은 품질이 나옵니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>원하는 결과와 순서를 설명해 스킬 초안을 만들어 달라고 합니다.</li><li>필요한 커넥터와 결과를 저장할 폴더를 스킬에 지정합니다.</li><li>테스트용 자료로 스킬을 한 번 실행해 결과를 봅니다.</li><li>앞 단계에서 메모한 아쉬운 점을 규칙으로 덧붙입니다.</li><li><code>/</code>를 입력해 저장한 스킬이 목록에 보이는지 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>방금 만든 주간 보고서 방식을 &#x27;주간 보고&#x27; 스킬로 저장해 줘. 순서는 핵심 요약 3줄, 진행 상황 표, 다음 주 할 일, 리스크 3개 이내로 하고, 결과는 &#x27;주간보고&#x27; 폴더에 날짜를 넣어 저장하게 해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>피드백을 줄 때마다 그 내용을 스킬에 남기면 같은 지적을 반복하지 않아도 됩니다.</li><li>스킬 저장 전후로 같은 프롬프트를 실행해 결과를 비교해 보세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g8">업무 자동화·에이전트 › 반복 업무를 스킬로 저장하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=0me1yQSI4uM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/0me1yQSI4uM/mqdefault.jpg" alt="" loading="lazy"><span><b>숏폼 자동화: Shorts를 시리즈와 스킬로 만들기</b><span class="muted">커리어해커 알렉스 · 2026-10-27</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=iY-px5zjyBc" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/iY-px5zjyBc/mqdefault.jpg" alt="" loading="lazy"><span><b>제미나이 스파크 사용법: 태스크·스케줄·스킬</b><span class="muted">이동훈의 루트AI · 2026-09-09</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=lsufr1i6ACY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/lsufr1i6ACY/mqdefault.jpg" alt="" loading="lazy"><span><b>마케팅 운영 주간 리포트를 Cowork로 자동화</b><span class="muted">Claude (공식) · 2026-05-18</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 한 번 직접 맡겨 보기</button><button type="button" class="nav-b next" data-go="s5">예약 작업으로 등록하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 7 · 예약·운영</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">예약 작업으로 등록하기</h2>
+  <div class="cos"><span class="co strong">Cowork</span></div>
+  <p>한 번 해 보고 마음에 든 작업을 정해진 주기로 예약합니다. 7월 업데이트 이후 예약 작업은 컴퓨터가 꺼져 있어도 클라우드에서 실행됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>반복할 일과 주기를 자연어로 설명합니다.</li><li>Claude가 만든 예약 작업 프롬프트 초안을 검토합니다.</li><li>필요하면 주기를 매시간·매일·평일·수동 중에서 바꿉니다.</li><li>내용이 맞으면 제안을 수락합니다.</li><li>왼쪽 사이드바의 예약(scheduled) 페이지에 작업이 추가됐는지 확인합니다.</li><li>예약 페이지에서 바로 한 번 실행해 결과를 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>매주 월요일 오전 8시에 &#x27;주간 보고&#x27; 스킬로 지난주 보고서를 만들어 구글 드라이브 &#x27;주간보고&#x27; 폴더에 저장하고, 팀장에게 보낼 요약 메일은 보내지 말고 초안으로만 남겨 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>예약 작업은 실행할 때마다 새 세션으로 시작해 그 시점의 최신 파일과 도구 상태를 기준으로 일합니다.</li><li>예전 방식: 6월까지는 컴퓨터와 데스크톱 앱이 켜져 있어야 실행됐습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g5">업무 자동화·에이전트 › Cowork 예약 작업으로 반복하기</a><a class="refl" href="../guide/connect.html#g2">MCP·커넥터 연결 › 코워크로 예약 작업 걸기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=xzLs8oiy8F0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/xzLs8oiy8F0/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 코워크 7월 업데이트와 실습 3가지</b><span class="muted">이동훈의 루트AI · 2026-08-01</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V-OOEC5RNaQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V-OOEC5RNaQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude for Teachers로 수업 계획 세우기</b><span class="muted">Claude (공식) · 2026-07-14</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=tYOI-WoLS_o" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tYOI-WoLS_o/mqdefault.jpg" alt="" loading="lazy"><span><b>Cowork로 업무 위임하고 예약 작업 만들기</b><span class="muted">Claude (공식) · 2026-06-21</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=lsufr1i6ACY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/lsufr1i6ACY/mqdefault.jpg" alt="" loading="lazy"><span><b>마케팅 운영 주간 리포트를 Cowork로 자동화</b><span class="muted">Claude (공식) · 2026-05-18</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 보고 형식을 스킬로 저장하기</button><button type="button" class="nav-b next" data-go="s6">확인 지점과 승인 규칙 정하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 7 · 예약·운영</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">확인 지점과 승인 규칙 정하기</h2>
+  <div class="cos"><span class="co strong">Cowork</span></div>
+  <p>자동화가 늘수록 매번 승인하는 것이 병목이 됩니다. 되돌리기 쉬운 일은 맡기고, 바깥으로 나가거나 되돌리기 어려운 일만 내 확인을 받게 미리 정합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>보고서 작성·저장처럼 되돌리기 쉬운 일은 알아서 하게 둡니다.</li><li>메일 발송·파일 삭제·공유 권한 변경은 진행 전에 승인을 받게 정합니다.</li><li>메일은 초안을 만든 뒤 승인을 받고 보내도록 프롬프트와 스킬에 적습니다.</li><li>승인 요청이 휴대폰 앱으로도 오는지 확인합니다.</li><li>피드백을 줄 때마다 규칙으로 남겨 다음부터 묻지 않게 합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>보고서를 만들고 저장하는 것까지는 알아서 해. 메일 발송, 파일 삭제, 공유 권한 변경은 반드시 내 승인을 받은 뒤에 해. 이 규칙을 &#x27;주간 보고&#x27; 스킬에도 추가해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>승인이 필요한 단계는 모바일 앱으로도 요청이 와서 이동 중에 처리할 수 있습니다.</li><li>처음에는 결과를 직접 확인하고 신뢰가 쌓이면 권한을 넓힙니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 사람이 확인할 지점 정하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OdXGvxYua_k" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OdXGvxYua_k/mqdefault.jpg" alt="" loading="lazy"><span><b>영상 30시간 작업을 Claude로 자동화한 방법</b><span class="muted">커리어해커 알렉스 · 2026-10-30</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Fb-68zqcSVs" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Fb-68zqcSVs/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Duet 소개</b><span class="muted">Claude (공식) · 2026-10-21</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=9GtcbnmldcY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/9GtcbnmldcY/mqdefault.jpg" alt="" loading="lazy"><span><b>Shopify CTO가 말하는 AI 전략과 배벨 토큰 전략</b><span class="muted">Claude (공식) · 2026-10-08</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 예약 작업으로 등록하기</button><button type="button" class="nav-b next" data-go="s7">결과 점검하고 스킬 다듬기 →</button></div>
+</dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
+  <div class="dr-head"><span class="muted small">7 / 7 · 예약·운영</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s7">결과 점검하고 스킬 다듬기</h2>
+  <div class="cos"><span class="co strong">Cowork</span></div>
+  <p>예약 작업은 처음 몇 번의 결과를 보며 다듬어야 믿고 맡길 수 있습니다. 숫자를 원본과 대조하고, 아쉬운 점은 스킬에 반영합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>예약 페이지에서 지난 실행 기록과 결과 파일을 엽니다.</li><li>보고서의 숫자를 원본 시트와 대조합니다.</li><li>아쉬운 점을 한 줄 규칙으로 정리해 스킬에 반영해 달라고 요청합니다.</li><li>필요하면 예약 페이지에서 지시문이나 주기를 고칩니다.</li><li>결과가 안정되면 맡기는 범위를 조금씩 넓힙니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이번 주 보고서에서 리스크 항목이 너무 길었어. 앞으로 리스크는 3개 이내, 한 줄씩만 쓰도록 &#x27;주간 보고&#x27; 스킬에 반영해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>절차는 점검하지 않으면 계속 쌓이므로 몇 달에 한 번 이 보고가 아직 필요한지도 다시 봅니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g5">업무 자동화·에이전트 › Cowork 예약 작업으로 반복하기</a><a class="refl" href="../guide/automation.html#g8">업무 자동화·에이전트 › 반복 업무를 스킬로 저장하기</a><a class="refl" href="../guide/prompting.html#g3">프롬프트·활용 요령 › AI 답변 검증해 환각 거르기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=xzLs8oiy8F0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/xzLs8oiy8F0/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 코워크 7월 업데이트와 실습 3가지</b><span class="muted">이동훈의 루트AI · 2026-08-01</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=lsufr1i6ACY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/lsufr1i6ACY/mqdefault.jpg" alt="" loading="lazy"><span><b>마케팅 운영 주간 리포트를 Cowork로 자동화</b><span class="muted">Claude (공식) · 2026-05-18</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 확인 지점과 승인 규칙 정하기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
