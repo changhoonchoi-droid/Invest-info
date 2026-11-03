@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유튜브 영상 만들기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="유튜브 영상 만들기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="https://changhoonchoi-droid.github.io/">🏠 홈</a><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › 유튜브 영상 만들기</div>
+  <h1>유튜브 영상 만들기</h1>
+  <p>Claude로 대본을 컷 표로 쓰고, ElevenLabs 내레이션과 Kling 4.0 영상 클립을 만들어 한 편의 유튜브 영상으로 엮습니다. 포맷이 정해지면 시리즈별 스킬로 다음 편을 빠르게 만듭니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 사실 확인을 마친 대본, AI 내레이션과 영상 클립으로 완성한 유튜브 영상 1편, 그리고 같은 포맷을 반복하는 시리즈 스킬</span><span><b>난이도</b> 중급</span>
+    <span><b>시간</b> 처음 하루(6~8시간)</span><span><b>단계</b> 10개</span></div>
+  <div class="cos"><span class="co">Claude 앱</span><span class="co">ElevenLabs</span><span class="co">Kling 4.0</span><span class="co">영상 편집 프로그램</span><span class="co">Claude Code</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-11-03 갱신</p>
+<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>기획</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">채널용 프로젝트 만들기</span><span class="ns">시청자·말투·분량을 지침으로 저장</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">대본을 컷 표로 쓰기</span><span class="ns">한 줄이 한 컷인 표로 대본 정리</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>소재</div>
+  <div class="nodes"><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">내레이션 목소리 고르기</span><span class="ns">같은 대사로 ElevenLabs 모델 비교</span>
+  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">감정 태그로 내레이션 만들기</span><span class="ns">대괄호 태그로 말투와 쉼을 연출</span>
+  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">사진으로 영상 클립 만들기</span><span class="ns">Kling 4.0에 사진을 순서대로 넣어 생성</span>
+  <span class="ntool">Kling 4.0</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>편집·게시</div>
+  <div class="nodes"><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">컷 맞추고 고칠 컷만 다시 만들기</span><span class="ns">내레이션 기준으로 자르고 싱크 검사</span>
+  <span class="ntool">영상 편집 프로그램</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="num">7</span>
+  <span class="nbody"><span class="nt">올리기 전 사실·출처 확인하기</span><span class="ns">수치·인용은 출처를 열어 다시 확인</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node sup" type="button" data-id="s8" aria-haspopup="dialog">
+  <span class="num">8</span>
+  <span class="nbody"><span class="nt">유튜브에 올리기</span><span class="ns">제목·설명을 다듬고 AI 사용 여부 표시</span>
+  <span class="ntool">YouTube Studio</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>자동화</div>
+  <div class="nodes"><button class="node" type="button" data-id="s9" aria-haspopup="dialog">
+  <span class="num">9</span>
+  <span class="nbody"><span class="nt">시리즈를 스킬로 만들기</span><span class="ns">포맷이 같은 영상은 시리즈별 스킬로</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s10" aria-haspopup="dialog">
+  <span class="num">10</span>
+  <span class="nbody"><span class="nt">확인 지점과 크레딧 상한 정하기</span><span class="ns">되돌리기 어려운 단계는 내가 먼저 확인</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 10 · 기획</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">채널용 프로젝트 만들기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>영상마다 시청자와 말투를 다시 설명하면 대본 톤이 들쭉날쭉해집니다. 채널 전용 프로젝트에 지침과 참고 자료를 넣어 두면 모든 대본이 같은 톤으로 나옵니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude에서 채널 이름으로 프로젝트를 새로 만듭니다.</li><li>커스텀 지침 칸에 대상 시청자, 말투, 분량, 형식을 적습니다.</li><li><code>지침 저장</code>을 눌러 저장합니다.</li><li>채널 소개, 잘된 지난 대본 같은 참고 자료를 업로드합니다.</li><li>프로젝트 안에서 새 대화를 열어 영상 주제를 의논합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>대상: 40대 직장인 유튜브 시청자. 톤: 쉽고 친근한 존댓말, 전문 용어는 한 줄 풀이를 붙일 것. 형식: 소제목 3~5개, 각 소제목 아래 핵심 요약 한 줄 먼저. 업로드한 자료에 없는 수치는 지어내지 말 것.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>쇼츠용·롱폼용처럼 형식별로 프로젝트를 나눠도 좋습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/projects.html#g2">프로젝트·메모리·지식 › 프로젝트 만들고 지침 저장하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ewgbQRow1T4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ewgbQRow1T4/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 핵심 기능 총정리 (2026년 5월판)</b><span class="muted">이동훈의 루트AI · 2026-05-01</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">대본을 컷 표로 쓰기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 10 · 기획</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">대본을 컷 표로 쓰기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>영상 모델과 편집 단계는 컷 단위로 움직이므로 대본도 처음부터 컷 표로 씁니다. 컷 번호를 파일 이름과 맞추면 이후 음성·영상 파일 관리가 쉬워집니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>작업 폴더를 만들고 단계가 끝날 때마다 결과 파일을 남기기로 정합니다.</li><li>주제와 핵심 내용을 알려 주고 대본을 표 하나로 써 달라고 요청합니다.</li><li>칸은 컷 번호, 화면 설명, 내레이션, 길이로 정합니다.</li><li>한 클립은 대사 세 줄, 10초 이하로 묶게 합니다.</li><li>확인이 필요한 수치는 따로 표시하게 합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>&#x27;직장인 연말정산 꼭 챙길 3가지&#x27;를 주제로 60초 쇼츠 대본을 써 줘. 한 줄이 한 컷인 표로, 칸은 컷 번호·화면 설명·내레이션·길이(초)로 해 줘. 컷 하나는 10초를 넘지 않게 하고, 확인이 필요한 수치는 따로 표시해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>16초까지 묶었을 때는 대사 타이밍이 줄마다 최대 1.5초 흔들렸습니다.</li><li>인물이 나오면 인물 묘사 문장을 정해 두고 모든 영상 프롬프트에 그대로 붙입니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g12">다른 AI 도구 › AI로 숏드라마 1화 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 채널용 프로젝트 만들기</button><button type="button" class="nav-b next" data-go="s3">내레이션 목소리 고르기 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 10 · 소재</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">내레이션 목소리 고르기</h2>
+  <div class="cos"><span class="co strong">ElevenLabs</span></div>
+  <p>같은 대사를 여러 음성 모델로 들어 보면 내 채널에 맞는 목소리를 빨리 고를 수 있습니다. 내 목소리를 쓰고 싶다면 즉석 복제도 시험해 봅니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude에게 한글·영어 테스트 대사를 짧게 만들어 달라고 요청합니다.</li><li>ElevenLabs에서 스피치 만들기 기능을 엽니다.</li><li><code>Eleven v4</code>로 생성해 들어 봅니다.</li><li>같은 대사를 <code>Multilingual v2</code>로 생성해 억양·감정·발음을 비교합니다.</li><li>내 목소리가 필요하면 <code>Create Voice</code> → <code>Instant Voice</code>에서 30~40초를 일정한 톤으로 녹음해 복제합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>ElevenLabs 음성 모델을 비교하려고 해. 내 채널 톤(차분하고 친근한 경제 설명)에 맞는 15초 분량 테스트 대사를 한글과 영어로 하나씩 써 줘. 숫자와 외래어를 섞어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>영상에서는 <code>Eleven v4</code>의 감정 표현과 영어가 특히 자연스럽다고 평가했습니다.</li><li>즉석 복제는 영상에서 70% 정도 비슷했고, 더 닮게 하려면 약 2시간 음원으로 학습하는 전문 복제(PVC)를 씁니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g4">다른 AI 도구 › ElevenLabs 음성 모델 비교하기</a><a class="refl" href="../guide/other-ai.html#g6">다른 AI 도구 › ElevenLabs로 내 목소리 복제하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 대본을 컷 표로 쓰기</button><button type="button" class="nav-b next" data-go="s4">감정 태그로 내레이션 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 10 · 소재</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">감정 태그로 내레이션 만들기</h2>
+  <div class="cos"><span class="co strong">ElevenLabs</span></div>
+  <p>ElevenLabs에는 감정 설정값이 거의 없어서 대사 안에 태그와 문장부호를 넣어 말투를 조절합니다. 컷 번호와 같은 파일 이름으로 저장하면 편집이 쉬워집니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>대사 앞에 대괄호로 연기 지시를 영어로 씁니다 (예: <code>[whispers]</code>, <code>[curious]</code>).</li><li>감정 이름보다 말투로 쓰고, 한 줄에 한 개에서 세 개까지만 붙입니다.</li><li><code>[beat]</code>로 한 박자 쉬는 구간을 만듭니다.</li><li>말줄임표와 느낌표로 억양을 보강합니다.</li><li>생성해 들어 보고 태그를 다듬습니다.</li><li>컷마다 대사 파일을 만들고 파일 이름을 컷 번호와 맞춥니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>[whispers] 이건 우리끼리만 아는 얘긴데요... [beat] [curious] 혹시 벌써 들으셨어요?</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>대괄호 안의 말은 소리로 읽히지 않고 뒤 대사를 어떻게 말할지만 정합니다.</li><li>잘 먹히는 태그를 모르겠으면 Claude에게 감정 표현 프롬프트 설계 방법을 찾아 달라고 해도 됩니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g5">다른 AI 도구 › 감정 태그로 AI 목소리 연기시키기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 내레이션 목소리 고르기</button><button type="button" class="nav-b next" data-go="s5">사진으로 영상 클립 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 10 · 소재</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">사진으로 영상 클립 만들기</h2>
+  <div class="cos"><span class="co strong">Kling 4.0</span></div>
+  <p>Artlist의 Kling 4.0은 사진을 최대 10장까지 시작·중간·끝 프레임에 넣어 최대 30초 영상 한 편을 만들어 줍니다. 편집 프로그램 없이 장면 전환이 이어진 클립을 얻을 수 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Artlist에서 <code>AI 비디오</code>로 이동합니다.</li><li>모델 선택에서 <code>올 모델</code>을 열고 Kling <code>4.0</code>을 고른 뒤 <code>유즈 모델</code>을 누릅니다.</li><li><code>스타트 프레임</code>의 <code>업로드 이미지</code>로 첫 장면 사진을 넣습니다.</li><li><code>미들 프레임</code>에 중간 장면 사진을 순서대로 넣고, 마지막 사진은 <code>엔드 프레임</code>에 넣습니다.</li><li>사진 순서에 맞춘 장면 흐름 프롬프트를 입력합니다.</li><li>비율(쇼츠는 세로)과 길이(최대 30초)를 정하고 <code>제너레이트</code>를 누릅니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 사진들을 이 순서로 넣어 Kling 4.0으로 30초 영상을 만들려고 해. 이 순서로 영상이 자연스럽게 나올지 검토하고, 장면 흐름을 담은 영상 프롬프트를 써 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>장면이 너무 많으면 파트를 나눠 생성하고, 강조할 장면은 앞뒤에 둡니다.</li><li>직접 찍었거나 사용 허락을 받은 사진만 넣으세요.</li><li>인물이 대사하는 장면이 필요하면 Higgsfield의 Seedance 2.5에 시작 스틸·캐릭터 시트·대사 오디오를 넣는 방법이 있습니다(크레딧 소모가 큼).</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g7">다른 AI 도구 › Kling 4.0으로 사진을 영상 만들기</a><a class="refl" href="../guide/other-ai.html#g12">다른 AI 도구 › AI로 숏드라마 1화 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=yHriIFuq1d0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/yHriIFuq1d0/mqdefault.jpg" alt="" loading="lazy"><span><b>Kling 4.0으로 사진 여러 장을 한 편의 영상으로</b><span class="muted">온선 [온라인 선생님]  · 2026-10-23</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 감정 태그로 내레이션 만들기</button><button type="button" class="nav-b next" data-go="s6">컷 맞추고 고칠 컷만 다시 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 10 · 편집·게시</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">컷 맞추고 고칠 컷만 다시 만들기</h2>
+  <div class="cos"><span class="co strong">영상 편집 프로그램</span></div>
+  <p>내레이션을 기준으로 영상 컷을 맞추면 길이와 리듬이 정리됩니다. 문제가 있는 컷만 같은 재료로 다시 만들고 이전 버전은 남겨 두면 되돌리기 쉽습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>컷 번호 순서대로 영상 클립과 대사 파일을 타임라인에 놓습니다.</li><li>목소리를 기준으로 컷을 자릅니다.</li><li>입 모양이 있는 컷은 입과 소리가 1프레임 안에서 맞는지 검사합니다.</li><li>어색한 컷만 같은 시작 사진·프롬프트로 다시 만듭니다.</li><li>이전 버전은 새 이름으로 남겨 둡니다.</li></ol>
+  
+  <ul class="tips"><li>본 생성 전에 낮은 해상도의 짧은 시험으로 결과를 먼저 확인하면 크레딧을 아낍니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g12">다른 AI 도구 › AI로 숏드라마 1화 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 사진으로 영상 클립 만들기</button><button type="button" class="nav-b next" data-go="s7">올리기 전 사실·출처 확인하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
+  <div class="dr-head"><span class="muted small">7 / 10 · 편집·게시</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s7">올리기 전 사실·출처 확인하기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>영상은 한번 퍼지면 고치기 어렵습니다. 대본 속 숫자·인용·날짜를 출처와 함께 검토하고, 화제가 된 글을 인용했다면 작성자와 원문까지 확인합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>최종 대본을 Claude에 붙여 넣고 수치·인용을 하나씩 검토하게 합니다.</li><li>주장마다 출처 링크를 붙이고 못 찾은 내용은 &#x27;확인 불가&#x27;로 표시하게 합니다.</li><li>출처 링크를 직접 열어 내용이 실제로 있는지 확인합니다.</li><li>SNS 화제 글을 인용했다면 작성자 프로필, 공식 링크, 원 논문을 확인합니다.</li><li>확인되지 않은 내용은 대본과 자막에서 빼거나 고칩니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>아래 영상 대본에 나온 수치와 인용을 하나씩 검토해 줘. 주장마다 출처 링크를 붙이고, 출처를 찾지 못한 내용은 &#x27;확인 불가&#x27;로 표시해 줘. 모르면 모른다고 해도 괜찮아.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>빠르게 바뀌는 숫자는 조사한 날짜를 함께 적어 두세요.</li><li>자신 있는 말투나 깔끔한 문단은 정확하다는 증거가 아닙니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g2">프롬프트·활용 요령 › AI 답변의 환각을 검증하기</a><a class="refl" href="../guide/news.html#g1">발표·소식 › 화제의 AI 소식 출처 확인하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=dQd-f0nNQtI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/dQd-f0nNQtI/mqdefault.jpg" alt="" loading="lazy"><span><b>해외 AI 트렌드: REA와 화제 오픈소스 정리</b><span class="muted">신영선의 AI탐구 · 2026-11-01</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=HO7abLVDTaQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/HO7abLVDTaQ/mqdefault.jpg" alt="" loading="lazy"><span><b>늦게 시작한 AI 초보에게 필요한 첫 대화</b><span class="muted">커리어해커 알렉스 · 2026-11-01</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=cIMlBw2nqfA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/cIMlBw2nqfA/mqdefault.jpg" alt="" loading="lazy"><span><b>AI의 답을 얼마나 믿어도 될까?</b><span class="muted">Claude (공식) · 2026-08-11</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=005JLRt3gXI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/005JLRt3gXI/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 왜 환각을 일으킬까</b><span class="muted">Claude (공식) · 2026-04-15</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 컷 맞추고 고칠 컷만 다시 만들기</button><button type="button" class="nav-b next" data-go="s8">유튜브에 올리기 →</button></div>
+</dialog><dialog class="drawer" id="d-s8" aria-labelledby="t-s8">
+  <div class="dr-head"><span class="muted small">8 / 10 · 편집·게시</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s8">유튜브에 올리기</h2>
+  <div class="cos"><span class="co strong">YouTube Studio</span></div>
+  <p class="supnote">이 단계는 흐름을 잇기 위해 덧붙인 일반 안내입니다. 모니터링 영상에서 직접 다룬 내용은 아닙니다.</p><p>완성한 영상에 제목·설명·썸네일을 붙여 업로드합니다. 실제처럼 보이는 AI 합성 장면이나 목소리를 썼다면 업로드할 때 그 사실을 표시합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude에게 대본을 주고 제목 후보와 설명란 초안을 여러 개 받아 고릅니다.</li><li>YouTube Studio에서 영상 파일을 업로드하고 제목·설명·썸네일을 넣습니다.</li><li>실제처럼 보이는 AI 합성 장면·목소리를 썼다면 업로드 화면의 변경·합성 콘텐츠 공개 항목에 표시합니다.</li><li>처음에는 비공개나 일부 공개로 올려 전체를 한 번 본 뒤 공개로 바꿉니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 대본으로 유튜브 제목 후보 5개와 설명란 초안을 써 줘. 제목은 30자 안팎으로 과장 없이, 설명란 첫 두 줄에 영상 핵심을 담아 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>자동 제작 콘텐츠일수록 내 관점과 경험을 더해야 채널의 가치가 생긴다는 고민도 함께 해 보세요.</li></ul>
+  
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=5vj8k6Ub3ck" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/5vj8k6Ub3ck/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 만든 영상, 이 채널에 계속 올려도 될까요?</b><span class="muted">커리어해커 알렉스 · 2026-10-22</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s8"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 올리기 전 사실·출처 확인하기</button><button type="button" class="nav-b next" data-go="s9">시리즈를 스킬로 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s9" aria-labelledby="t-s9">
+  <div class="dr-head"><span class="muted small">9 / 10 · 자동화</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s9">시리즈를 스킬로 만들기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>쇼츠를 한 편씩 따로 만들지 말고 시리즈로 묶고, 시리즈마다 스킬을 하나씩 두면 같은 지시로 같은 품질이 나옵니다. 대본 형식·컷 규칙·검증 단계를 스킬에 담습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>한 편을 끝까지 만들어 만족스러운 결과를 얻습니다.</li><li><code>/skill-creator</code>를 실행하거나 방금 한 작업을 스킬로 만들어 달라고 요청합니다.</li><li>대본 표 형식, 컷 길이 규칙, 감정 태그 규칙, 사실 확인 단계를 포함하게 합니다.</li><li>생성된 <code>SKILL.md</code>의 설명(description)에 언제 쓰는 스킬인지 분명히 적혀 있는지 확인합니다.</li><li>Claude Code를 다시 실행하고 <code>/</code>를 입력해 스킬이 목록에 보이는지 확인합니다.</li><li>다음 편 주제만 주고 스킬로 대본 표를 만들어 봅니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>지금까지 만든 &#x27;연말정산 쇼츠&#x27; 작업 과정을 시리즈 스킬로 만들어 줘. 대본 표 형식, 컷 길이 규칙, 내레이션 감정 태그 규칙, 업로드 전 사실 확인 단계를 포함해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>Claude가 같은 실수를 반복하면 다시 시키기보다 그 내용을 스킬에 적어 두세요.</li><li>라이브 녹화 한 편을 롱폼·쇼츠 여러 편으로 나누는 파이프라인도 같은 방식(스킬 조합)으로 만들 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/code-advanced.html#g1">Claude Code 고급 › 스킬로 반복 작업 맡기기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OdXGvxYua_k" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OdXGvxYua_k/mqdefault.jpg" alt="" loading="lazy"><span><b>영상 30시간 작업을 Claude로 자동화한 방법</b><span class="muted">커리어해커 알렉스 · 2026-10-30</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=0me1yQSI4uM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/0me1yQSI4uM/mqdefault.jpg" alt="" loading="lazy"><span><b>숏폼 자동화: Shorts를 시리즈와 스킬로 만들기</b><span class="muted">커리어해커 알렉스 · 2026-10-27</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s9"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s8">← 유튜브에 올리기</button><button type="button" class="nav-b next" data-go="s10">확인 지점과 크레딧 상한 정하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s10" aria-labelledby="t-s10">
+  <div class="dr-head"><span class="muted small">10 / 10 · 자동화</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s10">확인 지점과 크레딧 상한 정하기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>영상 자동화는 생성 크레딧처럼 한 번에 크게 나가는 비용이 있습니다. 비용이 드는 단계와 공개 직전에는 사람이 확인하도록 정하고, 상한을 걸어 폭주를 막습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>영상 생성처럼 크레딧이 드는 단계는 실행 전에 내 확인을 받도록 정합니다.</li><li>제출 전에 비용 견적 기능으로 크레딧을 확인합니다.</li><li>한 편당 크레딧 상한을 내 요금제에 맞게 정합니다.</li><li>업로드·공개는 자동으로 하지 않고 내가 직접 합니다.</li><li>만드는 AI와 검사하는 AI를 나눠, 다른 AI가 대본과 결과를 검증하게 합니다.</li><li>조회·반응 데이터를 보고 스킬과 규칙을 고칩니다.</li></ol>
+  
+  <ul class="tips"><li>숏드라마 1화 전체에 2,450크레딧이 들었고, 견적 옵션을 잘못 넣어 128크레딧이 실제로 나간 사례도 있습니다.</li><li>영상 속 크레딧 상한(쇼츠 500, 롱폼 1,500)은 제작자 본인의 값이므로 내 요금제에 맞게 정합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g12">업무 자동화·에이전트 › 확인 지점과 종료 조건 설계하기</a><a class="refl" href="../guide/other-ai.html#g12">다른 AI 도구 › AI로 숏드라마 1화 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OdXGvxYua_k" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OdXGvxYua_k/mqdefault.jpg" alt="" loading="lazy"><span><b>영상 30시간 작업을 Claude로 자동화한 방법</b><span class="muted">커리어해커 알렉스 · 2026-10-30</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=9tVJb46g7nA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/9tVJb46g7nA/mqdefault.jpg" alt="" loading="lazy"><span><b>루프 엔지니어링 핵심 개념과 5가지 부품</b><span class="muted">이동훈의 루트AI · 2026-08-12</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s10"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s9">← 시리즈를 스킬로 만들기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
