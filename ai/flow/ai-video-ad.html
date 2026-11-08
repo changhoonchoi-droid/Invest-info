@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 광고 영상 만들기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="AI 광고 영상 만들기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="https://changhoonchoi-droid.github.io/">🏠 홈</a><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › AI 광고 영상 만들기</div>
+  <h1>AI 광고 영상 만들기</h1>
+  <p>제품 사진으로 이미지를 만들고 AI 영상 도구로 광고 영상을 만들어 부분 수정까지 마칩니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 30초 안팎의 AI 광고 영상 시안과 제품 이미지 세트</span><span><b>난이도</b> 중급</span>
+    <span><b>시간</b> 처음 3~4시간</span><span><b>단계</b> 6개</span></div>
+  <div class="cos"><span class="co">Claude</span><span class="co">Artlist</span><span class="co">Seedance 2.5</span><span class="co">Kling 4.0</span><span class="co">Newtake</span><span class="co">ElevenLabs</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-11-08 갱신</p>
+<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>준비</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">Claude에 Artlist 연결하기</span><span class="ns">커스텀 커넥터로 이미지 생성을 붙입니다</span>
+  <span class="ntool">Claude 앱</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>이미지</div>
+  <div class="nodes"><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">제품 대표 이미지 만들기</span><span class="ns">사진 한 장으로 대표·착용샷을 만듭니다</span>
+  <span class="ntool">Claude + Artlist</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>영상</div>
+  <div class="nodes"><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">여러 사진을 한 편 영상으로</span><span class="ns">Kling 4.0으로 사진 최대 10장을 잇습니다</span>
+  <span class="ntool">Kling 4.0</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">30초 광고 영상 생성하기</span><span class="ns">레퍼런스 이미지로 Seedance 영상을 만듭니다</span>
+  <span class="ntool">Seedance 2.5</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>고치기</div>
+  <div class="nodes"><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">피드백 반영해 일부만 수정하기</span><span class="ns">전체를 다시 만들지 않고 구간만 바꿉니다</span>
+  <span class="ntool">Newtake</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">나레이션 목소리 넣기</span><span class="ns">감정 태그로 AI 목소리를 만듭니다</span>
+  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 6 · 준비</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">Claude에 Artlist 연결하기</h2>
+  <div class="cos"><span class="co strong">Claude 앱</span></div>
+  <p>목록에 없는 서비스도 MCP URL만 있으면 커스텀 커넥터로 붙일 수 있습니다. 연결은 처음 한 번만 하면 됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Artlist 사이트에서 <code>MCP</code> 메뉴로 들어가 <code>Claude</code>를 선택합니다.</li><li>아래쪽 <code>MCP URL</code>을 복사합니다.</li><li>Claude에서 이름을 눌러 <code>설정</code>으로 들어갑니다.</li><li>맨 아래 <code>커넥터</code>에서 <code>추가</code> → <code>커스텀 커넥터 추가</code>를 누릅니다.</li><li>이름에 <code>Artlist</code>를 쓰고 URL을 붙여 넣은 뒤 <code>계속</code>을 누릅니다.</li><li>채팅창 <code>+</code> → <code>커넥터</code>에서 Artlist가 파란색(사용 중)인지 확인합니다.</li></ol>
+  
+  <ul class="tips"><li>회색이면 사용 안 함 상태이니 눌러서 켜세요.</li><li>빠른 수정에는 Haiku 5.5가 유리합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/connect.html#g3">MCP·커넥터 연결 › Claude에 Artlist 커스텀 커넥터 연결하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=_ujUjF3253I" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_ujUjF3253I/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude에 Artlist MCP 연결해 상세페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-19</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">제품 대표 이미지 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 6 · 이미지</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">제품 대표 이미지 만들기</h2>
+  <div class="cos"><span class="co strong">Claude + Artlist</span></div>
+  <p>상품 사진 한 장으로 대표 이미지, 착용샷, 배너를 만듭니다. 생성 전에 체크만 시키면 크레딧을 아낄 수 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>쓸 수 있는 이미지 모델을 먼저 확인해 달라고 요청합니다.</li><li>생성 없이 체크만 해 달라고 하며 사진을 첨부합니다.</li><li>모델, 비율, 해상도를 구체적으로 적어 대표 이미지를 요청합니다.</li><li>착용샷·디테일·배너를 추가로 요청합니다.</li><li><code>바지를 청바지로 바꿔 줘</code>처럼 유지할 것과 바꿀 것을 나누어 수정합니다.</li><li>결과를 <code>다운로드</code>로 저장합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>첨부한 운동화 사진으로 정사각형 2K 대표 이미지를 만들어 줘. 신발의 형태와 로고는 그대로 유지해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>재생성하면 크레딧이 추가로 소진됩니다.</li><li>AI 이미지는 로고·형태·한글 문구가 달라질 수 있으니 반드시 확인합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g12">문서·슬라이드·디자인 만들기 › 제품 사진으로 광고·상세페이지 이미지 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=_ujUjF3253I" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_ujUjF3253I/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude에 Artlist MCP 연결해 상세페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-19</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=WJLin_YwwwM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/WJLin_YwwwM/mqdefault.jpg" alt="" loading="lazy"><span><b>상품 사진 한 장으로 광고·상세페이지·웹사이트 제작</b><span class="muted">온선 [온라인 선생님]  · 2026-10-05</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← Claude에 Artlist 연결하기</button><button type="button" class="nav-b next" data-go="s3">여러 사진을 한 편 영상으로 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 6 · 영상</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">여러 사진을 한 편 영상으로</h2>
+  <div class="cos"><span class="co strong">Kling 4.0</span></div>
+  <p>사진을 최대 10장까지 넣어 하나의 영상으로 만듭니다. 사진마다 영상을 따로 만들어 붙이던 과정이 사라졌습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Artlist에서 <code>AI 비디오</code>로 이동합니다.</li><li><code>올 모델</code>에서 Kling <code>4.0</code>을 선택하고 <code>유즈 모델</code>을 누릅니다.</li><li><code>스타트 프레임</code>에 첫 장면 사진을 넣습니다.</li><li><code>미들 프레임</code>에 중간 장면 사진을 순서대로 넣습니다.</li><li>마지막 사진은 <code>엔드 프레임</code>에 넣습니다.</li><li>사진 순서에 맞춰 장면 흐름을 프롬프트로 적습니다.</li><li>비율과 길이(최대 30초)를 정하고 <code>제너레이트</code>를 누릅니다.</li></ol>
+  
+  <ul class="tips"><li>강조할 장면은 앞뒤에 배치하면 좋습니다.</li><li>장면이 너무 많으면 파트를 나눠 생성하세요.</li><li>30초 영상 생성에 약 1분이 걸렸습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g8">다른 AI 도구 › Kling 4.0으로 사진 여러 장 영상 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=yHriIFuq1d0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/yHriIFuq1d0/mqdefault.jpg" alt="" loading="lazy"><span><b>Kling 4.0으로 사진 여러 장을 한 편의 영상으로</b><span class="muted">온선 [온라인 선생님]  · 2026-10-23</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 제품 대표 이미지 만들기</button><button type="button" class="nav-b next" data-go="s4">30초 광고 영상 생성하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 6 · 영상</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">30초 광고 영상 생성하기</h2>
+  <div class="cos"><span class="co strong">Seedance 2.5</span></div>
+  <p>제품 사진과 배경 이미지를 레퍼런스로 넣어 30초 광고를 만듭니다. 영상은 크레딧이 많이 드니 이미지로 구도를 먼저 확정합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>제품 사진을 여러 각도로 준비합니다.</li><li><code>AI 툴킷</code>의 <code>이미지</code>로 배경 장면 이미지를 생성합니다.</li><li>배경과 제품 이미지를 레퍼런스로 넣어 3D 렌더링 이미지를 만듭니다.</li><li><code>비디오</code>에서 <code>Seedance 2.5</code>를 선택하고 길이 30초, 높은 화질로 설정합니다.</li><li><code>+</code>의 <code>이미지 레퍼런스</code>로 제품 사진과 렌더링 이미지를 추가합니다.</li><li>프롬프트를 쓰고 <code>제너레이트</code>를 누릅니다.</li></ol>
+  
+  <ul class="tips"><li>시작·끝 프레임이 아니라 이미지 레퍼런스로 넣어야 합니다.</li><li>엄격한 브랜드 가이드가 필요한 광고는 실제 촬영이 필요할 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g10">다른 AI 도구 › Seedance 2.5로 30초 광고 영상 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=VeRMp1dTtDo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/VeRMp1dTtDo/mqdefault.jpg" alt="" loading="lazy"><span><b>Seedance 2.5로 30초 자동차 광고 프리비즈 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-08-31</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 여러 사진을 한 편 영상으로</button><button type="button" class="nav-b next" data-go="s5">피드백 반영해 일부만 수정하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 6 · 고치기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">피드백 반영해 일부만 수정하기</h2>
+  <div class="cos"><span class="co strong">Newtake</span></div>
+  <p>광고주 피드백은 수정 프롬프트만 넣어 반영하고, 제품이나 모델 교체는 구간 리메이크로 합니다. AI가 다시 생성하므로 세부가 완전히 같지는 않습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>먼저 만든 영상을 레퍼런스로 첨부하고 바꾸고 싶은 부분만 프롬프트로 입력합니다.</li><li>구간 교체가 필요하면 Newtake에서 영상을 선택하고 <code>구간 리메이크</code>를 누릅니다.</li><li>바꿀 구간을 늘리거나 줄여 지정합니다.</li><li>바꿀 제품이나 모델 이미지를 연결합니다.</li><li>프롬프트에 어떤 이미지의 인물인지 구체적으로 적고 생성합니다.</li><li>원본과 결과를 비교해 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>선글라스를 안경으로 바꿔 줘</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>구간이 길수록 크레딧이 많이 듭니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g11">다른 AI 도구 › Newtake로 영상 일부 구간만 바꾸기</a><a class="refl" href="../guide/other-ai.html#g10">다른 AI 도구 › Seedance 2.5로 30초 광고 영상 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=mBFCyvGjMGA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mBFCyvGjMGA/mqdefault.jpg" alt="" loading="lazy"><span><b>Newtake 구간 리메이크로 AI 영상 일부만 바꾸기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-26</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=y6TF3XDyp9M" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/y6TF3XDyp9M/mqdefault.jpg" alt="" loading="lazy"><span><b>이미지 한 장으로 여러 앵글 영상 만들기 (Newtake)</b><span class="muted">온선 [온라인 선생님]  · 2026-09-28</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=VeRMp1dTtDo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/VeRMp1dTtDo/mqdefault.jpg" alt="" loading="lazy"><span><b>Seedance 2.5로 30초 자동차 광고 프리비즈 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-08-31</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 30초 광고 영상 생성하기</button><button type="button" class="nav-b next" data-go="s6">나레이션 목소리 넣기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 6 · 고치기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">나레이션 목소리 넣기</h2>
+  <div class="cos"><span class="co strong">ElevenLabs</span></div>
+  <p>ElevenLabs에서 모델별 음성을 비교하고 감정 태그로 연기를 시킵니다. 내 목소리를 즉석 복제할 수도 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude에게 테스트 대사를 짧게 만들어 달라고 요청합니다.</li><li>ElevenLabs 스피치 만들기에서 대사를 입력합니다.</li><li><code>Eleven v4</code>와 <code>Multilingual v2</code>로 생성해 비교합니다.</li><li>감정 태그와 말줄임표·느낌표로 억양을 보강합니다.</li><li>내 목소리가 필요하면 <code>Create Voice</code> → <code>Instant Voice</code>로 약 30~40초 녹음합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>[whispers] 사실은… 아무한테도 말 안 했는데요. [curious] 혹시 이거 들어 보셨어요?</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>즉석 복제는 40초 녹음으로 70% 정도 비슷한 수준이었습니다.</li><li>숫자와 다양한 문장을 녹음하고 톤을 일정하게 유지하면 안정됩니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g6">다른 AI 도구 › ElevenLabs로 AI 목소리 만들고 복제하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 피드백 반영해 일부만 수정하기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
