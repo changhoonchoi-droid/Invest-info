@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>자료 조사하고 분석하기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="자료 조사하고 분석하기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="https://changhoonchoi-droid.github.io/">🏠 홈</a><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › 자료 조사하고 분석하기</div>
+  <h1>자료 조사하고 분석하기</h1>
+  <p>웹 조사와 내 자료 정리, 엑셀 분석을 거쳐 검증한 뒤 보고서 문서로 마무리합니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 출처가 확인된 조사 내용과 숫자가 검증된 분석, 다듬어진 보고서 초안</span><span><b>난이도</b> 중급</span>
+    <span><b>시간</b> 처음 2~3시간</span><span><b>단계</b> 7개</span></div>
+  <div class="cos"><span class="co">Claude</span><span class="co">딥 리서치</span><span class="co">NotebookLM</span><span class="co">Claude in Excel</span><span class="co">Claude for Word</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-11-12 갱신</p>
+<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>준비</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">목적과 맥락 알려 주기</span><span class="ns">상황과 기준을 충분히 말하기</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>조사</div>
+  <div class="nodes"><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">웹 검색·딥 리서치로 조사</span><span class="ns">출처 있는 시장 조사 받기</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">노트북LM에 자료 모아 질문</span><span class="ns">올린 자료만 근거로 답 받기</span>
+  <span class="ntool">NotebookLM</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>분석</div>
+  <div class="nodes"><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">엑셀에서 숫자 분석하기</span><span class="ns">피벗·차트 만들고 근거 셀 확인</span>
+  <span class="ntool">Claude in Excel</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">중립적으로 물어 편향 피하기</span><span class="ns">찬반 논거를 모두 요청하기</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>마무리</div>
+  <div class="nodes"><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">출처와 숫자 검증하기</span><span class="ns">링크를 열어 원문 확인</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="num">7</span>
+  <span class="nbody"><span class="nt">Word에서 보고서 다듬기</span><span class="ns">추적 변경으로 안전하게 고치기</span>
+  <span class="ntool">Claude for Word</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 7 · 준비</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">목적과 맥락 알려 주기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>완벽한 프롬프트보다 상황과 기준을 충분히 알리는 것이 중요합니다. 음성 받아쓰기로 길게 말하면 시간이 줄고 생각도 정리됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>음성 받아쓰기로 상황, 목적, 기준을 길게 말합니다.</li><li>관련 파일이나 화면 캡처를 많이 붙입니다.</li><li>결과를 직접 읽고 맞는지 판단합니다.</li><li>부족한 부분은 기준을 더 알려 다시 요청합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>지금 상황을 설명할게. 나는 기획팀 대리이고, 다음 주 경쟁사 비교 보고를 준비 중이야. 기준은 한 장으로 요약 가능하고 출처가 있어야 해.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>맥락을 많이 주는 것과 결과를 판단하는 능력이 가장 중요합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/projects.html#g4">프로젝트·메모리·지식 › 맥락을 많이 주어 답변 품질 높이기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=lHh45E-mW2s" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/lHh45E-mW2s/mqdefault.jpg" alt="" loading="lazy"><span><b>24만 유튜버의 AI 활용법: 마이크와 맥락</b><span class="muted">온선 [온라인 선생님]  · 2026-07-21</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">웹 검색·딥 리서치로 조사 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 7 · 조사</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">웹 검색·딥 리서치로 조사</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>웹 검색을 켜면 최신 정보와 출처를 받고, 시장 조사나 경쟁사 분석처럼 깊은 조사에는 딥 리서치 모드를 씁니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li><code>+</code> 버튼에서 <code>웹</code> 탭을 눌러 웹 검색을 켭니다.</li><li>깊은 조사는 <code>+</code> 버튼에서 <code>연구</code>를 눌러 딥 리서치를 켭니다.</li><li>조사할 내용을 프롬프트로 요청합니다.</li><li>답변의 출처 링크를 열어 확인합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>국내 사무용 협업 도구 시장의 주요 경쟁사 세 곳을 비교하고, 출처 링크와 함께 표로 정리해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>모델은 검색 도구 없이는 훈련 이후의 사실을 확실히 알지 못합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/start.html#g6">Claude 시작하기 › 웹 검색과 딥 리서치 켜기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=fjMceSbXTRM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/fjMceSbXTRM/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 채팅·코워크·코드·디자인 한 번에 정리</b><span class="muted">이동훈의 루트AI · 2026-08-27</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=j1Vk6Y-23CY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/j1Vk6Y-23CY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI와 대화하면 실제로 무슨 일이 일어날까?</b><span class="muted">Claude (공식) · 2026-08-05</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ewgbQRow1T4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ewgbQRow1T4/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 핵심 기능 총정리 (2026년 5월판)</b><span class="muted">이동훈의 루트AI · 2026-05-01</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 목적과 맥락 알려 주기</button><button type="button" class="nav-b next" data-go="s3">노트북LM에 자료 모아 질문 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 7 · 조사</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">노트북LM에 자료 모아 질문</h2>
+  <div class="cos"><span class="co strong">NotebookLM</span></div>
+  <p>노트북LM은 내가 올린 자료만 근거로 답하고 출처 번호를 달아 줍니다. 프로젝트별 노트북에 파일, 링크, 유튜브 자료를 모아 질문합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>노트북LM에서 <code>새 노트 만들기</code>를 누르고 제목을 프로젝트 이름으로 바꿉니다.</li><li><code>소스 추가</code>로 파일, 링크, 유튜브, 드라이브 자료를 넣습니다.</li><li>채팅창에 질문하고 답변의 숫자를 눌러 출처를 확인합니다.</li><li>좋은 답변은 <code>메모에 저장</code>을 누릅니다.</li><li>오른쪽 스튜디오에서 마인드맵 등으로 정리합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>AI 전문 강사 스타일로 답변해 줘</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>웹 검색은 약하니 최신 정보는 제미나이로 보완하세요.</li><li>채팅 설정은 노트북마다 따로 적용됩니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g6">다른 AI 도구 › 노트북LM에 자료 넣고 질문하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=ceOa8fKs9Zo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ceOa8fKs9Zo/mqdefault.jpg" alt="" loading="lazy"><span><b>구글 노트북LM 완벽 가이드: 실무 활용부터 자동화까지</b><span class="muted">온선 [온라인 선생님]  · 2026-06-04</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 웹 검색·딥 리서치로 조사</button><button type="button" class="nav-b next" data-go="s4">엑셀에서 숫자 분석하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 7 · 분석</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">엑셀에서 숫자 분석하기</h2>
+  <div class="cos"><span class="co strong">Claude in Excel</span></div>
+  <p>Claude in Excel은 통합 문서 전체를 이해하고 질문 답변, 오류 추적, 피벗 테이블, 차트 작성까지 도와줍니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Excel에서 통합 문서를 엽니다.</li><li>Mac은 <code>Control + Option + C</code>, Windows는 <code>Control + Alt + C</code>로 사이드바를 엽니다.</li><li>목표를 구체적으로 적어 질문합니다.</li><li>응답의 인용 상자를 눌러 근거 셀로 이동해 검증합니다.</li><li>피벗 테이블을 요청하고 그 표로 차트를 만듭니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>Create a pivot table showing total revenue by region and product.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>오류는 <code>Why is there an error in May?</code>처럼 물으면 원인 셀까지 추적해 줍니다.</li><li>리서치 프리뷰 베타입니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g6">문서·슬라이드·디자인 만들기 › Excel에서 Claude로 분석·피벗 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=54BdUqMQUMI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/54BdUqMQUMI/mqdefault.jpg" alt="" loading="lazy"><span><b>Excel에서 Claude 시작하기</b><span class="muted">Claude (공식) · 2026-01-30</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 노트북LM에 자료 모아 질문</button><button type="button" class="nav-b next" data-go="s5">중립적으로 물어 편향 피하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 7 · 분석</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">중립적으로 물어 편향 피하기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>질문에 원하는 답을 흘리면 AI가 그쪽으로 맞춰 주기 쉽습니다. 결론을 숨기고 찬성·반대 논거를 모두 요청하세요.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>원하는 결론을 드러내지 않고 질문합니다.</li><li>찬성과 반대 논거를 모두 요청합니다.</li><li>한쪽으로 치우친 답은 반박하고 균형을 요청합니다.</li><li>같은 질문을 다른 각도에서 다시 물어봅니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 결정에 대한 가장 강력한 찬성 논거와 반대 논거는 무엇인가요? 어느 쪽도 편들지 말고 근거와 함께 알려 주세요.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>일반 대화에도 똑같이 유용합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g4">프롬프트·활용 요령 › 중립적으로 물어 편향·아첨 피하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=cIMlBw2nqfA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/cIMlBw2nqfA/mqdefault.jpg" alt="" loading="lazy"><span><b>AI의 답을 얼마나 믿어도 될까?</b><span class="muted">Claude (공식) · 2026-08-11</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=RnOWJoHU_NY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/RnOWJoHU_NY/mqdefault.jpg" alt="" loading="lazy"><span><b>AI 모델에 편향이 생기는 이유와 대처법</b><span class="muted">Claude (공식) · 2026-04-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 엑셀에서 숫자 분석하기</button><button type="button" class="nav-b next" data-go="s6">출처와 숫자 검증하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 7 · 마무리</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">출처와 숫자 검증하기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>보고서에 들어갈 숫자·날짜·인용은 반드시 원문에서 확인합니다. 신뢰는 스위치가 아니라 다이얼처럼 질문의 중요도에 따라 조절하세요.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>주장마다 근거 출처를 요청합니다.</li><li>제시된 링크를 직접 열어 내용이 있는지 확인합니다.</li><li>의심스러운 부분은 얼마나 확신하는지 묻습니다.</li><li>새 대화나 다른 AI로 교차 검증합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>방금 답에 쓴 수치와 인용마다 출처를 알려 줘. 확신이 낮은 부분은 따로 표시하고, 모르는 것은 모른다고 말해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>AI가 없는 출처를 그럴듯하게 만들 수 있습니다.</li><li>상사에게 보일 통계·법률·금전 문제는 반드시 확인하세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g3">프롬프트·활용 요령 › AI 답변 믿어도 되는지 검증하기</a><a class="refl" href="../guide/news.html#g2">발표·소식 › AI 환각 줄이며 답 검증하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=cIMlBw2nqfA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/cIMlBw2nqfA/mqdefault.jpg" alt="" loading="lazy"><span><b>AI의 답을 얼마나 믿어도 될까?</b><span class="muted">Claude (공식) · 2026-08-11</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=005JLRt3gXI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/005JLRt3gXI/mqdefault.jpg" alt="" loading="lazy"><span><b>AI는 왜 환각을 일으킬까</b><span class="muted">Claude (공식) · 2026-04-15</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 중립적으로 물어 편향 피하기</button><button type="button" class="nav-b next" data-go="s7">Word에서 보고서 다듬기 →</button></div>
+</dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
+  <div class="dr-head"><span class="muted small">7 / 7 · 마무리</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s7">Word에서 보고서 다듬기</h2>
+  <div class="cos"><span class="co strong">Claude for Word</span></div>
+  <p>Claude for Word는 모든 수정을 추적 변경으로 남겨 직접 수락하거나 거절할 수 있습니다. 사실 확인, 고쳐 쓰기, 분량 줄이기를 맡깁니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Word 오른쪽의 Claude 패널을 엽니다.</li><li><code>Turn on Track Changes and keep it on for everything you do in this document.</code>라고 요청합니다.</li><li>본문의 수치와 주장을 근거 문서와 대조하게 합니다.</li><li>고쳐 쓸 문단을 선택하고 요청한 뒤 카드별로 확인합니다.</li><li>서식 정리 때는 <code>Don&#x27;t change anything else.</code>를 덧붙입니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>We need to get this under 1,000 words, but don&#x27;t cut any more than you need to.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>변경을 수락하면 되돌릴 수 없어서 Claude가 먼저 확인을 요청합니다.</li><li>Pro, Max, Team, Enterprise 유료 플랜에 포함됩니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g7">문서·슬라이드·디자인 만들기 › Word에서 Claude로 초안 다듬기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=x80HVKbZrno" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/x80HVKbZrno/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude for Word로 초안을 완성 문서로 만들기</b><span class="muted">Claude (공식) · 2026-08-26</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 출처와 숫자 검증하기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
