@@ -21,147 +21,147 @@
 <section class="hero">
   <div class="date"><a href="../index.html">목표별 지도</a> › AI 영상 만들기</div>
   <h1>AI 영상 만들기</h1>
-  <p>대본을 쓰고 같은 인물이 나오는 이미지와 영상, 목소리까지 AI로 만든 뒤 편집과 반복 제작까지 이어 가는 흐름입니다.</p>
-  <div class="wf-facts"><span><b>결과물</b> 얼굴과 의상이 일관된 AI 인물 영상과 자막 그래픽이 얹힌 짧은 영상 한 편</span><span><b>난이도</b> 중급</span>
+  <p>기획과 이미지 확정, 영상 생성, 목소리·자막까지 이어 홍보·SNS용 짧은 AI 영상을 완성합니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 인물·제품이 일관되게 유지된 짧은 AI 영상 한 편</span><span><b>난이도</b> 중급</span>
     <span><b>시간</b> 처음 3~4시간</span><span><b>단계</b> 8개</span></div>
-  <div class="cos"><span class="co">Claude</span><span class="co">힉스필드</span><span class="co">Seedance 2.5</span><span class="co">ElevenLabs</span><span class="co">Claude 디자인</span></div>
+  <div class="cos"><span class="co">Higgsfield</span><span class="co">Claude</span><span class="co">Seedance 2.5</span><span class="co">ElevenLabs</span><span class="co">Artlist</span></div>
 </section>
 <div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
   <button type="button" id="reset" class="linkish small">처음부터</button></div>
-<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-11-16 갱신</p>
-<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>준비</div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-11-18 갱신</p>
+<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>기획</div>
   <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
   <span class="num">1</span>
-  <span class="nbody"><span class="nt">대본을 표로 쓰기</span><span class="ns">한 줄이 한 컷인 대본 표 만들기</span>
+  <span class="nbody"><span class="nt">Claude로 기획·프롬프트 쓰기</span><span class="ns">콘셉트와 장면별 프롬프트를 먼저 정리합니다</span>
   <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
   <span class="num">2</span>
-  <span class="nbody"><span class="nt">Claude에 힉스필드 연결</span><span class="ns">한 대화창에서 기획과 생성 이어 가기</span>
-  <span class="ntool">Claude 커넥터</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>소재</div>
+  <span class="nbody"><span class="nt">힉스필드를 Claude에 연결</span><span class="ns">한 대화창에서 기획과 생성을 이어 갑니다</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>이미지</div>
   <div class="nodes"><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
   <span class="num">3</span>
-  <span class="nbody"><span class="nt">인물 이미지와 캐릭터 시트</span><span class="ns">전신 이미지로 같은 인물의 기준 만들기</span>
-  <span class="ntool">힉스필드</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>영상</div>
+  <span class="nbody"><span class="nt">이미지·캐릭터 시트 먼저 확정</span><span class="ns">영상 전에 이미지로 인물과 장면을 고정합니다</span>
+  <span class="ntool">Higgsfield</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>영상</div>
   <div class="nodes"><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
   <span class="num">4</span>
-  <span class="nbody"><span class="nt">캐릭터 시트로 장면 영상 만들기</span><span class="ns">시트를 레퍼런스로 넣어 일관된 컷 생성</span>
-  <span class="ntool">힉스필드 Seedance 2.5</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">이미지를 영상으로 바꾸기</span><span class="ns">확정한 이미지에 모델을 골라 영상화합니다</span>
+  <span class="ntool">Higgsfield</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
   <span class="num">5</span>
-  <span class="nbody"><span class="nt">목소리와 대사 입히기</span><span class="ns">감정 태그로 AI 목소리에 연기시키기</span>
-  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">레퍼런스로 긴 영상·광고 시안</span><span class="ns">이전 영상을 이어 장면을 늘립니다</span>
+  <span class="ntool">Artlist</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
   <span class="num">6</span>
-  <span class="nbody"><span class="nt">일부 장면만 바꿔 고치기</span><span class="ns">구간을 지정해 제품이나 모델만 교체</span>
-  <span class="ntool">Newtake</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>편집·자동화</div>
+  <span class="nbody"><span class="nt">일부 구간만 고치기</span><span class="ns">모델·제품만 바꿔 다시 만듭니다</span>
+  <span class="ntool">Newtake</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>소리·마무리</div>
   <div class="nodes"><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
   <span class="num">7</span>
-  <span class="nbody"><span class="nt">자막으로 그래픽 만들어 얹기</span><span class="ns">SRT 자막으로 영상용 애니메이션 제작</span>
-  <span class="ntool">Claude 디자인</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s8" aria-haspopup="dialog">
+  <span class="nbody"><span class="nt">목소리·나레이션 입히기</span><span class="ns">AI 음성이나 말하는 아바타를 더합니다</span>
+  <span class="ntool">ElevenLabs</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node sup" type="button" data-id="s8" aria-haspopup="dialog">
   <span class="num">8</span>
-  <span class="nbody"><span class="nt">반복 제작 파이프라인 만들기</span><span class="ns">기획부터 업로드까지 스킬로 묶기</span>
-  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+  <span class="nbody"><span class="nt">이어 붙이고 올리기 전 점검</span><span class="ns">장면을 편집하고 권리·표기를 확인합니다</span>
+  <span class="ntool">CapCut</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
 <dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
-  <div class="dr-head"><span class="muted small">1 / 8 · 준비</span>
+  <div class="dr-head"><span class="muted small">1 / 8 · 기획</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s1">대본을 표로 쓰기</h2>
+  <h2 id="t-s1">Claude로 기획·프롬프트 쓰기</h2>
   <div class="cos"><span class="co strong">Claude</span></div>
-  <p>영상 모델은 앞 컷을 기억하지 못하므로, 컷 단위로 쪼갠 대본이 출발점입니다. 컷 번호, 샷 크기, 인물, 대사, 길이를 표로 정리합니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>작업 폴더를 만들고 단계가 끝날 때마다 결과 파일을 남깁니다.</li><li>Claude에게 대본을 표 하나로 써 달라고 요청합니다. 한 줄이 한 컷입니다.</li><li>칸은 컷 번호, 샷 크기, 인물, 대사, 길이로 정합니다.</li><li>한 클립은 세 줄·10초 이하로 묶어야 대사 타이밍이 흔들리지 않습니다.</li><li>인물 외모를 묘사하는 문장을 하나 정해 두고 이후 프롬프트에 그대로 붙입니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>30초짜리 제품 소개 영상 대본을 표로 써 줘. 한 줄이 한 컷이고, 칸은 컷 번호·샷 크기·인물·대사·길이야. 컷당 길이는 10초 이하로 해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>인물 묘사 문장은 모든 프롬프트에 한 글자도 바꾸지 않고 붙입니다.</li><li>본 생성 전에 짧은 시험으로 입 모양과 대사를 먼저 확인합니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g12">다른 AI 도구 › AI 숏드라마 1화 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=GOb50YjFmSo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/GOb50YjFmSo/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드와 힉스필드로 쇼핑 브랜드·쇼츠·랜딩 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-16</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=zmyZqqiIDxU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/zmyZqqiIDxU/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드와 힉스필드 MCP로 AI 드라마 만들기</b><span class="muted">신영선의 AI탐구 · 2026-11-10</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <p>영상은 크레딧이 들어 바로 만들면 낭비됩니다. 먼저 콘셉트와 장면 구성을 정리하고, 프롬프트를 확인한 뒤 수정합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>만들 영상의 목적, 대상, 길이를 적어 기획을 요청합니다.</li><li>이미지를 바로 만들지 말고 먼저 프롬프트를 써 달라고 요청합니다.</li><li>영어 프롬프트는 읽거나 번역기로 확인합니다.</li><li>바꿀 부분만 지정하고 나머지는 바꾸지 말라고 요청합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>30대 직장인 대상 카페 신메뉴 홍보 영상을 기획해 줘. 15초, 장면 3개로 나누고 장면마다 이미지 생성용 프롬프트를 먼저 써 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>바꾸지 않을 부분을 말하지 않으면 다른 부분도 함께 바뀔 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/prompting.html#g10">프롬프트·활용 요령 › 프롬프트를 확인하며 수정하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=COpDLeQ9_Js" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/COpDLeQ9_Js/mqdefault.jpg" alt="" loading="lazy"><span><b>아트리스트 AI 에이전트로 한 채팅창에서 영상 제작</b><span class="muted">온선 [온라인 선생님]  · 2026-05-20</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
-  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">Claude에 힉스필드 연결 →</button></div>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">힉스필드를 Claude에 연결 →</button></div>
 </dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
-  <div class="dr-head"><span class="muted small">2 / 8 · 준비</span>
+  <div class="dr-head"><span class="muted small">2 / 8 · 기획</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s2">Claude에 힉스필드 연결</h2>
-  <div class="cos"><span class="co strong">Claude 커넥터</span></div>
-  <p>힉스필드를 커넥터로 연결하면 Claude가 기획하고 힉스필드가 이미지·영상을 만드는 작업을 한 대화에서 처리합니다. 클로드와 힉스필드 계정이 각각 필요합니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>채팅창에서 <code>+</code> → <code>커넥터</code> → <code>커넥터 추가</code> → <code>커넥터 둘러보기</code>를 엽니다.</li><li>검색창에 <code>Higgsfield</code>를 입력하고 <code>클로드에 연결</code>을 눌러 힉스필드 계정으로 로그인합니다.</li><li>목록에 없으면 클로드 <code>설정</code> → <code>커넥터</code>에서 <code>커스텀 커넥터 추가</code>를 누르고 이름에 힉스필드를 입력합니다.</li><li>힉스필드 사이트 상단 <code>MCP</code>에서 <code>Claude</code>를 선택해 나온 링크를 복사합니다.</li><li>복사한 링크를 <code>MCP 서버 URL</code> 칸에 붙여 넣고 <code>계속</code>을 누릅니다.</li><li>크레딧 잔액과 요금제를 확인해 달라고 요청해 연결을 확인합니다.</li></ol>
+  <h2 id="t-s2">힉스필드를 Claude에 연결</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>힉스필드 MCP를 커넥터로 연결하면 Claude가 기획하고 힉스필드가 이미지·영상을 만드는 작업을 한 곳에서 합니다. 직접 웹사이트에서 만들어도 되니 선택 사항입니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>채팅창 <code>+</code> → <code>커넥터</code> → <code>커넥터 추가</code> → <code>커넥터 둘러보기</code>를 엽니다.</li><li><code>Higgsfield</code>를 검색해 <code>클로드에 연결</code>하고 로그인합니다.</li><li>목록에 없으면 <code>설정</code> → <code>커넥터</code>에서 <code>커스텀 커넥터 추가</code>를 누릅니다.</li><li>힉스필드 사이트 <code>MCP</code>에서 <code>Claude</code>를 고르고 나온 링크를 <code>MCP 서버 URL</code> 칸에 붙여 넣습니다.</li><li>&#x27;힉스필드 MCP로 크레딧 잔액과 요금제를 확인해 줘&#x27;라고 요청해 연결을 확인합니다.</li></ol>
   <div class="example"><div class="muted small">예시 프롬프트</div><pre>힉스필드 MCP로 크레딧 잔액과 요금제를 확인해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>힉스필드 공식 MCP만 쓰고 비공식 MCP는 쓰지 않는 것이 좋습니다.</li><li>품질·화질을 최대로 올리면 크레딧이 많이 소모됩니다. 화질은 2K 정도가 무난하다고 했습니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/connect.html#g2">MCP·커넥터 연결 › 커스텀 커넥터로 힉스필드 연결하기</a></div>
+  <ul class="tips"><li>공식 MCP만 쓰고 비공식은 쓰지 않는 것이 좋습니다.</li><li>Artlist도 같은 방식으로 연결할 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/connect.html#g2">MCP·커넥터 연결 › 커스텀 커넥터로 힉스필드 연결하기</a><a class="refl" href="../guide/connect.html#g3">MCP·커넥터 연결 › Artlist 연결해 이미지 만들기</a></div>
   <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=GOb50YjFmSo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/GOb50YjFmSo/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드와 힉스필드로 쇼핑 브랜드·쇼츠·랜딩 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-16</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=HTZ9mxo8DRg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/HTZ9mxo8DRg/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드와 클로드 연결로 영상·광고 자동화</b><span class="muted">신영선의 AI탐구 · 2026-11-12</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=zmyZqqiIDxU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/zmyZqqiIDxU/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드와 힉스필드 MCP로 AI 드라마 만들기</b><span class="muted">신영선의 AI탐구 · 2026-11-10</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 대본을 표로 쓰기</button><button type="button" class="nav-b next" data-go="s3">인물 이미지와 캐릭터 시트 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← Claude로 기획·프롬프트 쓰기</button><button type="button" class="nav-b next" data-go="s3">이미지·캐릭터 시트 먼저 확정 →</button></div>
 </dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
-  <div class="dr-head"><span class="muted small">3 / 8 · 소재</span>
+  <div class="dr-head"><span class="muted small">3 / 8 · 이미지</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s3">인물 이미지와 캐릭터 시트</h2>
-  <div class="cos"><span class="co strong">힉스필드</span></div>
-  <p>영상에서 같은 인물을 유지하려면 먼저 전신 이미지를 만들고, 이를 기준으로 얼굴·의상·체형이 같은 캐릭터 시트를 만듭니다. 전신으로 만들어야 하반신이 임의로 표현되지 않습니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>힉스필드에 로그인하고 상단에서 <code>이미지</code>를 선택합니다.</li><li>모델의 외모·의상·분위기를 구체적으로 적고 전신 사진을 요청합니다.</li><li>모델을 <code>GPT Image 2.5</code>로 고르고 비율·품질·해상도·장수를 정한 뒤 <code>생성하기</code>를 누릅니다.</li><li>새 요청에 캐릭터 시트를 만들어 달라고 쓰고 얼굴·헤어·의상·신체 비율을 동일하게 유지하라고 덧붙입니다.</li><li><code>+</code>를 눌러 앞서 만든 이미지를 레퍼런스로 첨부하고 <code>생성하기</code>를 누릅니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>첨부된 이미지를 기준으로 동일한 인물의 캐릭터 시트를 만들어 줘. 얼굴, 헤어스타일, 의상, 신체 비율을 동일하게 유지해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>한국인을 원하면 프롬프트에 <code>한국인 여자</code>처럼 명시합니다.</li><li>이미지 1장은 약 2.75 크레딧이 들었습니다. 해상도·장수를 올리면 더 듭니다.</li><li>앱스토어의 Higgsfield는 정식 앱이 아니므로 웹사이트에서 사용하세요.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g7">다른 AI 도구 › 힉스필드로 가상 모델 이미지·캐릭터 시트 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=x9NIecTOxCo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/x9NIecTOxCo/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드로 AI 모델 이미지부터 영상까지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-09</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Nc6ywbkTmZU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Nc6ywbkTmZU/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드 AI로 릴스·쇼츠용 영상 만드는 법</b><span class="muted">온선 [온라인 선생님]  · 2026-07-24</span></span></a></div>
+  <h2 id="t-s3">이미지·캐릭터 시트 먼저 확정</h2>
+  <div class="cos"><span class="co strong">Higgsfield</span></div>
+  <p>이미지를 먼저 만들어 확인한 뒤 영상으로 바꾸면 인물이 흔들리지 않고 크레딧도 아낍니다. 전신 이미지와 캐릭터 시트를 레퍼런스로 쓰면 장면이 바뀌어도 일관됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li><code>Create Image</code>로 들어가 참고 사진을 <code>+</code>로 첨부합니다.</li><li>&#x27;같은 사람을 유지해 줘. 같은 얼굴, 같은 아이덴티티&#x27;처럼 프롬프트를 씁니다.</li><li>모델·화질·비율을 고르고 <code>Generate</code>를 누릅니다.</li><li>마음에 안 들면 <code>Recreate</code>로 다시 만듭니다.</li><li>캐릭터를 쓴다면 전신 이미지를 만든 뒤 같은 인물의 캐릭터 시트를 요청합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>첨부한 사진과 같은 사람을 유지해 줘. 같은 얼굴, 같은 아이덴티티. 카페 창가에서 커피를 마시며 천천히 고개를 돌리는 장면, 자연광.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>영상에 쓸 모델은 전신으로 만들어야 하반신이 임의로 표현되지 않습니다.</li><li>얼굴·로고는 &#x27;원본 그대로 100% 유지&#x27;라고 못 박습니다.</li><li>앱스토어의 Higgsfield는 정식 앱이 아니므로 웹사이트에서 씁니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g8">다른 AI 도구 › 이미지로 AI 영상 만들기 (힉스필드·Pollo)</a><a class="refl" href="../guide/other-ai.html#g9">다른 AI 도구 › 캐릭터 시트로 같은 인물 영상 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=x9NIecTOxCo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/x9NIecTOxCo/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드로 AI 모델 이미지부터 영상까지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-09</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Nc6ywbkTmZU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Nc6ywbkTmZU/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드 AI로 릴스·쇼츠용 영상 만드는 법</b><span class="muted">온선 [온라인 선생님]  · 2026-07-24</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=HTZ9mxo8DRg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/HTZ9mxo8DRg/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드와 클로드 연결로 영상·광고 자동화</b><span class="muted">신영선의 AI탐구 · 2026-11-12</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← Claude에 힉스필드 연결</button><button type="button" class="nav-b next" data-go="s4">캐릭터 시트로 장면 영상 만들기 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 힉스필드를 Claude에 연결</button><button type="button" class="nav-b next" data-go="s4">이미지를 영상으로 바꾸기 →</button></div>
 </dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
   <div class="dr-head"><span class="muted small">4 / 8 · 영상</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s4">캐릭터 시트로 장면 영상 만들기</h2>
-  <div class="cos"><span class="co strong">힉스필드 Seedance 2.5</span></div>
-  <p>캐릭터 시트를 레퍼런스로 넣고 Seedance 2.5로 영상을 만들면 얼굴과 의상이 바뀌지 않는 여러 장면을 얻습니다. 영상이 길거나 품질이 높을수록 크레딧과 시간이 늘어납니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>힉스필드 상단에서 <code>비디오</code>를 선택합니다.</li><li>프롬프트에 <code>이미지 1</code>을 주인공으로 지정하고 원하는 동작을 적습니다.</li><li>레퍼런스에 캐릭터 시트를 첨부하고 프롬프트에서 <code>@</code>로 지정합니다.</li><li>모델을 <code>Seedance 2.5</code>로 고르고 길이·비율(16:9)·품질을 정합니다.</li><li><code>생성하기</code>를 누르고 마음에 들면 <code>다운로드</code>, 아니면 프롬프트를 고쳐 다시 생성합니다.</li><li>다음 장면은 첫 영상을 레퍼런스로 함께 넣고 장소만 프롬프트에서 바꿉니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>`이미지 1`의 인물이 주인공이야. 이 인물이 거리를 천천히 걸어오는 장면을 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>스타터 요금제에서는 Seedance 2.5를 쓸 수 없습니다. 영상에서는 플러스를 추천했고 영상 1개당 약 1달러가 들었습니다.</li><li>모델 비교 영상에서는 빠른 대사 장면은 그록·플럭스, 영화 같은 영상미는 씨댄스, 가성비는 미니맥스를 추천했습니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g8">다른 AI 도구 › 캐릭터 시트로 일관된 AI 영상 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=XNzYpCXMFYU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/XNzYpCXMFYU/mqdefault.jpg" alt="" loading="lazy"><span><b>AI 영상 모델 9종 비교: 상사에게 대드는 연기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-11</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=HTZ9mxo8DRg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/HTZ9mxo8DRg/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드와 클로드 연결로 영상·광고 자동화</b><span class="muted">신영선의 AI탐구 · 2026-11-12</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=x9NIecTOxCo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/x9NIecTOxCo/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드로 AI 모델 이미지부터 영상까지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-09</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=F5eZKv65YSE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/F5eZKv65YSE/mqdefault.jpg" alt="" loading="lazy"><span><b>MiniMax H3 옴니 레퍼런스로 일관된 인물 영상 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-08-25</span></span></a></div>
+  <h2 id="t-s4">이미지를 영상으로 바꾸기</h2>
+  <div class="cos"><span class="co strong">Higgsfield</span></div>
+  <p>확정한 이미지를 영상으로 넘깁니다. 캐릭터 시트는 <code>@</code>로 지정해 얼굴·의상을 유지하게 합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>이미지에서 <code>Turn to Video</code>를 누르거나 상단에서 <code>비디오</code>를 선택합니다.</li><li>캐릭터 시트를 레퍼런스로 첨부하고 프롬프트에서 <code>@</code>로 지정합니다.</li><li>영상 모델(예: <code>Seedance 2.5</code>)과 길이·비율·품질을 정합니다.</li><li><code>생성하기</code>를 누르고 결과를 확인합니다.</li><li>마음에 들면 다운로드하고 아니면 프롬프트를 고쳐 다시 생성합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>@캐릭터 시트의 주인공이 해 질 녘 거리를 천천히 걸어오는 장면. 얼굴과 의상은 시트와 동일하게 유지, 16:9, 15초.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>같은 프롬프트라도 결과가 매번 달라 여러 번 생성해 고릅니다.</li><li>해상도·길이·품질을 올릴수록 크레딧이 늘고, 2K 정도가 무난합니다.</li><li>스타터 요금제에서는 Seedance 2.5를 쓸 수 없고 요금은 바뀔 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g9">다른 AI 도구 › 캐릭터 시트로 같은 인물 영상 만들기</a><a class="refl" href="../guide/other-ai.html#g8">다른 AI 도구 › 이미지로 AI 영상 만들기 (힉스필드·Pollo)</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=x9NIecTOxCo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/x9NIecTOxCo/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드로 AI 모델 이미지부터 영상까지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-09</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=HTZ9mxo8DRg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/HTZ9mxo8DRg/mqdefault.jpg" alt="" loading="lazy"><span><b>힉스필드와 클로드 연결로 영상·광고 자동화</b><span class="muted">신영선의 AI탐구 · 2026-11-12</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=XNzYpCXMFYU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/XNzYpCXMFYU/mqdefault.jpg" alt="" loading="lazy"><span><b>AI 영상 모델 9종 비교: 상사에게 대드는 연기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-11</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 인물 이미지와 캐릭터 시트</button><button type="button" class="nav-b next" data-go="s5">목소리와 대사 입히기 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 이미지·캐릭터 시트 먼저 확정</button><button type="button" class="nav-b next" data-go="s5">레퍼런스로 긴 영상·광고 시안 →</button></div>
 </dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
   <div class="dr-head"><span class="muted small">5 / 8 · 영상</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s5">목소리와 대사 입히기</h2>
-  <div class="cos"><span class="co strong">ElevenLabs</span></div>
-  <p>대사가 있는 영상은 인물마다 목소리를 정해 대사 파일을 만들어 둡니다. 감정은 파라미터가 거의 없어 프롬프트의 감정 태그와 문장부호로 조절합니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li><code>Create Voice</code>에서 <code>Instant Voice</code>를 골라 약 30~40초 동안 다양한 내용을 녹음해 내 목소리를 복제합니다.</li><li>인물이 여러 명이면 보이스 라이브러리에서 인물마다 목소리를 하나씩 고릅니다.</li><li>모델을 <code>Eleven v4</code>로 두고 대사에 whispers, curious 같은 감정 태그를 넣습니다.</li><li>말줄임표와 느낌표로 억양을 보강합니다.</li><li>대사 파일 이름을 컷 번호와 맞춰 저장합니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>[whispers] 오늘 발표, 정말 괜찮을까... [curious] 그런데 이거, 한번 해 볼까요?</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>즉석 복제는 약 70% 비슷한 수준입니다.</li><li>연기 지시는 한 줄에 한 개에서 세 개까지만 붙이고 감정 이름보다 말투로 적습니다.</li><li>다른 사람의 목소리는 동의 없이 복제하지 마세요.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g11">다른 AI 도구 › ElevenLabs로 내 목소리 복제하고 연기시키기</a><a class="refl" href="../guide/other-ai.html#g12">다른 AI 도구 › AI 숏드라마 1화 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a></div>
+  <h2 id="t-s5">레퍼런스로 긴 영상·광고 시안</h2>
+  <div class="cos"><span class="co strong">Artlist</span></div>
+  <p>Seedance 2.5는 최대 30초 영상에 여러 레퍼런스를 넣을 수 있고, 생성된 영상에 수정 프롬프트만 넣어 일부를 바꿀 수 있습니다. 광고 시안(프리비즈)에 적합합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>제품 사진을 여러 각도로 준비합니다.</li><li>Artlist <code>AI 툴킷</code>에서 배경 이미지와 제품 합성 이미지를 만듭니다.</li><li><code>비디오</code>에서 <code>Seedance 2.5</code>를 선택하고 길이를 정합니다.</li><li><code>+</code>로 <code>이미지 레퍼런스</code>에 제품·배경 이미지를 추가합니다.</li><li>프롬프트를 쓰고 <code>제너레이트</code>를 누릅니다.</li><li>수정은 먼저 만든 영상을 레퍼런스로 첨부하고 바꿀 부분만 적습니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>첨부한 SUV를 서울 도심 야경 배경에서 보여 주는 30초 광고. 천천히 다가오는 카메라, 마지막에 제품 정면 컷. 앞부분은 더 따뜻한 분위기로.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>시작·끝 프레임이 아니라 이미지 레퍼런스로 넣어야 합니다.</li><li>엄격한 브랜드 가이드가 필요한 광고는 실제 촬영이 필요할 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g10">다른 AI 도구 › Seedance 2.5로 장면 이어 광고·단편 만들기</a><a class="refl" href="../guide/other-ai.html#g11">다른 AI 도구 › Newtake로 광고 영상 만들고 구간 고치기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=VeRMp1dTtDo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/VeRMp1dTtDo/mqdefault.jpg" alt="" loading="lazy"><span><b>Seedance 2.5로 30초 자동차 광고 프리비즈 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-08-31</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=bH09JfKhNvk" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/bH09JfKhNvk/mqdefault.jpg" alt="" loading="lazy"><span><b>Seedance 2.5와 Pollo AI로 3분 단편영화 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-08-15</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=yHriIFuq1d0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/yHriIFuq1d0/mqdefault.jpg" alt="" loading="lazy"><span><b>Kling 4.0으로 사진 여러 장을 한 편의 영상으로</b><span class="muted">온선 [온라인 선생님]  · 2026-10-23</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 캐릭터 시트로 장면 영상 만들기</button><button type="button" class="nav-b next" data-go="s6">일부 장면만 바꿔 고치기 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 이미지를 영상으로 바꾸기</button><button type="button" class="nav-b next" data-go="s6">일부 구간만 고치기 →</button></div>
 </dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
   <div class="dr-head"><span class="muted small">6 / 8 · 영상</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s6">일부 장면만 바꿔 고치기</h2>
+  <h2 id="t-s6">일부 구간만 고치기</h2>
   <div class="cos"><span class="co strong">Newtake</span></div>
-  <p>영상 전체를 다시 만들지 않고 바꿀 구간만 지정해 제품이나 모델을 교체합니다. 구간이 짧을수록 크레딧이 덜 듭니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>Newtake에서 <code>제작 시작</code>을 눌러 캔버스를 엽니다.</li><li>모델과 제품 이미지를 생성하고 비디오 생성으로 광고 영상을 만듭니다.</li><li>만든 영상을 선택하고 왼쪽 위의 <code>구간 리메이크</code>를 누릅니다.</li><li>바꿀 구간을 지정하고 바꿀 이미지를 끌어다 연결합니다.</li><li><code>선글라스를 안경으로 바꿔 줘</code>처럼 입력해 생성하고 원본과 비교합니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>선글라스를 안경으로 바꿔 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>프롬프트에 어떤 이미지의 인물인지 구체적으로 써야 엉뚱한 인물이 섞이지 않습니다.</li><li>AI가 다시 생성하는 방식이라 모든 세부가 완전히 같지는 않습니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g10">다른 AI 도구 › Newtake로 영상 일부만 바꾸기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=mBFCyvGjMGA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mBFCyvGjMGA/mqdefault.jpg" alt="" loading="lazy"><span><b>Newtake 구간 리메이크로 AI 영상 일부만 바꾸기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-26</span></span></a></div>
+  <p>Newtake는 인물·제품·배경을 자산으로 고정하고 <code>구간 리메이크</code>로 일부만 바꿉니다. 이미 만든 영상을 처음부터 다시 만들지 않아도 됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>영상을 선택하고 왼쪽 위 <code>구간 리메이크</code>를 누릅니다.</li><li>바꿀 구간을 지정합니다.</li><li>바꿀 제품이나 모델 이미지를 연결합니다.</li><li>변경 내용을 입력해 생성합니다.</li><li><code>일괄 다운로드</code>로 장면 영상을 받아 이어 붙입니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>선글라스를 안경으로 바꿔 줘. 인물은 연결한 모델 이미지와 동일하게, 표정과 배경은 그대로 유지.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>구간이 길수록 크레딧이 많이 들고, 세부가 완전히 같지는 않습니다.</li><li>영상보다 이미지로 먼저 테스트하면 크레딧이 덜 듭니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g11">다른 AI 도구 › Newtake로 광고 영상 만들고 구간 고치기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=mBFCyvGjMGA" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mBFCyvGjMGA/mqdefault.jpg" alt="" loading="lazy"><span><b>Newtake 구간 리메이크로 AI 영상 일부만 바꾸기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-26</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=fOFP7sHSdUM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/fOFP7sHSdUM/mqdefault.jpg" alt="" loading="lazy"><span><b>아이디어만 넣으면 광고 영상 완성, Newtake</b><span class="muted">온선 [온라인 선생님]  · 2026-08-11</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 목소리와 대사 입히기</button><button type="button" class="nav-b next" data-go="s7">자막으로 그래픽 만들어 얹기 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 레퍼런스로 긴 영상·광고 시안</button><button type="button" class="nav-b next" data-go="s7">목소리·나레이션 입히기 →</button></div>
 </dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
-  <div class="dr-head"><span class="muted small">7 / 8 · 편집·자동화</span>
+  <div class="dr-head"><span class="muted small">7 / 8 · 소리·마무리</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s7">자막으로 그래픽 만들어 얹기</h2>
-  <div class="cos"><span class="co strong">Claude 디자인</span></div>
-  <p>녹음 자막(SRT)과 프롬프트를 Claude 디자인에 넣으면 말과 맞는 16:9 애니메이션이 나옵니다. 결과는 편집 프로그램에 B-roll 층으로 얹어 필요한 부분만 씁니다.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>녹화본에서 MP3를 추출해 <code>ChatGPT</code>에 올립니다.</li><li><code>SRT 트랜스크립트</code>를 만들어 달라고 요청해 타임스탬프가 있는 자막을 받습니다.</li><li><code>claude.ai/design</code>을 열고 SRT 파일과 애니메이션 프롬프트를 붙여 넣습니다.</li><li>로고와 스크린샷을 첨부하고 모델 설정을 높게 둔 뒤 생성합니다.</li><li>멈춘 듯하면 계속하라고 입력하고, 완성본을 보며 수정 사항을 요청합니다.</li><li>편집 프로그램에 B-roll 층으로 넣어 필요한 부분만 골라 씁니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>첨부한 SRT 자막의 타이밍에 맞춰 16:9 그래픽 애니메이션을 만들어 줘. 움직임은 많이, 글자는 최소로 해 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>기본값은 글자가 많게 나오므로 움직임 위주, 글자 최소로 요청합니다.</li><li>생성에는 영상 길이에 따라 약 30분~2시간이 걸립니다.</li><li>진행이 멈췄는데 알려 주지 않는 경우가 있어 계속하라고 지시해야 합니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g18">문서·슬라이드·디자인 만들기 › 자막으로 영상용 애니메이션 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=fS-88gtHXIg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/fS-88gtHXIg/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Design으로 영상 애니메이션 만드는 법</b><span class="muted">The AI Advantage · 2026-11-04</span></span></a></div>
+  <h2 id="t-s7">목소리·나레이션 입히기</h2>
+  <div class="cos"><span class="co strong">ElevenLabs</span></div>
+  <p>ElevenLabs로 대사를 음성으로 만들고 감정을 태그로 조절합니다. 사진과 음성만으로 말하는 아바타 영상을 만들거나 다른 언어로 더빙할 수도 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude로 짧은 대사를 만들어 ElevenLabs 스피치 기능에 입력합니다.</li><li><code>Eleven v4</code>로 생성해 들어 봅니다.</li><li>감정은 대사에 whispers, curious 같은 태그를 넣어 조절합니다.</li><li>말하는 아바타는 Artlist <code>AI 툴킷</code>의 <code>비디오</code>에서 사진과 음성 파일을 넣고 생성합니다.</li><li>영상 길이와 음성 길이를 맞춥니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>[whispers] 이건 아직 비밀인데... [curious] 혹시 내일 발표 자료, 다 준비하셨어요?</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>다른 사람의 목소리는 동의 없이 복제하지 않습니다.</li><li>아바타 영상은 프롬프트가 아니라 음성 파일의 내용이 대사가 됩니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g12">다른 AI 도구 › ElevenLabs로 AI 음성·내 목소리 만들기</a><a class="refl" href="../guide/other-ai.html#g13">다른 AI 도구 › 사진과 음성으로 말하는 아바타 영상 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=OFqA6OUTzDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OFqA6OUTzDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>ElevenLabs로 내 목소리 복제해 AI와 비교하기</b><span class="muted">커리어해커 알렉스 · 2026-10-26</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=p4eCaA9zqeI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/p4eCaA9zqeI/mqdefault.jpg" alt="" loading="lazy"><span><b>Artlist AI 아바타로 촬영 없이 말하는 영상 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-06-17</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=6c0rwK3Eum4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/6c0rwK3Eum4/mqdefault.jpg" alt="" loading="lazy"><span><b>Artlist 하나로 이미지·영상·음성·음악 만들기</b><span class="muted">온선 [온라인 선생님]  · 2025-11-30</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 일부 장면만 바꿔 고치기</button><button type="button" class="nav-b next" data-go="s8">반복 제작 파이프라인 만들기 →</button></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 일부 구간만 고치기</button><button type="button" class="nav-b next" data-go="s8">이어 붙이고 올리기 전 점검 →</button></div>
 </dialog><dialog class="drawer" id="d-s8" aria-labelledby="t-s8">
-  <div class="dr-head"><span class="muted small">8 / 8 · 편집·자동화</span>
+  <div class="dr-head"><span class="muted small">8 / 8 · 소리·마무리</span>
     <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
-  <h2 id="t-s8">반복 제작 파이프라인 만들기</h2>
-  <div class="cos"><span class="co strong">Claude Code</span></div>
-  <p>영상을 꾸준히 만들려면 기획·대본·음성·편집·업로드를 단계로 나눠 스킬로 묶습니다. 고급 단계이므로 한 편을 손으로 끝낸 뒤 시도하세요.</p>
-  <h3>따라 하기</h3><ol class="steps"><li>기획·리서치, 대본, 음성, 모션, 검수, 패키징, 업로드 단계로 파이프라인을 나눕니다.</li><li>레퍼런스 계정을 수집 대상으로 정하고 매일 아침 일정에 모읍니다.</li><li>남의 영상은 번역만 하지 않고 Claude가 던지는 질문에 내 소감을 답하는 인터뷰로 내 해석을 더합니다.</li><li>Claude가 만든 것은 Codex가, Codex가 만든 것은 Claude가 독립적으로 검증하게 합니다.</li><li>피드백을 줄 때마다 스킬이나 규칙으로 남기고 크레딧 상한을 정합니다.</li><li>되돌리기 어려운 지점은 내 확인을 받도록 정합니다.</li></ol>
-  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 영상으로 롱폼을 만들어 보자. 영상을 본 사람이 궁금해할 질문을 뽑아서 나를 인터뷰해 줘. 내 답변을 바탕으로 롱폼 대본을 만들어 줘.</pre><button class="copy" type="button">복사</button></div>
-  <ul class="tips"><li>상한 숫자는 영상 제작자 본인의 값이므로 내 요금제에 맞게 정하세요.</li><li>검수 없이 올리지 말고 아는 지식 범위에서만 올립니다.</li><li>구글 드라이브 폴더를 루틴으로 확인하게 하면 영상만 올려도 편집이 시작되도록 할 수 있습니다.</li></ul>
-  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/automation.html#g11">업무 자동화·에이전트 › 콘텐츠 제작 파이프라인 자동화하기</a><a class="refl" href="../guide/code-advanced.html#g9">Claude Code 고급 › 루틴으로 알아서 일하는 에이전트 만들기</a></div>
-  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=X1jGARiC7RY" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/X1jGARiC7RY/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 코드로 영상 편집 자동화하기 (2편)</b><span class="muted">신영선의 AI탐구 · 2026-11-13</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=7MGY09neWho" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/7MGY09neWho/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code로 인스타 카드뉴스·릴스 자동화하기</b><span class="muted">신영선의 AI탐구 · 2026-11-10</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=OdXGvxYua_k" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/OdXGvxYua_k/mqdefault.jpg" alt="" loading="lazy"><span><b>영상 30시간 작업을 Claude로 자동화한 방법</b><span class="muted">커리어해커 알렉스 · 2026-10-30</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ESnqYamB_NI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ESnqYamB_NI/mqdefault.jpg" alt="" loading="lazy"><span><b>라이브 한 편을 롱폼 5편·쇼츠 22편으로 자동화하기</b><span class="muted">커리어해커 알렉스 · 2026-10-25</span></span></a></div>
+  <h2 id="t-s8">이어 붙이고 올리기 전 점검</h2>
+  <div class="cos"><span class="co strong">CapCut</span></div>
+  <p class="supnote">이 단계는 흐름을 잇기 위해 덧붙인 일반 안내입니다. 모니터링 영상에서 직접 다룬 내용은 아닙니다.</p><p>생성한 장면 영상을 편집 앱에서 이어 붙이고 업로드 전에 점검합니다. 편집 앱 선택은 자유이며 자료에 단계별 메뉴 설명은 없습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>장면 영상을 다운로드해 편집 앱(예: 캡컷)에서 순서대로 이어 붙입니다.</li><li>나레이션·음악을 얹고 길이를 맞춥니다.</li><li>얼굴·로고·한글 문구가 변형되지 않았는지 확인합니다.</li><li>쓴 음악·인물 이미지의 이용 조건을 확인합니다.</li></ol>
+  
+  <ul class="tips"><li>AI 생성 이미지는 로고·형태·한글 문구가 달라질 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g14">문서·슬라이드·디자인 만들기 › AI로 이미지·로고·광고 시안 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=V8pYaWVwmo0" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/V8pYaWVwmo0/mqdefault.jpg" alt="" loading="lazy"><span><b>AI로 로맨스 판타지 숏드라마 만드는 6단계</b><span class="muted">커리어해커 알렉스 · 2026-10-24</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=laOSBXJ5J7s" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/laOSBXJ5J7s/mqdefault.jpg" alt="" loading="lazy"><span><b>Hailuo 2.3로 청춘영화 감성 AI 영상 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-05-08</span></span></a></div>
   <label class="donel"><input type="checkbox" class="donebox" data-id="s8"> 이 단계 완료</label>
-  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 자막으로 그래픽 만들어 얹기</button><span></span></div>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 목소리·나레이션 입히기</button><span></span></div>
 </dialog>
 </main>
 <footer class="foot">
