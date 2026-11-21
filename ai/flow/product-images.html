@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>상품 이미지·상세페이지 만들기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="상품 이미지·상세페이지 만들기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+</head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="https://changhoonchoi-droid.github.io/">🏠 홈</a><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a><a href="../../index.html">투자 브리핑</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › 상품 이미지·상세페이지 만들기</div>
+  <h1>상품 이미지·상세페이지 만들기</h1>
+  <p>제품 사진 한 장으로 대표 이미지, 배너, 상세페이지 시안을 만들고 광고 영상까지 확장합니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 대표 이미지·배너·상세페이지 시안 한 세트.</span><span><b>난이도</b> 중급</span>
+    <span><b>시간</b> 처음 2~3시간(생성 크레딧 필요)</span><span><b>단계</b> 7개</span></div>
+  <div class="cos"><span class="co">Claude</span><span class="co">Artlist</span><span class="co">Gemini(나노바나나)</span><span class="co">미리캔버스</span><span class="co">AI 빌더</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-11-21 갱신</p>
+<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>준비</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">Claude에 Artlist 연결하기</span><span class="ns">채팅 안에서 이미지 생성·수정 가능하게</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>만들기</div>
+  <div class="nodes"><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">대표 이미지·배너 만들기</span><span class="ns">제품 사진을 올려 비율·해상도 지정</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">배경 교체·보정하기</span><span class="ns">원본 인물·제품은 유지하고 일부만 변경</span>
+  <span class="ntool">Gemini</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">브랜드 로고 만들기</span><span class="ns">엠블럼은 AI로, 글자는 미리캔버스에서</span>
+  <span class="ntool">Gemini</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>다듬기</div>
+  <div class="nodes"><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">상세페이지·랜딩 페이지로 엮기</span><span class="ns">이미지를 넣어 판매 페이지 시안 완성</span>
+  <span class="ntool">Readdy AI</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">결과 확인하고 수정하기</span><span class="ns">로고·형태·한글 문구가 맞는지 점검</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>확장</div>
+  <div class="nodes"><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="num">7</span>
+  <span class="nbody"><span class="nt">광고 영상으로 확장하기</span><span class="ns">제품 이미지를 레퍼런스로 30초 영상</span>
+  <span class="ntool">Artlist</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 7 · 준비</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">Claude에 Artlist 연결하기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>Artlist를 커넥터로 붙이면 Claude 채팅 안에서 이미지를 만들고 고칠 수 있습니다. 연결은 처음 한 번만 하면 됩니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Artlist 사이트에서 <code>MCP</code> 메뉴로 들어가 <code>Claude</code>를 선택합니다.</li><li>아래쪽의 <code>MCP URL</code>을 복사합니다.</li><li>Claude에서 이름을 눌러 <code>설정</code>으로 들어갑니다.</li><li>맨 아래 <code>커넥터</code>에서 <code>추가</code> → <code>커스텀 커넥터 추가</code>를 누릅니다.</li><li>이름에 <code>Artlist</code>를 쓰고 URL을 붙여 넣은 뒤 <code>계속</code>을 누릅니다.</li><li>채팅창의 <code>+</code> → <code>커넥터</code>에서 Artlist가 파란색(사용 중)인지 확인합니다.</li></ol>
+  
+  <ul class="tips"><li>회색이면 사용 안 함 상태이니 눌러서 켜세요.</li><li>빠른 수정 작업에는 Haiku 5.5가 속도와 사용량 면에서 유리합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/connect.html#g7">MCP·커넥터 연결 › Claude에 Artlist 커넥터 연결하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=_ujUjF3253I" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_ujUjF3253I/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude에 Artlist MCP 연결해 상세페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-19</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">대표 이미지·배너 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 7 · 만들기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">대표 이미지·배너 만들기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>운동화 사진 한 장으로 대표 이미지, 배너, 인스타그램용 이미지, 모바일 상세페이지 시안까지 만든 사례가 있습니다. 비율과 해상도를 적어 요청합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>제품 사진을 채팅에 올립니다.</li><li>만들 이미지의 용도, 비율, 해상도를 적어 요청합니다.</li><li>생성 없이 체크만 시켜 먼저 구도를 확인합니다.</li><li>마음에 드는 결과를 <code>다운로드</code>로 저장합니다.</li></ol>
+  
+  <ul class="tips"><li>Artlist에서는 생성 없이 체크만 시키면 크레딧을 아끼고, 재생성하면 크레딧이 추가로 소진됩니다.</li><li>화면 캡처 대신 다운로드해야 화질이 깨지지 않습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g12">문서·슬라이드·디자인 만들기 › AI로 이미지·로고·제품 사진 만들기</a><a class="refl" href="../guide/connect.html#g7">MCP·커넥터 연결 › Claude에 Artlist 커넥터 연결하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=_ujUjF3253I" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_ujUjF3253I/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude에 Artlist MCP 연결해 상세페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-19</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← Claude에 Artlist 연결하기</button><button type="button" class="nav-b next" data-go="s3">배경 교체·보정하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 7 · 만들기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">배경 교체·보정하기</h2>
+  <div class="cos"><span class="co strong">Gemini</span></div>
+  <p>제미나이의 나노바나나는 원본의 얼굴·포즈·배경을 유지하면서 요청한 부분만 고치는 일관성이 강점입니다. 제품 사진 배경 교체, 물체 제거에 씁니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>제미나이에서 제출 전에 <code>도구</code>를 눌러 <code>이미지 생성</code>을 선택합니다.</li><li>내 사진을 올리고 바꿀 부분을 문장으로 요청합니다.</li><li>바꾸지 않을 부분을 함께 적어 일관성을 유지합니다.</li><li>같은 대화창에서 수정 요청을 이어 갑니다.</li><li>나온 이미지를 다운로드로 저장합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>왼쪽 나무를 자연스럽게 지워 줘. 책상 위는 건드리지 말고.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>주인공·행동·배경·조명·분위기·카메라 6요소로 프롬프트를 구체화하면 좋습니다.</li><li>나노바나나로 검색하면 스캠 사이트가 나올 수 있으니 주의합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g7">다른 AI 도구 › Gemini 나노바나나로 이미지 만들고 고치기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=wcl41hexeYU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/wcl41hexeYU/mqdefault.jpg" alt="" loading="lazy"><span><b>제미나이 3.0 나노바나나 이미지 기능 13가지</b><span class="muted">온선 [온라인 선생님]  · 2025-11-28</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Sz9DjG8cEEU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Sz9DjG8cEEU/mqdefault.jpg" alt="" loading="lazy"><span><b>구글 나노바나나(Gemini) 이미지 활용법 모음</b><span class="muted">온선 [온라인 선생님]  · 2025-10-16</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=SqjOXrbM2c4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/SqjOXrbM2c4/mqdefault.jpg" alt="" loading="lazy"><span><b>제미나이 나노바나나 이미지 생성·편집 총정리</b><span class="muted">온선 [온라인 선생님]  · 2025-09-18</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=3nTOWSqBuyg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/3nTOWSqBuyg/mqdefault.jpg" alt="" loading="lazy"><span><b>나노바나나 1년 사용법 총정리 (제미나이 이미지)</b><span class="muted">온선 [온라인 선생님]  · 2025-12-25</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 대표 이미지·배너 만들기</button><button type="button" class="nav-b next" data-go="s4">브랜드 로고 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 7 · 만들기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">브랜드 로고 만들기</h2>
+  <div class="cos"><span class="co strong">Gemini</span></div>
+  <p>로고는 참고 로고와 함께 주제·상징물·스타일·색상·분위기를 적어 엠블럼을 만들고, 텍스트는 미리캔버스에서 얹어 완성합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>마음에 드는 참고 로고 이미지와 함께 주제·상징물·스타일·색상·분위기를 적어 요청합니다.</li><li>엠블럼만 이미지로 저장합니다.</li><li>미리캔버스의 <code>업로드</code>로 엠블럼을 넣고 텍스트를 추가합니다.</li><li>결과를 <code>다운로드</code>로 저장합니다.</li></ol>
+  
+  <ul class="tips"><li>미리캔버스의 왕관 표시 폰트는 유료입니다.</li><li>AI 이미지는 로고·형태·한글 문구가 달라질 수 있으니 반드시 확인합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g12">문서·슬라이드·디자인 만들기 › AI로 이미지·로고·제품 사진 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=UJVGKuzSAhw" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/UJVGKuzSAhw/mqdefault.jpg" alt="" loading="lazy"><span><b>제미나이와 미리캔버스로 로고 직접 만들기</b><span class="muted">온선 [온라인 선생님]  · 2025-12-18</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=_ujUjF3253I" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_ujUjF3253I/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude에 Artlist MCP 연결해 상세페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-19</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 배경 교체·보정하기</button><button type="button" class="nav-b next" data-go="s5">상세페이지·랜딩 페이지로 엮기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 7 · 다듬기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">상세페이지·랜딩 페이지로 엮기</h2>
+  <div class="cos"><span class="co strong">Readdy AI</span></div>
+  <p>만든 이미지를 AI 빌더에 넣어 상세페이지나 랜딩 페이지 시안을 만듭니다. 참고 화면 캡처를 붙이면 분위기를 맞추기 쉽습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>첫 화면 입력창에 상품 이름, 색감, 제목, 구성을 적어 보냅니다.</li><li>참고 화면 캡처나 링크를 함께 넣습니다.</li><li>생성된 사이트를 확인하고 요소를 눌러 직접 고칩니다.</li><li>큰 변경은 채팅으로 한 번에 하나씩 요청합니다.</li><li>숫자·후기 같은 생성 문구는 사실에 맞게 고칩니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>해당 이미지를 참고해서 비슷한 느낌의 랜딩 페이지 만들어 줘</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>공개 게시와 도메인 연결에는 유료 결제가 필요할 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g13">문서·슬라이드·디자인 만들기 › AI 빌더로 홈페이지·랜딩 페이지 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=phZxdZYg9-U" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/phZxdZYg9-U/mqdefault.jpg" alt="" loading="lazy"><span><b>호스팅어 AI 빌더로 내 사업 홈페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-17</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=8VUpLvbeaYU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/8VUpLvbeaYU/mqdefault.jpg" alt="" loading="lazy"><span><b>Readdy AI로 홈페이지 만들고 관리비 받는 법</b><span class="muted">온선 [온라인 선생님]  · 2026-07-10</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=SFc-nOD0UB4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/SFc-nOD0UB4/mqdefault.jpg" alt="" loading="lazy"><span><b>Readdy AI로 대기업 홈페이지 복제하고 수정하기</b><span class="muted">온선 [온라인 선생님]  · 2026-03-27</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 브랜드 로고 만들기</button><button type="button" class="nav-b next" data-go="s6">결과 확인하고 수정하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 7 · 다듬기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">결과 확인하고 수정하기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>AI 이미지는 제품 형태나 로고, 한글 문구가 달라질 수 있습니다. 공개 전에 실제 제품과 대조해 어긋난 부분은 다시 생성합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>결과 이미지의 제품 형태와 로고가 실제와 같은지 확인합니다.</li><li>한글 문구와 가격·성분 같은 정보가 맞는지 확인합니다.</li><li>마음에 들지 않으면 같은 요청을 다시 시도합니다.</li><li>엄격한 브랜드 가이드가 필요한 광고는 실제 촬영이 필요한지 판단합니다.</li></ol>
+  
+  <ul class="tips"><li>결과는 매번 달라서 마음에 들지 않으면 같은 요청을 다시 시도합니다.</li><li>디테일이 어긋나는 광고는 실제 촬영과 후반 작업이 필요할 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g12">문서·슬라이드·디자인 만들기 › AI로 이미지·로고·제품 사진 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=_ujUjF3253I" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/_ujUjF3253I/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude에 Artlist MCP 연결해 상세페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-10-19</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=3nTOWSqBuyg" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/3nTOWSqBuyg/mqdefault.jpg" alt="" loading="lazy"><span><b>나노바나나 1년 사용법 총정리 (제미나이 이미지)</b><span class="muted">온선 [온라인 선생님]  · 2025-12-25</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← 상세페이지·랜딩 페이지로 엮기</button><button type="button" class="nav-b next" data-go="s7">광고 영상으로 확장하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
+  <div class="dr-head"><span class="muted small">7 / 7 · 확장</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s7">광고 영상으로 확장하기</h2>
+  <div class="cos"><span class="co strong">Artlist</span></div>
+  <p>Artlist의 Seedance 2.5는 제품 사진과 배경 이미지를 레퍼런스로 넣고 짧은 프롬프트로 최대 30초 영상을 만듭니다. 광고 프리비즈(시안)용입니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>제품 사진을 정면·측면·후면 등 여러 각도로 준비합니다.</li><li><code>AI 툴킷</code>에서 이미지로 배경 장면을 만들고 제품이 놓인 렌더링 이미지를 만듭니다.</li><li><code>비디오</code>로 바꾸고 <code>Seedance 2.5</code>를 선택한 뒤 길이와 화질을 정합니다.</li><li><code>+</code>를 눌러 <code>이미지 레퍼런스</code>로 제품·배경 이미지를 추가합니다.</li><li>프롬프트를 쓰고 <code>제너레이트</code>를 누릅니다.</li><li>수정은 만든 영상을 첨부해 바꿀 부분만 요청합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>앞부분을 더 따뜻한 분위기로 바꿔 줘. 나머지는 그대로 유지해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>시작·끝 프레임이 아니라 이미지 레퍼런스로 넣어야 합니다.</li><li>영상 생성은 크레딧이 많이 들어서 이미지로 구도를 먼저 확정하는 편이 좋습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/other-ai.html#g10">다른 AI 도구 › Seedance 2.5로 30초 광고 영상 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=VeRMp1dTtDo" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/VeRMp1dTtDo/mqdefault.jpg" alt="" loading="lazy"><span><b>Seedance 2.5로 30초 자동차 광고 프리비즈 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-08-31</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=Z4gFx_xdAwM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/Z4gFx_xdAwM/mqdefault.jpg" alt="" loading="lazy"><span><b>ChatGPT에 Artlist 연결해 AI 브이로거 영상 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-09-30</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 결과 확인하고 수정하기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
