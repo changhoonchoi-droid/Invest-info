@@ -1,0 +1,211 @@
+<!doctype html>
+<html data-skin="ai" lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>웹사이트·앱 만들기 | AI 활용 따라하기</title>
+<meta name="description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<meta property="og:title" content="웹사이트·앱 만들기 | AI 활용 따라하기">
+<meta property="og:description" content="Claude 공식 채널과 국내외 AI 전문가들의 유튜브 영상을 매일 모니터링해 기능별 따라 하기 가이드로 정리합니다.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/style.css">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#07080d"><style>html{background:#07080d}</style><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&display=swap"><link rel="stylesheet" href="https://changhoonchoi-droid.github.io/assets/tm-skin.css"></head>
+<body class="ai">
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="../index.html"><span class="dot"></span>AI 활용 따라하기</a>
+    <nav><a href="https://changhoonchoi-droid.github.io/">🏠 홈</a><a href="../index.html#flows">목표별 지도</a><a href="../index.html">가이드</a><a href="../videos.html">전체 영상</a></nav>
+  </div>
+</header>
+<main class="wrap">
+<section class="hero">
+  <div class="date"><a href="../index.html">목표별 지도</a> › 웹사이트·앱 만들기</div>
+  <h1>웹사이트·앱 만들기</h1>
+  <p>코딩을 몰라도 말로 설명해 홈페이지나 간단한 앱·대시보드를 만들고, 말로 고쳐 가며 완성해 공개하는 흐름입니다.</p>
+  <div class="wf-facts"><span><b>결과물</b> 브라우저로 볼 수 있는 홈페이지(또는 대시보드)와 이를 고쳐 쓰는 방법.</span><span><b>난이도</b> 중급</span>
+    <span><b>시간</b> 처음 2~4시간</span><span><b>단계</b> 8개</span></div>
+  <div class="cos"><span class="co">Claude 아티팩트</span><span class="co">Claude Code</span><span class="co">Claude 디자인</span><span class="co">Readdy AI</span><span class="co">구글 AI 스튜디오</span></div>
+</section>
+<div class="prog"><div class="prog-track"><div id="prog-bar"></div></div><span id="prog-txt" class="muted small"></span>
+  <button type="button" id="reset" class="linkish small">처음부터</button></div>
+<p class="muted small hint">카드를 누르면 단계별 세부 방법이 열립니다. 점선 카드는 영상 밖에서 덧붙인 보충 단계입니다. · 2026-11-27 갱신</p>
+<div class="flow" style="--cols:4"><div class="phase"><div class="phase-h"><span>1</span>시안</div>
+  <div class="nodes"><button class="node" type="button" data-id="s1" aria-haspopup="dialog">
+  <span class="num">1</span>
+  <span class="nbody"><span class="nt">아티팩트로 작은 도구 만들기</span><span class="ns">한 줄 요청으로 작동하는 앱을 만듭니다</span>
+  <span class="ntool">Claude</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s2" aria-haspopup="dialog">
+  <span class="num">2</span>
+  <span class="nbody"><span class="nt">디자인 시안 먼저 탐색하기</span><span class="ns">코드 전에 여러 시안을 만들어 고릅니다</span>
+  <span class="ntool">Claude 디자인</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>2</span>만들기</div>
+  <div class="nodes"><button class="node" type="button" data-id="s3" aria-haspopup="dialog">
+  <span class="num">3</span>
+  <span class="nbody"><span class="nt">데스크톱 앱에서 Claude Code 준비하기</span><span class="ns">터미널 없이 폴더를 열고 시작합니다</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s4" aria-haspopup="dialog">
+  <span class="num">4</span>
+  <span class="nbody"><span class="nt">계획 모드로 안전하게 시키기</span><span class="ns">만들기 전에 계획부터 확인합니다</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s5" aria-haspopup="dialog">
+  <span class="num">5</span>
+  <span class="nbody"><span class="nt">AI 빌더로 홈페이지 만들기</span><span class="ns">설명이나 스크린샷으로 사이트를 만듭니다</span>
+  <span class="ntool">Readdy AI</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>3</span>다듬기</div>
+  <div class="nodes"><button class="node" type="button" data-id="s6" aria-haspopup="dialog">
+  <span class="num">6</span>
+  <span class="nbody"><span class="nt">말로 하나씩 고치기</span><span class="ns">한 번에 하나씩 수정을 요청합니다</span>
+  <span class="ntool">Readdy AI</span></span><span class="check" aria-hidden="true">✓</span></button><button class="node" type="button" data-id="s7" aria-haspopup="dialog">
+  <span class="num">7</span>
+  <span class="nbody"><span class="nt">결과를 직접 확인하고 검증하기</span><span class="ns">테스트와 성공 기준으로 확인합니다</span>
+  <span class="ntool">Claude Code</span></span><span class="check" aria-hidden="true">✓</span></button></div></div><div class="phase"><div class="phase-h"><span>4</span>공개</div>
+  <div class="nodes"><button class="node" type="button" data-id="s8" aria-haspopup="dialog">
+  <span class="num">8</span>
+  <span class="nbody"><span class="nt">공개하고 공유하기</span><span class="ns">링크나 도메인으로 다른 사람에게 보여 줍니다</span>
+  <span class="ntool">Readdy AI</span></span><span class="check" aria-hidden="true">✓</span></button></div></div></div>
+<dialog class="drawer" id="d-s1" aria-labelledby="t-s1">
+  <div class="dr-head"><span class="muted small">1 / 8 · 시안</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s1">아티팩트로 작은 도구 만들기</h2>
+  <div class="cos"><span class="co strong">Claude</span></div>
+  <p>아티팩트는 채팅 옆에 바로 작동하는 계산기·퀴즈·간단한 앱을 만들어 줍니다. 코딩 없이 만들기 감각을 익히기에 가장 쉽습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude 채팅창에 만들고 싶은 도구를 한 줄로 요청합니다.</li><li>채팅 옆에 나타난 아티팩트를 직접 사용해 봅니다.</li><li>고칠 부분을 채팅으로 수정 요청합니다.</li><li>공유하려면 게시해 링크로 받습니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>내 1일 칼로리 계산기 만들어 줘</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>퀴즈, 점수 측정기, 인포그래픽에도 쓸 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g1">문서·슬라이드·디자인 만들기 › Claude 아티팩트로 계산기·앱 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=SDipcfxxa8s" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/SDipcfxxa8s/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드의 새 화이트보드·시트·데이터 기능 정리</b><span class="muted">The AI Advantage · 2026-11-13</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=ewgbQRow1T4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/ewgbQRow1T4/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 핵심 기능 총정리 (2026년 5월판)</b><span class="muted">이동훈의 루트AI · 2026-05-01</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=QQkxSceKsDQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/QQkxSceKsDQ/mqdefault.jpg" alt="" loading="lazy"><span><b>갤럭시 북6 Pro와 클로드로 AI 업무 시간 줄이기</b><span class="muted">온선 [온라인 선생님]  · 2026-06-24</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s1"> 이 단계 완료</label>
+  <div class="dr-nav"><span></span><button type="button" class="nav-b next" data-go="s2">디자인 시안 먼저 탐색하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s2" aria-labelledby="t-s2">
+  <div class="dr-head"><span class="muted small">2 / 8 · 시안</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s2">디자인 시안 먼저 탐색하기</h2>
+  <div class="cos"><span class="co strong">Claude 디자인</span></div>
+  <p>코드를 짜기 전에 짧게 디자인 시안을 탐색하면 결과가 좋아집니다. 시안 → 댓글 피드백 → 수정 → 클릭형 프로토타입 순서로 진행합니다. Pro 이상 구독이 필요합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li><code>Artifacts</code> 탭으로 이동해 새 디자인을 만듭니다.</li><li>원하는 화면의 시안을 여러 개 만들어 달라고 요청합니다.</li><li>잘 된 점과 아쉬운 점을 댓글로 남깁니다.</li><li>마음에 들지 않는 세부는 에디터에서 직접 고칩니다.</li><li>클릭해 볼 수 있는 프로토타입을 만들어 달라고 요청합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>현재 앱을 살펴보고 앱에 맞는 온보딩 디자인 시안을 여러 개 만들어 줘</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li><code>Tweaks</code>로 화면의 여러 변형을 비교해 고를 수 있습니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g7">문서·슬라이드·디자인 만들기 › Claude 디자인으로 시안에서 구현까지</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=COJAZQM1aeQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/COJAZQM1aeQ/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude 디자인으로 앱 온보딩 만들기</b><span class="muted">Claude (공식) · 2026-10-02</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=O8CrrsKJDFQ" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/O8CrrsKJDFQ/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 디자인으로 앱·PPT 만들기 실습</b><span class="muted">이동훈의 루트AI · 2026-05-09</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s2"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s1">← 아티팩트로 작은 도구 만들기</button><button type="button" class="nav-b next" data-go="s3">데스크톱 앱에서 Claude Code 준비하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s3" aria-labelledby="t-s3">
+  <div class="dr-head"><span class="muted small">3 / 8 · 만들기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s3">데스크톱 앱에서 Claude Code 준비하기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>개발 지식이 없어도 Claude 데스크톱 앱의 Claude Code 모드로 폴더를 열고 결과물을 만들게 할 수 있습니다. 어떻게 만들지는 AI에 맡기고 무엇을 만들지에 집중합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Claude 데스크톱 앱에서 Claude Code 모드(상단의 <code>Code</code> 토글)를 선택합니다.</li><li><code>로컬</code> 옆 버튼에서 <code>폴더 열기</code>를 눌러 작업할 폴더를 선택합니다.</li><li>폴더(워크스페이스) 신뢰를 허용합니다.</li><li>필요한 파일(예: CSV)을 첨부하고 만들 결과물을 풀어서 요청합니다.</li><li>우측 내장 브라우저에서 결과를 확인하고 필요하면 <code>기본 브라우저에서 열기</code>로 크롬에서 엽니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>첨부한 설문 결과 CSV로, 팀원 누구나 브라우저로 볼 수 있는 대시보드 웹사이트를 만들어 줘. 응답자 연령대별 만족도 막대그래프와 주요 의견 요약을 넣어 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>사용량이 빨리 닳으면 모델을 한 단계 가벼운 것으로 바꿉니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/code-basics.html#g3">Claude Code 기본 › 데스크톱 앱에서 Claude Code 세팅하기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=NOe0m1TTA5w" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/NOe0m1TTA5w/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 코드로 영상 편집 자동화하기 (왕초보용)</b><span class="muted">신영선의 AI탐구 · 2026-11-21</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=fjMceSbXTRM" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/fjMceSbXTRM/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 채팅·코워크·코드·디자인 한 번에 정리</b><span class="muted">이동훈의 루트AI · 2026-08-27</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=0kILa02vKuI" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/0kILa02vKuI/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 설치하기</b><span class="muted">Claude (공식) · 2026-05-14</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s3"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s2">← 디자인 시안 먼저 탐색하기</button><button type="button" class="nav-b next" data-go="s4">계획 모드로 안전하게 시키기 →</button></div>
+</dialog><dialog class="drawer" id="d-s4" aria-labelledby="t-s4">
+  <div class="dr-head"><span class="muted small">4 / 8 · 만들기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s4">계획 모드로 안전하게 시키기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>큰 작업은 계획 모드로 먼저 방향을 잡으면 실수를 줄입니다. 코드가 쓰이기 전인 계획 단계가 방향을 고치기 가장 좋은 시점입니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li><code>Shift + Tab</code>을 눌러 <code>Plan mode</code>로 전환합니다.</li><li>만들려는 내용과 알고 싶은 점을 구체적으로 요청합니다.</li><li>Claude가 내놓은 계획을 검토하고 부족하면 추가·수정을 요청합니다.</li><li>계획이 좋으면 승인하고 파일 수정을 자동 수락할지 매번 물을지 고릅니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>앱 전체에 다크 모드를 추가하고 싶어. 헤더에 토글 스위치를 만들고, 기존 라이트 테마와 어울리는 대비 색을 쓰도록 계획을 먼저 세워 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>모든 단계를 직접 확인하고 싶으면 기본 승인 모드를 유지하세요.</li><li><code>권한 무시</code>는 작업 폴더 범위를 확인한 뒤에만 켭니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/code-basics.html#g4">Claude Code 기본 › 권한 모드와 계획 모드로 안전하게 시키기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=gbetp6D7J_Q" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/gbetp6D7J_Q/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 첫 프롬프트 작성하기</b><span class="muted">Claude (공식) · 2026-05-15</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=xJQuF02NAK8" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/xJQuF02NAK8/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code의 탐색→계획→코딩→커밋 흐름</b><span class="muted">Claude (공식) · 2026-05-17</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=6bs5b4FltCU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/6bs5b4FltCU/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code의 작동 원리</b><span class="muted">Claude (공식) · 2026-05-14</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=NOe0m1TTA5w" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/NOe0m1TTA5w/mqdefault.jpg" alt="" loading="lazy"><span><b>클로드 코드로 영상 편집 자동화하기 (왕초보용)</b><span class="muted">신영선의 AI탐구 · 2026-11-21</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s4"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s3">← 데스크톱 앱에서 Claude Code 준비하기</button><button type="button" class="nav-b next" data-go="s5">AI 빌더로 홈페이지 만들기 →</button></div>
+</dialog><dialog class="drawer" id="d-s5" aria-labelledby="t-s5">
+  <div class="dr-head"><span class="muted small">5 / 8 · 만들기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s5">AI 빌더로 홈페이지 만들기</h2>
+  <div class="cos"><span class="co strong">Readdy AI</span></div>
+  <p>Readdy AI, 호스팅어 AI 빌더, 구글 AI 스튜디오는 사이트 설명이나 스크린샷만으로 홈페이지를 만들어 줍니다. 시안을 빠르게 만들고 말로 고쳐 갑니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>Readdy AI에 로그인하고 계정 메뉴의 <code>Language</code>에서 <code>한국어</code>를 선택합니다.</li><li>입력창에 사이트 종류, 대상, 분위기, 넣을 섹션을 적어 전송합니다.</li><li>완성된 사이트를 PC·모바일 화면으로 확인합니다.</li><li>마음에 드는 사이트를 캡처해 <code>해당 이미지를 참고해서 비슷한 느낌의 랜딩 페이지 만들어 줘</code>라고 요청할 수도 있습니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>치과 병원 홈페이지를 만들어 줘. 대상은 30~50대 직장인, 분위기는 깔끔하고 따뜻하게, 섹션은 소개·진료 안내·예약 문의·오시는 길로 구성해 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>디자인은 말보다 이미지가 정확합니다.</li><li>Readdy는 요청 한 번마다 25 크레딧이 차감되고 공개 게시에는 유료 결제가 필요합니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g13">문서·슬라이드·디자인 만들기 › AI로 홈페이지·랜딩 페이지 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=phZxdZYg9-U" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/phZxdZYg9-U/mqdefault.jpg" alt="" loading="lazy"><span><b>호스팅어 AI 빌더로 내 사업 홈페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-17</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=8VUpLvbeaYU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/8VUpLvbeaYU/mqdefault.jpg" alt="" loading="lazy"><span><b>Readdy AI로 홈페이지 만들고 관리비 받는 법</b><span class="muted">온선 [온라인 선생님]  · 2026-07-10</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=SFc-nOD0UB4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/SFc-nOD0UB4/mqdefault.jpg" alt="" loading="lazy"><span><b>Readdy AI로 대기업 홈페이지 복제하고 수정하기</b><span class="muted">온선 [온라인 선생님]  · 2026-03-27</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=AZYrVwm2_U4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/AZYrVwm2_U4/mqdefault.jpg" alt="" loading="lazy"><span><b>Readdy AI로 한 줄 입력해 웹사이트 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-02-02</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s5"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s4">← 계획 모드로 안전하게 시키기</button><button type="button" class="nav-b next" data-go="s6">말로 하나씩 고치기 →</button></div>
+</dialog><dialog class="drawer" id="d-s6" aria-labelledby="t-s6">
+  <div class="dr-head"><span class="muted small">6 / 8 · 다듬기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s6">말로 하나씩 고치기</h2>
+  <div class="cos"><span class="co strong">Readdy AI</span></div>
+  <p>완성된 사이트를 보고 고칠 곳을 요소별로 짚어 요청합니다. 한 번에 하나씩 요청해야 어긋남이 적습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li><code>편집 선택</code>으로 고칠 요소를 클릭해 일상 언어로 수정을 요청합니다.</li><li>말로 설명하기 어려우면 화면을 캡처해 첨부합니다.</li><li>구글 AI 스튜디오에서는 <code>어노테이트 앱</code>으로 위치를 표시합니다.</li><li>숫자·후기 같은 생성 문구는 실제 사실에 맞게 고칩니다.</li></ol>
+  
+  <ul class="tips"><li>수정 요청은 한 번에 하나씩 해야 어긋남이 적습니다.</li><li>구글 AI 스튜디오에서는 완성된 컴포넌트 코드를 함께 붙여 넣으면 디자인 품질이 올라갑니다.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g13">문서·슬라이드·디자인 만들기 › AI로 홈페이지·랜딩 페이지 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=SFc-nOD0UB4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/SFc-nOD0UB4/mqdefault.jpg" alt="" loading="lazy"><span><b>Readdy AI로 대기업 홈페이지 복제하고 수정하기</b><span class="muted">온선 [온라인 선생님]  · 2026-03-27</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=AZYrVwm2_U4" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/AZYrVwm2_U4/mqdefault.jpg" alt="" loading="lazy"><span><b>Readdy AI로 한 줄 입력해 웹사이트 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-02-02</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=YiVOAOfFfIs" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/YiVOAOfFfIs/mqdefault.jpg" alt="" loading="lazy"><span><b>구글 AI 스튜디오로 스크린샷 보고 웹사이트 만들기</b><span class="muted">이동훈의 루트AI · 2026-02-14</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s6"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s5">← AI 빌더로 홈페이지 만들기</button><button type="button" class="nav-b next" data-go="s7">결과를 직접 확인하고 검증하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s7" aria-labelledby="t-s7">
+  <div class="dr-head"><span class="muted small">7 / 8 · 다듬기</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s7">결과를 직접 확인하고 검증하기</h2>
+  <div class="cos"><span class="co strong">Claude Code</span></div>
+  <p>성공 기준을 분명히 적고 Claude가 직접 테스트하게 하면 품질이 안정됩니다. 웹 화면은 Claude in Chrome으로 탭에서 확인하게 할 수 있습니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>계획에 무엇이 올바른 결과인지 성공 기준을 분명히 적습니다.</li><li>웹 UI라면 Claude in Chrome 확장을 설치해 Claude가 탭에서 직접 테스트하게 합니다.</li><li>직접 확인해 만족하면 서브에이전트 코드 리뷰어로 점검합니다.</li><li>같은 문제가 반복되면 해결책을 <code>CLAUDE.md</code>에 저장하도록 요청합니다.</li></ol>
+  <div class="example"><div class="muted small">예시 프롬프트</div><pre>이 변경의 성공 기준은 기존 테스트가 모두 통과하고 로그인 화면에 오류가 없는 거야. 먼저 계획을 세우고, 구현 후 테스트까지 돌려서 결과를 알려 줘.</pre><button class="copy" type="button">복사</button></div>
+  <ul class="tips"><li>같은 실수가 나오면 다시 시키지 말고 <code>CLAUDE.md</code>나 스킬에 적어 두세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/code-basics.html#g7">Claude Code 기본 › 탐색→계획→코딩→커밋 흐름 익히기</a><a class="refl" href="../guide/code-advanced.html#g6">Claude Code 고급 › verify 스킬로 검증 루프 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=xJQuF02NAK8" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/xJQuF02NAK8/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code의 탐색→계획→코딩→커밋 흐름</b><span class="muted">Claude (공식) · 2026-05-17</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=tuY2ChJIx48" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/tuY2ChJIx48/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 기본기를 넘어서</b><span class="muted">Claude (공식) · 2026-05-22</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=mQZB0l-rhxE" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/mQZB0l-rhxE/mqdefault.jpg" alt="" loading="lazy"><span><b>Claude Code 검증 루프 만들기</b><span class="muted">Claude (공식) · 2026-09-25</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s7"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s6">← 말로 하나씩 고치기</button><button type="button" class="nav-b next" data-go="s8">공개하고 공유하기 →</button></div>
+</dialog><dialog class="drawer" id="d-s8" aria-labelledby="t-s8">
+  <div class="dr-head"><span class="muted small">8 / 8 · 공개</span>
+    <button type="button" class="x" data-close aria-label="닫기">✕</button></div>
+  <h2 id="t-s8">공개하고 공유하기</h2>
+  <div class="cos"><span class="co strong">Readdy AI</span></div>
+  <p>사내 공유라면 아티팩트 링크나 대시보드를, 외부 공개라면 도메인 연결이나 호스팅 출시를 씁니다. 공개 전에 문구와 개인정보를 한 번 더 확인합니다.</p>
+  <h3>따라 하기</h3><ol class="steps"><li>공개하려면 도메인을 연결하거나 호스팅어의 <code>출시</code>를 누릅니다.</li><li>호스팅어는 SEO 메뉴의 <code>AI SEO 어시스턴트</code>로 검색 설정을 합니다.</li><li>아티팩트로 만든 앱은 게시해 링크로 공유합니다.</li><li>공개 전 숫자·연락처·후기 문구가 사실과 맞는지 확인합니다.</li></ol>
+  
+  <ul class="tips"><li>요금제 가격은 기간 기준인지 확인하세요.</li></ul>
+  <h3>자세한 기능 가이드</h3><div class="refs"><a class="refl" href="../guide/create.html#g13">문서·슬라이드·디자인 만들기 › AI로 홈페이지·랜딩 페이지 만들기</a><a class="refl" href="../guide/create.html#g1">문서·슬라이드·디자인 만들기 › Claude 아티팩트로 계산기·앱 만들기</a></div>
+  <h3>참고 영상</h3><div class="vchips one"><a class="vchip" href="https://www.youtube.com/watch?v=phZxdZYg9-U" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/phZxdZYg9-U/mqdefault.jpg" alt="" loading="lazy"><span><b>호스팅어 AI 빌더로 내 사업 홈페이지 만들기</b><span class="muted">온선 [온라인 선생님]  · 2026-11-17</span></span></a><a class="vchip" href="https://www.youtube.com/watch?v=8VUpLvbeaYU" target="_blank" rel="noopener"><img src="https://i.ytimg.com/vi/8VUpLvbeaYU/mqdefault.jpg" alt="" loading="lazy"><span><b>Readdy AI로 홈페이지 만들고 관리비 받는 법</b><span class="muted">온선 [온라인 선생님]  · 2026-07-10</span></span></a></div>
+  <label class="donel"><input type="checkbox" class="donebox" data-id="s8"> 이 단계 완료</label>
+  <div class="dr-nav"><button type="button" class="nav-b" data-go="s7">← 결과를 직접 확인하고 검증하기</button><span></span></div>
+</dialog>
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <p>각 유튜브 채널의 공개 영상과 자막을 AI(Claude)가 요약·정리했습니다. 자세한 내용과 최신 화면은 원본 영상을 확인하세요. 영상의 저작권은 각 채널에 있습니다.</p>
+    <p class="muted">매일 밤 8시 업데이트 · 모니터링 채널 9곳</p>
+  </div>
+</footer>
+<script>
+(() => {
+  const key = 'flow-done:' + location.pathname;
+  let done = new Set();
+  try { done = new Set(JSON.parse(localStorage.getItem(key) || '[]')); } catch (e) {}
+  const nodes = [...document.querySelectorAll('.node')];
+  const bar = document.getElementById('prog-bar'), txt = document.getElementById('prog-txt');
+  function paint() {
+    nodes.forEach(n => n.classList.toggle('done', done.has(n.dataset.id)));
+    document.querySelectorAll('.donebox').forEach(c => c.checked = done.has(c.dataset.id));
+    const k = nodes.filter(n => done.has(n.dataset.id)).length;
+    bar.style.width = (100 * k / nodes.length) + '%';
+    txt.textContent = k + ' / ' + nodes.length + ' 단계 완료';
+  }
+  function save() { try { localStorage.setItem(key, JSON.stringify([...done])); } catch (e) {} paint(); }
+  function open(id) {
+    document.querySelectorAll('dialog[open]').forEach(d => d.close());
+    const d = document.getElementById('d-' + id);
+    if (d) { d.showModal(); d.scrollTop = 0; history.replaceState(null, '', '#' + id); }
+  }
+  nodes.forEach(n => n.addEventListener('click', () => open(n.dataset.id)));
+  document.querySelectorAll('[data-go]').forEach(b => b.addEventListener('click', () => open(b.dataset.go)));
+  document.querySelectorAll('dialog').forEach(d => {
+    d.addEventListener('click', ev => { if (ev.target === d) d.close(); });   // backdrop click
+    d.addEventListener('close', () => history.replaceState(null, '', location.pathname));
+  });
+  document.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => b.closest('dialog').close()));
+  document.querySelectorAll('.donebox').forEach(c => c.addEventListener('change', () => {
+    c.checked ? done.add(c.dataset.id) : done.delete(c.dataset.id); save(); }));
+  document.getElementById('reset').addEventListener('click', () => { done.clear(); save(); });
+  document.querySelectorAll('.copy').forEach(b => b.addEventListener('click', () => {
+    navigator.clipboard.writeText(b.previousElementSibling.innerText).then(() => {
+      b.textContent = '복사됨'; setTimeout(() => b.textContent = '복사', 1500); }); }));
+  paint();
+  if (location.hash.length > 1) open(location.hash.slice(1));
+})();
+</script>
+</body>
+</html>
